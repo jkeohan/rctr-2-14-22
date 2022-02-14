@@ -22,7 +22,7 @@
 | **Zoom Class Room** | Pinned in Slack Channel | Same link every class! |
 | **Exit Ticket** | [link](https://forms.gle/gRqsKNL3UXcozRS38) | Use the same link at the end of every class! |
 | **Homework** | [link](https://docs.google.com/spreadsheets/d/1d4JVrnePPau9VtGB-aHjp7hE4CijMgGwC0fo45TxaKo/edit#gid=566709901) | Add CodeSandbox link to HW |
-| **Office Hours** | [link](https://docs.google.com/spreadsheets/d/1d4JVrnePPau9VtGB-aHjp7hE4CijMgGwC0fo45TxaKo/edit#gid=1977257351)) | Schedule 1on1's |
+| **Office Hours** | [link](https://docs.google.com/spreadsheets/d/1d4JVrnePPau9VtGB-aHjp7hE4CijMgGwC0fo45TxaKo/edit#gid=1977257351) | Schedule 1on1's |
 
 ## Course Schedule
 
