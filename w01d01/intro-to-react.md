@@ -25,7 +25,7 @@ Any Front End developer, with several years of experience in the industry, will 
 
 jQuery was first introduced in 2006 and just shy of [20 million web sites](https://www.similartech.com/compare/jquery-vs-react-js) have been built using the library vs. the 1 million+ for React.
 
-<img src="https://i.imgur.com/1QmJMVa.png" /><br>
+<img src="https://i.imgur.com/ZquZoFk.png" /><br>
 
 The jQuery `library` was the front end developers tool of choice for quite sometime but it's starting to run it's course. 
 
@@ -112,7 +112,7 @@ As you can imagine they are not the only popular sites built in React.
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-Let's take a look at this article  [The Best Websites Examples Built With React JS](https://procoders.tech/blog/popular-react-js-websites-examples/).
+Let's take a look at this article  [The Best Websites Examples Built With React JS](https://www.monocubed.com/websites-built-with-react/).
 
 Look over the sites and determine which ones you have used in the past or perhaps use on a daily/weekly basis.
 
@@ -144,7 +144,9 @@ By modeling small reusable `Components` that focus on just rendering a specific 
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - React Developer Tools - 5min
 
-Let's take a look at a simple app built in React: <a href="https://02nz9.csb.app/" target="_">Mars Rebuild</a>
+<!-- Let's take a look at a simple app built in React: <a href="https://02nz9.csb.app/" target="_">Mars Rebuild</a> -->
+
+Let's take a look at a simple app built in React: <a href="<https://nt8se.csb.app/>" target="_">StreetBall Mecca</a>
 
 Looking at the sites UI we can't really see React.  It's there working under the hook but just not so apparent on the surface.  So let's peel back a layer and see React in action.  
 
@@ -231,7 +233,9 @@ So now it's time to get started with React. For this demo we will be using an on
 
 <hr> -->
 
-Here is the starter code we will be working with: <a href="https://codesandbox.io/s/rctr-8-2-21-getting-starter-v05qc?file=/src/index.js" target="_">React CodeSandbox Starter</a>
+<!-- Here is the starter code we will be working with: <a href="https://codesandbox.io/s/getting-started-0q2sk" target="_">React CodeSandbox Starter</a> -->
+
+Here is the starter code we will be working with: <a href="https://codesandbox.io/s/getting-started-forked-kq03v" target="_">React CodeSandbox Starter</a>
 
 **Note:** Be sure to fork button on the top right:
 
@@ -264,7 +268,7 @@ As of `16.8` React introduced `Hooks` which allowed **Functional Components** to
 
 **Hooks** are the way to write modern day React and will use them throughout this class.  
 
-<img src="https://i.imgur.com/60wz4jr.png" width=300/>
+<img src="https://i.imgur.com/cYH2l2Q.png" width=300/>
 
 #### Setting Up index.js
 
@@ -346,9 +350,8 @@ Take special note that once the element is rendered that React renamed `classNam
 
 <hr>
 
-### Final Solution
-
-Here is the final <a href="https://codesandbox.io/s/seir-831-getting-starter-forked-jogq5?file=/src/index.js:188-372" target="_">CodeSandbox Solution</a>.
+<!-- 
+Here is the final <a href="https://codesandbox.io/s/seir-831-getting-starter-forked-jogq5?file=/src/index.js:188-372" target="_">CodeSandbox Solution</a>. -->
 
 ### Bonus - Becoming A React Developer
 
