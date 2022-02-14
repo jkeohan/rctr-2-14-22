@@ -136,7 +136,7 @@ React was born out of Facebook's frustration with the traditional MVC model and:
 
 ### What Is React.js
 
-React is a JavaScript `framework` used to craft modern day UI for the front-end in web applications. It essentially takes the UI and breaks it down into reusable `Components`.  
+React is a JavaScript `library` used to craft modern day UI for the front-end in web applications. It essentially takes the UI and breaks it down into reusable `Components`.  
 
 By modeling small reusable `Components` that focus on just rendering a specific portion of the view,  React can improve an app's performance, maintainability, modularity and readability.
 
