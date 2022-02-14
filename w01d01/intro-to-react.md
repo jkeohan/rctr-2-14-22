@@ -189,8 +189,8 @@ The MVC architecture is a JavaScript design pattern for building an applications
 
 The backed is represented here by `Controller` and `Model` and can be implemented using any backend framework such as:
 
-- Node/Express (unit 3)
-- Ruby on Rails / Python & Django (unit 4)
+- Node/Express 
+- Ruby on Rails / Python & Django 
 - PHP
 
 
