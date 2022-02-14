@@ -138,7 +138,9 @@ As of `React 16.8` Components now come in 3 forms, all of which follow the same 
 
 We will introduce `Class Based` Components so that you have some grounding as to what they are, but the remainder of this class and Components will be built as `Functional Components` 
 
-Let's continue working on the previous <a target="_" href="https://codesandbox.io/s/rctr-8-2-21-getting-starter-forked-6p4z0?file=/src/index.js">CodeSandbox Starter</a> code. 
+<!-- Let's continue working on the previous <a target="_" href="https://codesandbox.io/s/rctr-8-2-21-getting-starter-forked-6p4z0?file=/src/index.js">CodeSandbox Starter</a>. -->
+
+Let's continue working on the previous <a target="_" href="">CodeSandbox Starter (TBD)</a>.
 
 **App.js**
 
