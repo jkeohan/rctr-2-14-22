@@ -148,7 +148,7 @@ Components are such an integral part of React that many companies create Compone
 
 <!-- Let's take a look at a simple app built in React: <a href="https://02nz9.csb.app/" target="_">Mars Rebuild</a> -->
 
-Let's take a look at a simple app built in React: <a href="<https://nt8se.csb.app/>" target="_">StreetBall Mecca</a>
+Let's take a look at a simple app built in React: <a href="https://nt8se.csb.app" target="_">StreetBall Mecca</a>
 
 Looking at the sites UI we can't really see React.  It's there working under the hook but just not so apparent on the surface.  So let's peel back a layer and see React in action.  
 
