@@ -311,9 +311,7 @@ In our basic starter app we will render some basic `HTML` for now.
 ```js
 // GRAB THE ELEMENT WITH AN ID OF ROOT AND STORE IN A VARIABLE CALLED rootElement
 const rootElement = document.getElementById("root");
-// USE ReactDOM TO RENDER SOME HTML
-
-//                WhHAT TO RENDER    WHERE TO RENDER
+// RENDER               WHAT              WHERE
 ReactDOM.render(<h1>Hello World</h1>, rootElement);
 ```
 
