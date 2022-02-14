@@ -31,8 +31,8 @@ The class schedule is as follows:
 | Class | Date | Class Topic | Homework | Recording |
 | :---: | :---: | :--- | :--- | :---: |
 ||| **Part 1: Fundamentals** |
-| 1  | Mon 02/14 | <li>[Class Orientation](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/orientation.md)</li><li>[Intro To React](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/intro-to-react.md)</li>| <li>Read: [Why React For The Front End](https://www.cloudways.com/blog/why-reactjs-for-front-end/)</li><li>Read: [Props and JSX](https://www.freecodecamp.org/news/react-components-jsx-props-for-beginners/)</li>| Recording|
-| 2  | Wed 02/16 | <li>[Components and JSX](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/components-and-jsx.md)</li><li>[Nested Components](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/nested-compnents.md)</li>| <li>Do: [React Floorplan](https://github.com/jkeohan/rctr-2-14-22/blob/main/homework/w01/react-floorplan.md)</li>  </li> | Recording|
+| 1  | Mon 02/14 | <li>[Class Orientation](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/orientation.md)</li><li>[Intro To React](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/intro-to-react.md)</li>| <li>Read: [Why Use React? – Top 8 Reasons Experts Use React in 2022](https://www.monocubed.com/why-use-react/)</li>| Recording|
+| 2  | Wed 02/16 | <li>[Components and JSX](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/components-and-jsx.md)</li><li>[Nested Components](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/nested-compnents.md)</li>| <li>Do: [React Floorplan](https://github.com/jkeohan/rctr-2-14-22/blob/main/homework/w01/react-floorplan.md)</li><li>Read: [Props and JSX](https://www.freecodecamp.org/news/react-components-jsx-props-for-beginners/)</li> | Recording|
 | | Mon 02/21| Holiday |||
 |3 | Wed 02/23| <li>Intro To Props</li>||Recording|
 |4 | Mon 02/28|<li>Intro to State</li>||Recording|
