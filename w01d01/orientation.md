@@ -6,7 +6,7 @@ Throughout this course, you will:
 
 * Work with several ES6 features as React is written in modern day JS
 * Learn about React Components and how they use **props** to pass data and **state** maintain the apps state
-* Differentiate between Class and Functional Components
+* Differentiate between **Class** and **Functional Components**
 * Learn key React concepts such as:
   * The flow of data with a React app
   * The component lifecycle
@@ -212,10 +212,10 @@ To qualify for a Letter of Completion, you must satisfactorily complete the fina
 
 Here are some previous student Final Projects:
 
- - [Covid Tracker](https://novel-covid19.netlify.app/)
  - [Dungeon and Dragons](http://dnd-monsters.surge.sh/)
  - [Bible Trip](https://raboriel.github.io/BibleTrip/)
  - [MasterMind](https://pd9ht.csb.app/)
+ - [Covid Tracker](https://novel-covid19.netlify.app/) - No Longer Working
  <!-- - [Mars Remake](https://ytgyi.csb.app/) -->
 
 
