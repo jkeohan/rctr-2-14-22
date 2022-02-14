@@ -140,6 +140,8 @@ React is a JavaScript `library` used to craft modern day UI for the front-end in
 
 By modeling small reusable `Components` that focus on just rendering a specific portion of the view,  React can improve an app's performance, maintainability, modularity and readability.
 
+Components are such an integral part of React that many companies create Component Libraries, such as Shopify which created [Polaris](https://polaris.shopify.com/)
+
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - React Developer Tools - 5min
