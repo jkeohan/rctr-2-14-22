@@ -31,8 +31,27 @@ The class schedule is as follows:
 | Class | Date | Class Topic | Homework | Recording |
 | :---: | :---: | :--- | :--- | :---: |
 ||| **Part 1: Fundamentals** |
-| 1  | Mon 02/14 | [Class Orientation](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/orientation.md)<br><br>[Intro To React](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/intro-to-react.md) | <li>Read: [Why React For The Front End](https://www.cloudways.com/blog/why-reactjs-for-front-end/)</li><li>Read: [Props and JSX](https://www.freecodecamp.org/news/react-components-jsx-props-for-beginners/)</li>| Recording|
-| 2  | Wed 02/16 | [Components and JSX](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/components-and-jsx.md)<br><br>[Nested Components](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/nested-compnents.md)| <li>Do: [React Floorplan](https://github.com/jkeohan/rctr-2-14-22/blob/main/homework/w01/react-floorplan.md)</li>  </li> | Recording|
+| 1  | Mon 02/14 | <li>[Class Orientation](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/orientation.md)</li><li>[Intro To React](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d01/intro-to-react.md)</li>| <li>Read: [Why React For The Front End](https://www.cloudways.com/blog/why-reactjs-for-front-end/)</li><li>Read: [Props and JSX](https://www.freecodecamp.org/news/react-components-jsx-props-for-beginners/)</li>| Recording|
+| 2  | Wed 02/16 | <li>[Components and JSX](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/components-and-jsx.md)</li><li>[Nested Components](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/nested-compnents.md)</li>| <li>Do: [React Floorplan](https://github.com/jkeohan/rctr-2-14-22/blob/main/homework/w01/react-floorplan.md)</li>  </li> | Recording|
+| | Mon 02/21| Holiday |||
+|3 | Wed 02/23| <li>Intro To Props</li>||Recording|
+|4 | Mon 02/28|<li>Intro to State</li>||Recording|
+|5 | Wed 03/02|<li>Lifting State</li>||Recording|
+|6 | Mon 03/07|<li>Controlled vs Uncontrolled Inputs and the useRef Hook</li>||Recording|
+|7 | Wed 03/09|<li>React Lifecycle States & The useEffect Hook</li>||Recording|
+|8 | Mon 03/14|<li>Making API calls using useEffect</li>||Recording|
+|9 | Wed 03/16| <li>useContext Hook</li>||Recording|
+|10 | Mon 03/21|<li>useReducer Hook</li>||Recording|
+|11 | Wed 03/23|<li>React Router</li>||Recording|
+|12 | Mon 03/28|<li>React Router Cont...</li>||Recording|
+|13 | Wed 03/30|<li>Final Project 1on1's</li>||Recording|
+|14 | Mon 04/04|<li>Styling Components</li>||Recording|
+|15 | Wed 04/06|<li>Intro to Redux</li>||Recording|
+|16 | Mon 04/11|<li>Custom Hooks</li>||Recording|
+|17 | Wed 04/13|<li>Testing in React</li>||Recording|
+|18 | Mon 04/18|<li>Final Project 1on1's</li>||Recording|
+|19 | Wed 04/20|<li>React & Mapbox</li>||Recording|
+|20 | Mon 04/25|<li>Project Presentations</li>||Recording|
 
 <!--  -->
 
