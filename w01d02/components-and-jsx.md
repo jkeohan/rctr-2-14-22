@@ -275,9 +275,9 @@ JSX is not limited to `React` and can be implemented in other frameworks.
 
 Let's review the rules once again for working with JSX.
 
-- They can render only one top level element but that element can contain numerous children. 
+- It can render only one top level element but that element can contain numerous children. 
 - As per CSS, the word `class` is replaced with `className`
-- Any JavaScript code must be surrounding in opening/closing curly braces
+- Any JavaScript code must be surrounded in opening/closing curly braces
 - Any Component created via a loop must include a `key` prop
 
 
