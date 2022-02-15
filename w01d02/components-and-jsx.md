@@ -227,7 +227,7 @@ Just keep in mind that the additional structure for defining state, handling pro
 
 Being that you are familiar with standard JS functions writing a Functional Component is much easier to understand. 
 
-For now let's just comment out the **Class Component** and we will write a new `Functional` Component.
+For now let's just comment out the **Class Component** and write a new `Functional` Component.
 
 
 ```js
