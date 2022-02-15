@@ -238,7 +238,7 @@ const App = () => (
 
 As we can see a `Functional` Component is more streamlined and concise. If written using the `fat-arrow` syntax it allows it to take advantage of the `implicit` return.  
 
-If we only need to return `JSX` then this way of writing the Component will suffice.  However if we needed to include additional functionality then we would need to write the Component as follows:
+If we only need to return `JSX` then this way of writing the Component will suffice.  However if we needed to include additional logic then we would need to write the Component to include the **return** keyword. 
 
 ```js
 const App = () => {
