@@ -62,7 +62,6 @@ You should see the following:
 
 :thumbsup: - Click on the thumbs up when you're done.
 
-- Slack you're answer in the thread created by the instructor
 
 <hr>
 
