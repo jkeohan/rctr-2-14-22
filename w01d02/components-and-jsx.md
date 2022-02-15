@@ -180,8 +180,7 @@ This imports React and supporting methods from the React library.  In this case 
 
 :oncoming_police_car: `class App extends React.Component`
 
-Since we are creating a `Class Component` we must include the keyword `class`, as well as `extend` which is used to inherit all the functionality provided via the default `React.Component`.  
-
+Since we are creating a `Class Component` we must include the keyword `class`, as well as `extend`, which is used to inherit all the functionality provided via the default `React.Component`.  
 
 ES6 classes and class inheritance are a much more extensive topic and something we will not cover but expect to encounter them anytime you research how to do something in React. 
 
