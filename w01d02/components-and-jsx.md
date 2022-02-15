@@ -254,7 +254,7 @@ As we can see this requires curly braces `{}` and an `explicit` return statement
 
 ## JSX
 
-One thing to note about Bootstrap is that there is a distinct separation between HTML, CSS and JS.  It takes the `separation of concerns` modality and requires the import of a separate css and js file.  So in order to fully work with Bootstrap not only do you need to include the Bootstrap specific HTML but also import the following files:
+One thing to note about Bootstrap is that there is a distinct separation between HTML, CSS and JS.  It takes the `separation of concerns` modality and requires the import of a separate css and js file.  So in order to fully work with Bootstrap not only do you need to include the Bootstrap specific HTML but also import the following files into **index.js**
 ```html
 <!-- BOOTSTRAP CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
