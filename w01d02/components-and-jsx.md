@@ -182,7 +182,7 @@ This imports React and supporting methods from the React library.  In this case 
 
 Since we are creating a `Class Component` we must include the keyword `class`, as well as `extend`, which is used to inherit all the functionality provided via the default `React.Component`.  
 
-ES6 classes and class inheritance are a much more extensive topic and something we will not cover but expect to encounter them anytime you research how to do something in React. 
+ES6 classes, and class inheritance, are a much more extensive topic and something we will not cover in this class, but they are extensively used in JavaScript and were how we originally created **state** enabled Components in React up until v16.8.
 
 ```js
 render(){
