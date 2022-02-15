@@ -304,23 +304,23 @@ We can fix that by wrapping all the HTML in a top level element, such as another
 ```js
 const App = () => {
   return (
-    <React.Fragment>
-      <div>Top</div>
-      <div>Functional Component</div>
-    </React.Fragment>
-  )
-}
-```
-
-Which can also be written as:
-
-```js
-const App = () => {
-  return (
     <>
       <div>Top</div>
       <div>Functional Component</div>
     </>
+  )
+}
+```
+
+Which in pre v16.8 was written as:
+
+```js
+const App = () => {
+  return (
+    <React.Fragment>
+      <div>Top</div>
+      <div>Functional Component</div>
+    </React.Fragment>
   )
 }
 ```
