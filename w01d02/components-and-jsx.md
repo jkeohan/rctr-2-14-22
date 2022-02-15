@@ -267,9 +267,7 @@ So in order to fully work with Bootstrap not only do you need to include the Boo
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 ```
 
-React however brings the HTML and JS together into one file using `JSX`.  It can also include the CSS to make the Component self sufficient. 
-
-JSX is a language that compiles to JavaScipt and allows us to write code that strongly resembles HTML. 
+JSX is a language that allows us to enumerate JavaScipt within HTML and write more cohesive code. 
 
 JSX is not limited to `React` and can be implemented in other frameworks. 
 
