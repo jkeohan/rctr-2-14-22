@@ -279,12 +279,10 @@ Let's review the rules once again for working with JSX.
 - As per CSS, the word `class` is replaced with `className`
 - Any JavaScript code must be surrounded in opening/closing curly braces
 - Any Component created via a loop must include a `key` prop
-
-
-Keeping all these rules in mind let's see what happens if you try to render two top level elements.  
+  
 
 ##### Single Top Level Parent
-Let's add another `div`
+Let's put the first rule to the test and try adding another `div` as a sibling. 
 
 ```js
 const App = () => {
