@@ -176,7 +176,7 @@ Let's break down the things we see here:
 
 :oncoming_police_car: `import React from 'react'`
 
-This imports React methods from the React library.
+This imports React and supporting methods from the React library.  In this case were making use of **React.Component()**
 
 :oncoming_police_car: `class App extends React.Component`
 
