@@ -221,7 +221,7 @@ Once the page refreshes you should see the output.
 
 There is much more to `Class Components` then was touched on here.  This was only meant to show the most minimum instantiation of a Class Component.  
 
-Just keep in mind that the additional structure for defining state, handling props, calling lifecycle methods is much different than their `Hook` based counterparts. 
+Just keep in mind that the additional structure for defining state, handling props, calling lifecycle methods will be slightly different than their `Hook` based counterparts. 
 
 ### Functional Components
 
