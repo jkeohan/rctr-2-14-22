@@ -149,9 +149,8 @@ In `src` create a new file called `App.js`.
 
 <img src="https://i.imgur.com/RArVqwo.png" width=200/>
 
-<br>
 
-Inside `App.js` let's do the following:
+Inside `App.js` we will do the following:
 
  - import `React`
  - create the `Class Component` 
