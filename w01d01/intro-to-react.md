@@ -350,8 +350,13 @@ Take special note that once the element is rendered that React renamed `classNam
 
 <hr>
 
+https://codesandbox.io/s/getting-started-2-14-22-9is0i?file=/src/index.js
+
 <!-- 
 Here is the final <a href="https://codesandbox.io/s/seir-831-getting-starter-forked-jogq5?file=/src/index.js:188-372" target="_">CodeSandbox Solution</a>. -->
+
+
+Here is the final <a href="https://codesandbox.io/s/getting-started-2-14-22-9is0i?file=/src/index.js" target="_">CodeSandbox Solution</a>.
 
 ### Bonus - Becoming A React Developer
 
