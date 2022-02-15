@@ -150,7 +150,6 @@ In `src` create a new file called `App.js`.
 <img src="https://i.imgur.com/RArVqwo.png" width=200/>
 
 <br>
-<br>
 
 Inside `App.js` let's do the following:
 
