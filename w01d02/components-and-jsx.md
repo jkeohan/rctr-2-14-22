@@ -140,7 +140,7 @@ We will introduce `Class Based` Components so that you have some grounding as to
 
 <!-- Let's continue working on the previous <a target="_" href="https://codesandbox.io/s/rctr-8-2-21-getting-starter-forked-6p4z0?file=/src/index.js">CodeSandbox Starter</a>. -->
 
-Let's continue working on the previous <a target="_" href="">CodeSandbox Starter (TBD)</a>.
+Let's continue working on the previous <a target="_" href="https://codesandbox.io/s/getting-started-2-16-22-spp2fx">CodeSandbox Starter</a>.
 
 **App.js**
 
