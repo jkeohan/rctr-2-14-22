@@ -439,7 +439,7 @@ The instructor will perform a walk through of organizing the Components into a f
 
 ### Final Solution
 
-To Be Provided Shotly...
+[Final Solution](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/components-and-jsx.md)
 
 <!-- WITH FOLDERS -->
 Here is the [Final Solution](https://codesandbox.io/s/bootstrap-solution-seir-1207-2v48i?file=/src/App.js)
