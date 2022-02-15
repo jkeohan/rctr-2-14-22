@@ -192,7 +192,7 @@ render(){
 }
 ```
 
-All Class Components must use the `render(){}` method to `return()` the UI.  The `render()` method is something that was inherited by extending the React.Component.
+All Class Components must use the `render(){}` method to `return()` the UI.  The `render()` method is was inherited from **React.Component** via the **extend** keyword. 
 
 :oncoming_police_car: `export default App`
 
