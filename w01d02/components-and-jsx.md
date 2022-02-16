@@ -120,6 +120,7 @@ From this point on we will be creating Components so before we begin let's take 
 - Can return only one top level element but that element can contain numerous child elements. 
 - Any JS within JSX must be enclosed in curly braces `{variable_name}`
 - The keyword `class` is reserved so CSS classes must be renamed `className`
+- Any Component created via a loop must include a `key` prop
 
 :star: Some Best Practices
 - Each Component should be in it's own file
@@ -275,10 +276,10 @@ JSX is not limited to `React` and can be implemented in other frameworks.
 
 Let's review the rules once again for working with JSX.
 
-- It can render only one top level element but that element can contain numerous children. 
-- As per CSS, the word `class` is replaced with `className`
-- Any JavaScript code must be surrounded in opening/closing curly braces
-- Any Component created via a loop must include a `key` prop
+* Can return only one top level element but that element can contain numerous child elements.
+* Any JS within JSX must be enclosed in curly braces `{variable_name}`
+* The keyword `class` is reserved so CSS classes must be renamed `className`
+* Any Component created via a loop must include a `key` prop
   
 
 ##### Single Top Level Parent
