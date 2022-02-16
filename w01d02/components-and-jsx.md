@@ -118,7 +118,7 @@ From this point on we will be creating Components so before we begin let's take 
 #### JSX Specific Rules :oncoming_police_car
 
 - Can return only one top level element but that element can contain numerous child elements. 
-- Any JS within JSX must be enclosed in curly braces `{}`
+- Any JS within JSX must be enclosed in curly braces `{variable_name}`
 - The keyword `class` is reserved so classes must be renamed `className`
 
 :star: Best Practices
