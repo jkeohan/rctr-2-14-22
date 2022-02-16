@@ -110,7 +110,7 @@ From this point on we will be creating Components so before we begin let's take 
 
 #### Component Specific Rules :oncoming_police_car
 
-- Must import `React`
+- Must import `React` (not so anymore with the latest version of React)
 - Must be called within the JSX using an uppercase first letter
 - Must return some form of UI (user interface) 
 - Must be exported from the file to be imported into another Component 
