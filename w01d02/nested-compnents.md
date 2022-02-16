@@ -42,13 +42,17 @@ Here is the HTML provided by Bootstrap:
 
 In order to bridge the gap of what defines a Component, we will be creating a custom React `Card` Component that uses the Bootstrap HTML. 
 
-<hr>
-
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
+#### Starter Code
 
 Open and fork the following <a href="https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js" target="_">CodeSandbox Card Starter</a>
 
 :thumbsup: Click on the thumbs up when you've forked.
+
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
+
+
 
 <!-- https://codesandbox.io/s/seir-831-bootstrap-starter-sv30w?file=/src/index.js -->
 
