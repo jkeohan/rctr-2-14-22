@@ -110,14 +110,14 @@ From this point on we will be creating Components so before we begin let's take 
 
 #### Component Specific Rules :oncoming_police_car
 
-- They must import `React`
-- They must be called within the JSX using an uppercase first letter
-- They must return some form of UI (user interface) 
-- They must be exported from the file to be imported into another Component 
+- Must import `React`
+- Must be called within the JSX using an uppercase first letter
+- Must return some form of UI (user interface) 
+- Must be exported from the file to be imported into another Component 
 
 #### JSX Specific Rules :oncoming_police_car
 
-- They can return only one top level element but that element can contain numerous children. 
+- Can return only one top level element but that element can contain numerous children. 
 - Any JS within JSX must be enclosed in curly braces `{}`
 - The keyword `class` is reserved so classes must be renamed `className`
 
