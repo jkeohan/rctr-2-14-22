@@ -121,7 +121,7 @@ From this point on we will be creating Components so before we begin let's take 
 - Any JS within JSX must be enclosed in curly braces `{variable_name}`
 - The keyword `class` is reserved so CSS classes must be renamed `className`
 
-:star: Best Practices
+:star: Some Best Practices
 - Each Component should be in it's own file
 - Each Component file should be in a separate folder 
 - Each Component should reference it's own CSS
@@ -254,7 +254,7 @@ As we can see this requires curly braces `{}` and an `explicit` return statement
 
 ## JSX
 
-One thing to note about Bootstrap is that there is a distinct separation between HTML, CSS and JS.  It takes the `separation of concerns` modality and requires the import of a separate css and js file.  
+<!-- One thing to note about Bootstrap is that there is a distinct separation between HTML, CSS and JS.  It takes the `separation of concerns` modality and requires the import of a separate css and js file.  
 
 So in order to fully work with Bootstrap not only do you need to include the Bootstrap specific HTML but also import the following files into **index.js**
 
@@ -265,7 +265,7 @@ So in order to fully work with Bootstrap not only do you need to include the Boo
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-```
+``` -->
 
 JSX is a language that allows us to enumerate JavaScipt within HTML and write more cohesive code. 
 
