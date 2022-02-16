@@ -32,6 +32,3 @@ Perform the following to complete the lab:
 
 **Super Bonus**
 * Try working on the [The Knot](https://codesandbox.io/s/theknot-starter-ye150) exercise
-
-**Submitting Homework**
-* Add a link to your CodeSandbox [here](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit#gid=566709901)
