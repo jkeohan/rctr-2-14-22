@@ -119,7 +119,7 @@ From this point on we will be creating Components so before we begin let's take 
 
 - Can return only one top level element but that element can contain numerous child elements. 
 - Any JS within JSX must be enclosed in curly braces `{variable_name}`
-- The keyword `class` is reserved so classes must be renamed `className`
+- The keyword `class` is reserved so CSS classes must be renamed `className`
 
 :star: Best Practices
 - Each Component should be in it's own file
