@@ -106,7 +106,7 @@ When using React, building Components will be a thing you will do quite often.
 
 ### Rules To Follow
 
-From this point on we will be creating Components, more  than you ever imagined, so before we begin let's take a moment to discuss the `requirements` and `best practices` for creating Components.  
+From this point on we will be creating Components so before we begin let's take a moment to discuss the `requirements` and `best practices` for creating Components.  
 
 Some of the requirements are specific to `JSX`, short for `JavaScript And XML`. 
 
