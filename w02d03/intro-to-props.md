@@ -131,7 +131,7 @@ Inside of our **Card** Component let's assign **CardBody** the following `prop`.
 <CardBody title='Santorini' />
 ```
 
-Nothing will change as CardBody has not yet been configured to use that prop. We can confirm this in React DevTools. 
+Nothing will change as CardBody has not yet been configured to use that prop. 
 
 #### Accepting Props
 
