@@ -62,7 +62,10 @@ Since we haven't yet passed any data to these Components the props object contai
 
 **End Goal**
 
-Let's take a look at the final [solution](https://zeuwb.csb.app/) and compare how much more data props contains.
+Let's take a look at the final [solution](https://d484q.csb.app/) and compare how much more data props contains.
+
+<!-- SOLUTION for d484q -->
+<!-- https://codesandbox.io/s/rctr-8-2-21-components-bootstrap-starter-forked-d484q?file=/src/App.js -->
 
 <!-- WITH FOLDERS -->
 <!-- Here is the [Final Solution](https://codesandbox.io/s/bootstrap-solution-seir-1207-2v48i?file=/src/App.js) -->
@@ -91,7 +94,7 @@ Let's extend the rules we defined previously for Components and JSX to now inclu
 
 This Rule isn't regarding props but something we will need to keep in mind going forward:
 
-- Any Components created using Array.map() must be assigned a **key** prop with a unique value.
+- Any Components created using **Array.map()** must be assigned a **key** prop with a unique value.
 
 ### Passing Props
 
