@@ -171,9 +171,7 @@ Refresh the page and you should see the following:
 
 <img src="https://i.imgur.com/Nmio71o.png" width=300/>
 
-So it looks like props was not updated to reflect the edit. This is an example of one of the rules of props:
-
-So any attempt to change those props directly within the Component will have no effect.
+It looks like props was not updated to reflect the edit. So any attempt to change those props directly within the Component will have no effect.
 
 
 
