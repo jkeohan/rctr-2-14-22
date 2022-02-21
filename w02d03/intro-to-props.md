@@ -264,7 +264,7 @@ Now take a look in DevTools and you should see the following:
 
 <img src="https://i.imgur.com/gx42Kme.png" />
 
-Each object appears to contain much more info then we passed and each one has a `$$typeof` key that is set to `Symbol(react.element)`. 
+Each object appears to contain much more info then we passed as well as each one contains a `$$typeof` key that is set to `Symbol(react.element)`. 
 
 `Symbols` were a new data type introduced in ES6 and are unique, meaning there will not be another `Symbol` in this array with the same exact info.
 
