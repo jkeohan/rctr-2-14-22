@@ -358,8 +358,6 @@ Below includes those 2 updates.
 <br>
 <br>
 
-And there you have it. Multiple Components rendered via a loop.  
-
 The only task left is to pass the data to **CardImage** and **Button**. 
 
 <hr>
