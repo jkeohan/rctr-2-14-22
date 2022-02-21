@@ -21,7 +21,7 @@ Perform the following to complete the lab:
 **Rendering The `WeatherIcons` Component**
 * Import the `WeatherIcons` Component into `App`
 * Loop over the weatherData array data and create a `WeatherIcons` Component for each element passed
-* In the loop pass the element the props it needs for img`, `conditions` and `time`. 
+* In the loop pass the element the props it needs for **img, conditions` and time**. 
 * App will then render those `WeatherIcons` Components
 
 **Refactor**
@@ -34,5 +34,5 @@ Creating the following additional Components that are rendered as children of th
 **Super Bonus**
 * Try working on the [The Knot](https://codesandbox.io/s/theknot-starter-ye150) exercise
 
-**Submitting Homework**
-* Add a link to your CodeSandbox [here](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit#gid=566709901)
+<!-- **Submitting Homework**
+* Add a link to your CodeSandbox [here](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit#gid=566709901) -->
