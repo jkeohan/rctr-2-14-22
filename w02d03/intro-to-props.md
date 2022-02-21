@@ -36,18 +36,24 @@ Every Component has a `props` object even if no data has actually been passed.
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
-Let's revisit our previous [Bootstrap Cards](https://codesandbox.io/s/rctr-8-2-21-components-bootstrap-starter-forked-d484q) in `React Developer Tools` see if anything `props` related pops out.
+Let's revisit our previous [Bootstrap Cards](https://codesandbox.io/s/seir-628-bootstrap-starter-props-llbeh?file=/src/CardImage.js) in `React Developer Tools` see if anything `props` related pops out.
 
-<!-- STARTER 
+<!-- STARTER
+Starter from last session 
+https://codesandbox.io/s/seir-628-bootstrap-starter-props-llbeh?file=/src/CardImage.js
+
+Original Card Starter
 https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js
 
-https://codesandbox.io/s/seir-628-bootstrap-starter-props-llbeh?file=/src/CardImage.js
+
 -->
 
 <!-- SOLUTIONS -->
 <!-- https://codesandbox.io/s/seir-831-bootstrap-solution-r8p9i?file=/src/App.js 
 
 [Bootstrap Cards](https://codesandbox.io/s/components-bootstrap-starter-forked-2bujt?file=/src/App.js)
+
+[Bootstrap Cards](https://codesandbox.io/s/rctr-8-2-21-components-bootstrap-starter-forked-d484q)
 -->
 
 If we highlight the `Card1` Component we will see something called `props` in the right pane.  As a matter of fact, if you highlight any Component you will see the same `props` reference. 
