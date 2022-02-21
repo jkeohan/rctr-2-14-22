@@ -386,7 +386,7 @@ As we have made some design changes let's take a look at our final React Archite
 
 The above was created using [Google Draw](https://docs.google.com/drawings/d/1pG32gpXhkLqtBR2g_SrXWVeX6sza3TAq3zpP0Sjq3QM/edit?usp=sharing)
 
-The architecture represents all the Components and the props that are being passed to each one. This makes it much easier to understand the flow of data in our app.
+The architecture represents all the Components and the props that are being passed from parent to child Component.  This makes it much easier to understand the flow of data in our app.
 
 ### Bonus - The ...spread Operator and Object Destructuring
 
@@ -406,11 +406,11 @@ const cards = cardsArr.map((card, index) => {
 
 #### Using Object Destructuring
 
-The other shorthand we can use is to update the Child components to create variables based on the **keys** that are in the `props` object.
+The other shorthand we can use is to update the Child components to destructure the **props** object and target only those key values needed by the Component. 
 
 **CardBody**
 
-Let's update `CardBody` to make use of Object Destructuring. Here we use an object as parameter that includes all the prop key names that are being passed down.
+Let's update `CardBody` to make use of **Object Destructuring**. Here we use an object as parameter that includes all the **key names** that are being passed down.
 
 ```js
 const CardBody = ({ title, text, url }) => {
@@ -430,11 +430,11 @@ const CardBody = ({ title, text, url }) => {
 
 Take a moment to update the `CardImage` and `Button` Components to make use of Object Destructuring.
 
-:thumbsup: Click on the thumbs up when your done.
+:thumbsup_all: Click on the thumbs up when your done.
 
 <hr>
 
-### Bonus - A Better Folder Structure
+### Additional Bonus - A Better Folder Structure
 
 The instructor will perform a walk through of organizing the Components into a folder structure.
 
