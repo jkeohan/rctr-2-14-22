@@ -378,17 +378,17 @@ If we follow the basic pattern we can create and render new Components relativel
 
 Now it's you're turn to do the following:
 
-- Create a CardImage Component that returns the just image
-- Create a Button Component that returns just the button
-- Import CardImage into Card1
-- Import the CardButton into CardBody
-- Replace the HTML with those Components
+- Create a **CardImage Component** that returns the just image
+- Create a **Button Component** that returns just the button
+- Import **CardImage** into **Card1**
+- Import the **CardButton** into **CardBody**
+- Replace the hardcode HTML with those Components
 
 :thumbsup: Click on the thumbs up when you're done.
 
 <hr>
 
-<a href="https://codesandbox.io/s/seir-831-bootstrap-solution-r8p9i?file=/src/CardBody.js" target="_">Solution Code</a>
+<!-- <a href="https://codesandbox.io/s/seir-831-bootstrap-solution-r8p9i?file=/src/CardBody.js" target="_">Solution Code</a> -->
 
 ### Lab Time
 
