@@ -237,7 +237,7 @@ console.log('this is cardsArr:', cardsArr);
 
 #### Creating Multiple Cards
 
-With the data in hand we can now loop over the array and render as many `Card Components` as we need and pass them the `props` needed for each card.
+With the data in hand we can now loop over the array and render as many `Card Components` as their are objects in the array, passing them the `props` needed for each card.
 
 Inside of the `App` Component we will loop over the `cardsArr` array and create a `Card` for each object in the array.
 
