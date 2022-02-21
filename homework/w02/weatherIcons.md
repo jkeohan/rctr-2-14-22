@@ -16,7 +16,7 @@ Perform the following to complete the lab:
 **Creating The `WeatherIcons` Component**
 * Look over the HTML structure used to create the weather icons
 * Create a `WeatherIcons`  Component based on the HTML structure 
-* Make sure to set the Component up to accept props and update the JSX to work with those props
+* Make sure to set the Component up to accept props and update the JSX to reference those props
 
 **Rendering The `WeatherIcons` Component**
 * Import the `WeatherIcons` Component into `App`
