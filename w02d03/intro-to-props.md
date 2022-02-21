@@ -266,7 +266,7 @@ Now take a look in DevTools and you should see the following:
 
 Each object appears to contain much more info then we passed as well as each one contains a `$$typeof` key that is set to `Symbol(react.element)`. 
 
-`Symbols` were a new data type introduced in ES6 and are unique, meaning there will not be another `Symbol` in this array with the same exact info.
+`Symbols` were a new data type introduced in ES6 and are unique, meaning if we create many Symbols with the same value they will be unique. 
 
 In order for React to distinguish it as unique it does so by assigning a prop called `key`.
 
