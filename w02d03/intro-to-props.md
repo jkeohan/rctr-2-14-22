@@ -249,10 +249,11 @@ Let's also console the `cards` so see what React magic has been performed.
 const cards = cardsArr.map((card, index) => {
 	return (
 		<Card1 
-         img={card.img} 
-         title={card.title} 
-         text={card.text} 
-         url={card.url} />
+			img={card.img} 
+			title={card.title} 
+			text={card.text} 
+			url={card.url} 
+		/>
 	);
 });
 
