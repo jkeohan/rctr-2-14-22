@@ -164,7 +164,7 @@ Let's take a moment to confirm this and open the `CardBody` Component and add th
 console.log('current props.title', props.title);
 // ATTEMPT TO REASSIGN TITLE A NEW VALUE
 props.title = 'Mykonos';
-console.log('props.title', props.title);
+console.log('new props.title', props.title);
 ```
 
 Refresh the page and you should see the following:
