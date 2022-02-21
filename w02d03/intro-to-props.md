@@ -150,7 +150,7 @@ In DevTools you should see the following in the console.
 
 <img src="https://i.imgur.com/HlrtO2T.png" width=300/>
 
-We can see here that `props` is an object and that `title` is a key. This will be the same pattern for when we start passing in multiple props. Each prop passed will be assigned a **key:value** pair.
+We can see here that `props` is an object and that `title` is a key. This will be the same pattern for when we start passing in multiple props. Each prop passed will be assigned as a unique **key:value** pair.
 
 
 #### Props Are Immutable
