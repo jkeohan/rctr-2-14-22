@@ -291,7 +291,7 @@ In **App** comment out `<Card1 />` and `<Card2 />` as we will now replace those 
 
 #### The Key Prop
 
-As you may recall it was mentioned earlier that the elements would render fine however React would present an error. The following error to be exact:
+As you may recall it was mentioned earlier that the elements would render fine however React would present a warning. 
 
 <img src="https://i.imgur.com/Ofg12N1.png" >
 
