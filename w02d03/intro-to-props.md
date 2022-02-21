@@ -283,7 +283,7 @@ In **App** comment out `<Card1 />` and `<Card2 />` as we will now replace those 
 	{cards}
 	{/* 
 		<Card1 title="Santorini" />
-    	<Card2 /> 
+    		<Card2 /> 
 	*/}
 </section>
 ```
