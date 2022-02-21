@@ -36,7 +36,7 @@ Every Component has a `props` object even if no data has actually been passed.
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
-Let's revisit our previous [Bootstrap Cards](https://codesandbox.io/s/seir-628-bootstrap-starter-props-llbeh?file=/src/CardImage.js) in `React Developer Tools` see if anything `props` related pops out.
+Let's revisit our previous [Bootstrap Cards](https://codesandbox.io/s/bootstrap-starter-props-ryh02d?file=/src/App.js) in `React Developer Tools` see if anything `props` related pops out.
 
 <!-- STARTER
 Starter from last session 
