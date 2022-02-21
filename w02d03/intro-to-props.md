@@ -185,16 +185,6 @@ Let's now replace the hard coded value for title to the one being passed down as
 <h5 className='card-title'>{props.title}</h5>
 ```
 
-<hr>
-
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 1min
-
-Confirm in React Dev Tools that CardBody is now being passed a prop
-
-:thumbsup: Click on the thumbs up when your done.
-
-<hr>
-
 ### Passing Mulitple Props
 
 We could do the same for all the additional values we wish to pass but as you can imagine if we had 10, 20, 100+ cards this manual method becomes completely inefficient.
