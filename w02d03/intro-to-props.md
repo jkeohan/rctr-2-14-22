@@ -282,7 +282,7 @@ In **App** comment out `<Card1 />` and `<Card2 />` as we will now replace those 
 <section className='cards'>
 	{cards}
 	{/* 
-	<Card1 title="Santorini" />
+		<Card1 title="Santorini" />
     	<Card2 /> 
 	*/}
 </section>
