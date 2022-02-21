@@ -355,8 +355,7 @@ It makes more sense to rename `Card1.js` to `Card.js` and update both the import
 Below includes those 2 updates.
 
 <img src="https://i.imgur.com/SLtYu9d.png">
-<br>
-<br>
+
 
 The only task left is to pass the data to **CardImage** and **Button**. 
 
@@ -401,7 +400,7 @@ In `Card.js` let's replace all those hard coded props, except `key`, with the `.
 
 ```js
 const cards = cardsArr.map((card, index) => {
-	return <Card1 {...card} key={index} />;
+	return <Card {...card} key={index} />;
 });
 ```
 
