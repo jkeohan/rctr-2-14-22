@@ -266,9 +266,9 @@ Now take a look in DevTools and you should see the following:
 
 Each object appears to contain much more info then we passed as well as each one contains a `$$typeof` key that is set to `Symbol(react.element)`. 
 
-`Symbols` were a new data type introduced in ES6 and are unique, meaning if we create many Symbols with the same value they will be unique. 
+<!-- `Symbols` were a new primitive data type introduced in ES6 and are unique, meaning if we create many Symbols with the same value they will be unique.  -->
 
-In order for React to distinguish it as unique it does so by assigning a prop called `key`.
+In order for React to distinguish each element and manage updating it in the **Virtual DOM** it must be unique.  This is done by assigning a new prop called `key` which will be assigned a unique value. 
 
 :oncoming_police_car: - Any Components created within a .map() must be assigned a unique key.
 
