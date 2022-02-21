@@ -44,8 +44,6 @@ https://codesandbox.io/s/seir-628-bootstrap-starter-props-llbeh?file=/src/CardIm
 
 Original Card Starter
 https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js
-
-
 -->
 
 <!-- SOLUTIONS -->
@@ -60,7 +58,7 @@ If we highlight the `Card1` Component we will see something called `props` in th
 
 <img src="https://i.imgur.com/qzpnB0y.png" /><br>
 
-Since we haven't yet passed any data to these Components there is no value in props. 
+Since we haven't yet passed any data to these Components the props object contains no values.
 
 **End Goal**
 
