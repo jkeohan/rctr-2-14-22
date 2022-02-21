@@ -276,7 +276,7 @@ In order for React to distinguish each element and manage updating it in the **V
 
 Now it's time to see this in action.
 
-In App comment out `<Card1 />` and `<Card2 />`. We will now replace those values with the data returned via the **.map()** and stored in `cards`.
+In **App** comment out `<Card1 />` and `<Card2 />` as we will now replace those Components with the Components returned via the **.map()**.
 
 ```js
 <section className='cards'>
