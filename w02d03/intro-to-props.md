@@ -5,7 +5,7 @@ Creator:  Joe Keohan<br>
 
 ---
 
-# Passing Props
+# Intro To Props
 
 ## Learning Objectives
 
