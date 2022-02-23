@@ -87,5 +87,5 @@ Each object in the `parkData.js` file contains the following key:value pairs.
 
 - In the `App` Component, sort the `parkData` in descending order before passing it to the `Parks` Component
 
-#### Bonus#1
+#### Bonus#2
 - Try Creating and Adding a **Filters Component** according to this [final working solution](https://nt8se.csb.app/). 
