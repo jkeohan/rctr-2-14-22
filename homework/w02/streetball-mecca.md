@@ -83,6 +83,9 @@ Each object in the `parkData.js` file contains the following key:value pairs.
 - Examine the working solution and determine what HTML element(s) being used to render LI's that compose the `Park` Component
 - Assign the element with a class of `rating` the border color assigned to the elements `color` key.
 
-#### Bonus
+#### Bonus#1
 
 - In the `App` Component, sort the `parkData` in descending order before passing it to the `Parks` Component
+
+#### Bonus#1
+- Try Creating and Adding a **Filters Component** according to this [final working solution](https://nt8se.csb.app/). 
