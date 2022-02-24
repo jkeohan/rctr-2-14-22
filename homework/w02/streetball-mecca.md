@@ -26,7 +26,7 @@ Examine the working version of the app so you can see what element will be rende
 
 ## Starter Code
 
-Here is the [Starter CodeSandbox](https://codesandbox.io/s/streetball-mecca-seir-starter-trpid).  
+Here is the [Starter CodeSandbox](https://codesandbox.io/s/streetball-mecca-seir-starter-qdeik).  
 
 ## Instructions
 
