@@ -259,7 +259,7 @@ Here are a few of the Hooks available, including **useState**
 
 From the console log output it's clear to see that these **Hooks** are **key:value** pairs inside the **React** object. 
 
-Since we are familiar with **Object Destructuring** let's use it to elicit the **useState** function and store in a variable.
+Since we were introduced to **Object Destructuring** let's use it to elicit the **useState** function and store in a variable.
 
 
 ```js
@@ -280,11 +280,11 @@ The output should look like the following:
 <img src="https://i.imgur.com/IZFNnbg.png" width=400/>
 <br><br>
 
-It appears that **useState** is a function that takes in **initialState**, calls a supporting function and returns **dispatcher.useState()**. 
+It appears that **useState** is a function that takes in **initialState** and returns **dispatcher.useState(initialState)**. 
 
 We won't get into the underlying code here but one thing to highlight is the keyword **dispatcher**. 
 
-We will revisit this concept later when we cover the **useReducer** hook as it uses a similar naming convention of **dispatch** for its corresponding **setState** function.
+We will revisit this concept later when we cover the **useReducer** hook as it uses a similar naming convention of **dispatch** for its **setState** function.
 
 <hr>
 
@@ -420,7 +420,7 @@ There are scenarios when the callback function version is required, such as when
 
 In order to allow the user to interact with the buttons we will need to add an event listener.
 
-They are essentially **synthetic events** based on the real underlying JS events.  
+React provide **synthetic events** which correspond to underlying JS events.  
 
 Events you might have worked with before are: 
 
