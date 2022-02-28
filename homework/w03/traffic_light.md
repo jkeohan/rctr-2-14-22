@@ -9,7 +9,14 @@ Objectives:
 
 ## Working Version
 
-Here is a <a target="_" href="https://zhtbi.csb.app/">working CodeSandBox solution</a> of the app so you can examine the components in React DevTools.
+Here is a <a target="_" href="https://n9wzs.csb.app/">working CodeSandBox solution</a> of the app so you can examine the components in React DevTools.
+
+<!-- 
+  https://n9wzs.csb.app/  
+https://codesandbox.io/s/traffic-light-3-components-solution-n9wzs?file=/src/componnents/App.js
+ -->
+
+<!-- Here is a <a target="_" href="https://zhtbi.csb.app/">working CodeSandBox solution</a> of the app so you can examine the components in React DevTools. -->
 
 ## Starter CodeSandbox
 
@@ -17,42 +24,8 @@ Here is our <a target="_" href="https://codesandbox.io/s/traffic-light-single-ap
 
 ### Instructions
 
-#### Prep
-
 - Examine the working live solution and determine the functionality needed
 - Examine the HTML in `App.js` as this contains the HTML elements needed for the design 
 - All the CSS has been included in `styles.css`
 - The `bulbData.js` file contains the data 
-
-#### TrafficLight Component
-
-<!-- <details><summary>bulbData.js</summary>
-
-```javascript
-export default [
-  {id: 'stop', name:'Stop', color: 'red'},
-  {id: 'slow', name: 'Slow', color: 'yellow'},
-  {id: 'go', name: 'Go', color: 'green'},
-]
-```
-</details> -->
-- Create a `TrafficLight` Component which will be used to render all 3 traffic lights
-- It will receive a prop called `color` and render the color using a style tag: **style={{ background: props.color }}**
-
-#### App Component
-
-- Import `bulbData.js` and set it 
-- Import `useState` into `App` as follows: **const [activeBulb, setActiveBulb] = useState({})**
-- Import the `TrafficLight` Component
-- Loop over the bulbData and return a `TrafficLight` Component and pass each the color it needs
-- Create a `handleControls` function that will be passed the object of which button was clicked which it will use to update state.
-- Loop over the bulbData again and return the html based on the existing design.  Also make sure to assign an `onClick` event that is passed the object. 
-
-### Bonus - Bulb Component
-
-- Create a new `Bulb` Component that will render the a single bulb with it's color
-
-### Bonus - Controls Component
-
-- Create a new `Controls` Component that will render all the buttons
-  
+- Implement the solution based on what you see in dev tools 
