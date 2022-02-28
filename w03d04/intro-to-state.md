@@ -554,14 +554,13 @@ Let's try a quick activity that should help you apply some of these concepts.
 setCount((prevState) => prevState + 1);
 ```
 
-<hr>
 
-#### Final Solution
+<!-- #### Final Solution
 
 Here is the final version of the Counter Component.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution</summary> -->
 
 <!-- ```js
 import React, {useState} from 'react'
@@ -604,14 +603,12 @@ export default Counter
 
 #### :mag: - Check for Understanding 
 
-Take a few minutes to think about the following questions:
+Take a few minutes to think about the following question:
 
-  - Why does a react component need state?
+  <!-- - Why does a react component need state? -->
   - What is the difference between **state** and **props** and provide an example of when to use each. 
 
 **Note:** Do not slack your answers until the instructor has given the ok.
-
-:thumbsup: Click on the thumbs up when your done.
 
 When asked slack your answer(s) in a thread created by the instructor
 
@@ -621,7 +618,7 @@ When asked slack your answer(s) in a thread created by the instructor
 
 ### Bonus - Using Conditional Logic and Ternary Operators
 
-Since React is all JavaScript we can use all of our previous JS expertise when trying to implement additional, non React specific, logic. Let's take a look at the following:
+Since React is a JavaScript library we can use all of our previous JS expertise when trying to implement additional, non React specific, logic. Let's take a look at a few ways to implement conditional logic: 
 
 - IF/ELSE
 - Switch Statement
@@ -642,7 +639,7 @@ const handleIncrement = () => {
 ```
 #### Switch Statements
 
-Another form of conditional logic is to use a **switch** statement. They are the conditional logic of choice for the **useReducer** Hook.
+Another form of conditional logic is to use a **switch** statement which is the conditional logic of choice for the **useReducer** Hook.
 
 For now let's refactor the code to use a switch statement. 
 ```js
@@ -659,7 +656,7 @@ const handleIncrement = () => {
 
 #### Ternary Operator
 
-Most often React developers prefer to write a single if/else conditional as a **ternary** operator.  So let's perform our last refactor. 
+Most often React developers prefer to write a single **if/else** conditional as a **ternary** operator.  So let's perform our last refactor. 
 
 **handleIncrement**
 ```js
@@ -673,7 +670,7 @@ const handleIncrement = () => {
 
 **State of Transition**
 
-We are currently in a **state of transition** in world of React. Hooks were a game changer and have become the prefered way of writing Components React in 2021.  
+We are currently in a **state of transition** in world of React. Hooks were a game changer and have become the preferred way of writing Components in React.  
 
 Keep in mind however that there is way more code out there written in the previous syntax and any research you perform on React will almost certainly show Class based solutions unless you include the keyword **Hook** in your search query. 
 
