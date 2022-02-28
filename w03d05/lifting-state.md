@@ -228,16 +228,16 @@ import React from 'react';
 
 const SmallImage = (props) => {
   
- return (
-  <img
-    className="thumb"
-    id={props.city}
-    src={props.src}
-    alt={props.city}
-    // key={index} - this is no longer needed here as it is only assigned within the loop
-    onClick={() => props.handleClick(props.img)}
-  />
- )
+    return (
+        <img
+            className="thumb"
+            id={props.city}
+            src={props.img}
+            alt={props.city}
+            // key={index} - this is no longer needed here as it is only assigned within the loop
+            onClick={() => props.handleClick(props.img)}
+        />
+    )
 }
 
 export default SmallImage
