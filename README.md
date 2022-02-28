@@ -35,8 +35,8 @@ The class schedule is as follows:
 | 2  | Wed 02/16 | <li>[Components and JSX](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/components-and-jsx.md)</li><li>[Nested Components](https://github.com/jkeohan/rctr-2-14-22/blob/main/w01d02/nested-compnents.md)</li>| <li>Do: [React Floorplan](https://github.com/jkeohan/rctr-2-14-22/blob/main/homework/w01/react-floorplan.md)</li><li>Read: [Props and JSX](https://www.freecodecamp.org/news/react-components-jsx-props-for-beginners/)</li> | [Recording](https://generalassembly.zoom.us/rec/share/Sa3g-J_-w0dKLnmtINsh14WCzk3NIyCwD6KMjMFv0rxmC9WzLkl6yTqs__dVaDGi.ZLI2xXktRT74Ept7)|
 | | Mon 02/21| Holiday |||
 |3 | Wed 02/23| <li>[Intro To Props](https://github.com/jkeohan/rctr-2-14-22/blob/main/w02d03/intro-to-props.md)</li>| <li>Do: [StreetBall Mecca](https://github.com/jkeohan/rctr-2-14-22/blob/main/homework/w02/streetball-mecca.md)</li> <li>Read: [React useState Hook](https://www.robinwieruch.de/react-usestate-hook)<li>Read: [4 Examples of the useState Hook](https://daveceddia.com/usestate-hook-examples/)</li>| [Recording](https://generalassembly.zoom.us/rec/share/_-vzAPLn5nlgNn91_PMAdMYBmlnfeGoi4Z6x7Tbajk1Mp_Zc00ALCNccsRg2XlwO.yMd8DCeY0hMIP3Gh)|
-|4 | Mon 02/28|<li>Intro to State</li>||Recording|
-|5 | Wed 03/02|<li>Lifting State</li>||Recording|
+|4 | Mon 02/28|<li>[Intro to State](https://github.com/jkeohan/rctr-2-14-22/blob/main/w03d04/intro-to-state.md)</li>||Recording|
+|5 | Wed 03/02|<li>[Lifting State](https://github.com/jkeohan/rctr-2-14-22/blob/main/w03d05/lifting-state.md)</li>||Recording|
 |6 | Mon 03/07|<li>Controlled vs Uncontrolled Inputs and the useRef Hook</li>||Recording|
 |7 | Wed 03/09|<li>React Lifecycle States & The useEffect Hook</li>||Recording|
 |8 | Mon 03/14|<li>Making API calls using useEffect</li>||Recording|
