@@ -38,7 +38,6 @@ export default [
 </details> -->
 - Create a `TrafficLight` Component which will be used to render all 3 traffic lights
 - It will receive a prop called `color` and render the color using a style tag: **style={{ background: props.color }}**
-- Keep in mind that all 3 Components will be passed black as this is the starting color for each `Trafficlight`
 
 #### App Component
 
@@ -51,6 +50,9 @@ export default [
 
 ### Bonus - Bulb Component
 
-- Create a new `Bulb` Component that will render the a single bulb
-- Pass the `Bulb` Component the color it needs based the state of the application
+- Create a new `Bulb` Component that will render the a single bulb with it's color
+
+### Bonus - Controls Component
+
+- Create a new `Controls` Component that will render all the buttons
   
