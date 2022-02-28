@@ -25,7 +25,7 @@ Here is our <a target="_" href="https://codesandbox.io/s/traffic-light-single-ap
 - All the CSS has been included in `styles.css`
 - The `bulbData.js` file contains the data 
   
-<details><summary>bulbData.js</summary>
+<!-- <details><summary>bulbData.js</summary>
 
 ```javascript
 export default [
@@ -34,7 +34,7 @@ export default [
   {id: 'go', name: 'Go', color: 'green'},
 ]
 ```
-</details>
+</details> -->
 
 - Create a `TrafficLight` Component which will be used to render all 3 traffic lights
 - It will receive a prop called `color` and render the color using a style tag: **style={{ background: props.color }}**
