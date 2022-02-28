@@ -309,6 +309,6 @@ export default SmallImage
 
 [Solution CodeSandbox](https://codesandbox.io/s/cities-multiple-comp-lift-state-m9kt6?file=/src/App.js) 
 
-### Lab Time
+<!-- ### Lab Time
 
-The instructor will provide the lab
+The instructor will provide the lab -->
