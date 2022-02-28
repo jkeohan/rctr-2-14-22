@@ -20,18 +20,18 @@ After this lesson you will be able to:
 ## Framing
 
 ### The Chain of Command
-The chain of command is one of the foundational elements of any successful organization.  Decisions are made at the C-Suite level and then passed to to their subordinates to execute.  Each group along the way has certain freedoms to carry out the corp agenda as long as they adhere to the rules and policies that are in place. 
+The chain of command is one of the foundational elements of any successful organization.  Decisions are made at the C-Suite level and then passed to their subordinates to execute.  Each group along the way has certain freedoms to carry out the tasks at hand as long as they adhere to the rules and policies that are in place. 
 
-Some decisions will be made and executed at specific levels while others need to be run past a manager or director for approval. The need to elevate a request up the chain is an example of `lifting state`.  
+Some decisions will be made and executed at specific levels while others need to be run past a manager for approval. The need to elevate a request up the chain is an example of `lifting state`.  
 
 Once a decision is made it is then passed back down the chain of command to all those involved with making the request. 
 
 ## React State
 React state works in a similar fashion. Props are passed down to child Components and, if needed, data can be lifted back up to the parent Component is a process called `lifting state`.
 
-Lifting state will almost always cause the parent element to update it's own state which triggers a re-render, and then passing some version of the data back down as props. 
+Lifting state will almost always cause the parent element to update it's own state thereby triggering a re-render which then allows the parent to passing some mutated version of the data back down as props. 
 
-It's also important to note that the applications state can be placed nearest to those Components that specifically need it, while other state must be placed at a much higher level in order to pass it down the right channels.  
+It's also important to note that state should be placed nearest to the Component that needs it.
 
 <!-- ### Rules Of State
 :oncoming_police_car: - Rules (Component Specific)
@@ -44,7 +44,7 @@ It's also important to note that the applications state can be placed nearest to
 
 ### Component Hierarchy 
 
-So far we've learned how to create nested Components, pass props and set/update state.  The goal has been to get you comfortable with all of the smaller moving parts before we attempt to create much larger applications. 
+So far we've learned how to create nested Components, pass props and set/update state.  The goal has been to get you comfortable with all of the smaller moving parts before we attempt to put them all together and create much larger applications. 
 
 Now it's time to take it one step further and start thinking about the entire React hierarchy as a whole. 
 
@@ -53,8 +53,8 @@ Building out an app involves asking questions like the following:
 - What components are needed?
 - How should they be organized? 
 - What props need to be passed down?
-- Where should state reside and what should that state look like? 
 - What state needs to be lifted?
+- Where should state reside and what should that state look like? 
 
 The answer to these questions is key to the success of your application and, as there are many options to think through, there is much planning needed to truly design an effective and efficient architecture. 
 
@@ -64,14 +64,14 @@ Let's take a look at `Cities Of The World`.  The app is divided into small image
 
 Clicking on any small image will assign the big image the same image url. 
 
-You may or may not have worked on this already so here is a [working CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-react-cities-base-solution-k8jfb) of the app which we will use as our starter code.
+You may or may not have worked on this already so here is a [working CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-iqcwj3) of the app which we will use as our starter code.
 
 <img src="https://i.imgur.com/LI6KqAI.jpg" width=300/><br>
 
  
 It consists of a single `App` Component and one instance of `state` which keeps track of the last image clicked.  Since all functionality lives in one Component there is currently no need to `lift state`.  
 
-In order to `lift state` were going to have to add some additional Components. For this design it seems the following Components would be appropriate:
+In order to `lift state` we need to add some additional Components. For this design it seems the following Components would work for our design:
 
 - BigImage
 - SmallImage
@@ -89,7 +89,7 @@ Based on our design decision this is the React Hierarchy we are looking to imple
 <img src="https://i.imgur.com/WkLBY2i.png" width=400/>
 
 
-As we can see App is still responsible for looping over the initial array and creating multiple instances of small images but now it will be done so using `SmallImage` Components.
+As we can see App is still responsible for looping over the initial array and creating multiple instances of small images but now those images will be rendered via the `SmallImage` Component.
 
 We can improve the drawing a bit to include what props will be passed down to the children. 
 
@@ -107,12 +107,11 @@ Now it's time to do a little refactoring in order to implement the new hierarchy
 
 Let's start with creating the BigImage Component.  Here are the steps we need to perform:
 
-- Creating a new file for the Component
-- Importing React
-- Creating the Component
+- Create a new file for the Component
+- Create the Component
 - Return some form of JSX 
 - Exporting the Component
-- Import the Component into a parent Component. 
+- Import the Component into its parent Component. 
 
 **Setup The Components**
 
@@ -168,8 +167,6 @@ If we test the app now it should still work as before.
 
 Also take a minute to investigate the Component in `React Dev Tools`.
 
-:thumbsup: Click on the thumbs up when your done.
-
 
 `SmallImage.js`
 
@@ -222,11 +219,9 @@ const SmallImage = (props) => {
 }
 ```
 
-:thumbsup: Click on the thumbs up when your done.
-
 **Lifting State**
 
-The last item to precede with props is `props.handleClick`.  The expectation is that the parent element will pass this function down which we will call in the child thus `lifting state`. 
+The last item to precede with props is `props.handleClick`.  The expectation is that the parent element will pass this function down which we will call in the child in order to `lift state`. 
 
 ```js
 import React from 'react';
@@ -268,11 +263,11 @@ And update the .map() to include the Component
 const images = imagesArr.map( (image, index) => {
     return (
         <SmallImage 
-        id={image.city}
-        src={image.img}
-        alt={image.city}
-        key={index}
-        handleClick={handleClick}   
+            id={image.city}
+            src={image.img}
+            alt={image.city}
+            key={index}
+            handleClick={handleClick}   
         />
     )
 })
@@ -286,7 +281,7 @@ If we take a look at React Dev Tools we should see the following:
 
 #### Bonus - Using Object Destructuring
 
-As we might recall Object Destructuring allows us to create variables and assign them values by eliciting those same `key:value` pairs from an object
+As we might recall **Object Destructuring** allows us to create variables and assign them values by eliciting those same `key:value` pairs from an object
 
 Let's make use of the for `SmallImage`.
 
@@ -302,7 +297,7 @@ const SmallImage = ({city, src, handleClick}) => {
     src={src}
     alt={city}
     {/* key={index} - this is no longer needed here as it is only assigned within the loop */}
-    onClick={() => handleClick(props)}
+    onClick={() => handleClick(src)}
   />
  )
 }
