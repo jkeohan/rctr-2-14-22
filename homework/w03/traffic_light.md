@@ -17,14 +17,15 @@ Here is our <a target="_" href="https://codesandbox.io/s/traffic-light-single-ap
 
 ### Instructions
 
-
-#### TrafficLight Component
+#### Prep
 
 - Examine the working live solution and determine the functionality needed
 - Examine the HTML in `App.js` as this contains the HTML elements needed for the design 
 - All the CSS has been included in `styles.css`
 - The `bulbData.js` file contains the data 
-  
+
+#### TrafficLight Component
+
 <!-- <details><summary>bulbData.js</summary>
 
 ```javascript
@@ -35,7 +36,6 @@ export default [
 ]
 ```
 </details> -->
-
 - Create a `TrafficLight` Component which will be used to render all 3 traffic lights
 - It will receive a prop called `color` and render the color using a style tag: **style={{ background: props.color }}**
 - Keep in mind that all 3 Components will be passed black as this is the starting color for each `Trafficlight`
