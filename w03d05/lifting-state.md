@@ -83,6 +83,8 @@ Let's take a minute to update the starter code to add state in order to reproduc
 Here is our [Starter CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-2-14-22-v7bjt0?file=/src/App.js) of the app which we will use as our starter code.
 
 <hr>
+
+### Refactor
  
 It consists of a single `App` Component and one instance of `state` which keeps track of the last image clicked.  Since all functionality lives in one Component there is currently no need to `lift state`.  
 
