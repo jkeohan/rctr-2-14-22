@@ -72,9 +72,17 @@ Here is a [working CodeSandbox](https://iqcwj3.csb.app/) of the app.
  <!-- Here is our [Starter CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-2-14-22-v7bjt0?file=/src/App.js) of the app which we will use as our starter code.
  -->
 
+ Here is our [Starter CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-2-14-22-v7bjt0?file=/src/App.js) of the app which we will use as our starter code.
 
 <img src="https://i.imgur.com/LI6KqAI.jpg" width=300/><br>
 
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
+
+Let's take a minute to update the starter code to add state in order to reproduce the same functionality. 
+
+<hr>
  
 It consists of a single `App` Component and one instance of `state` which keeps track of the last image clicked.  Since all functionality lives in one Component there is currently no need to `lift state`.  
 
