@@ -64,7 +64,14 @@ Let's take a look at `Cities Of The World`.  The app is divided into small image
 
 Clicking on any small image will assign the big image the same image url. 
 
-Here is a [working CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-iqcwj3) of the app which we will use as our starter code.
+Here is a [working CodeSandbox](https://iqcwj3.csb.app/) of the app which we will use as our starter code.
+
+<!-- Here is a [working CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-iqcwj3) of the app which we will use as our starter code.
+ -->
+
+ <!-- Here is our [Starter CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-2-14-22-v7bjt0?file=/src/App.js) of the app which we will use as our starter code.
+ -->
+
 
 <img src="https://i.imgur.com/LI6KqAI.jpg" width=300/><br>
 
