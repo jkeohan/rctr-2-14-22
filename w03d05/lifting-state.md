@@ -76,7 +76,7 @@ Here is a [working CodeSandbox](https://iqcwj3.csb.app/) of the app.
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 7min
 
 Let's take a minute to update the starter code to add state in order to reproduce the same functionality. 
 
