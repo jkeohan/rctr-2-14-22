@@ -56,7 +56,7 @@ Building out an app involves asking questions like the following:
 - What state needs to be lifted?
 - Where should state reside and what should that state look like? 
 
-The answer to these questions is key to the success of your application and, as there are many options to think through, there is much planning needed to truly design an effective and efficient architecture. 
+The answer to these questions is key to the success of your application and, as there are many options to think through, there is much planning needed to design an intuitive and efficient architecture. 
 
 ### Lifting State In React Cities
 
@@ -64,7 +64,7 @@ Let's take a look at `Cities Of The World`.  The app is divided into small image
 
 Clicking on any small image will assign the big image the same image url. 
 
-You may or may not have worked on this already so here is a [working CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-iqcwj3) of the app which we will use as our starter code.
+Here is a [working CodeSandbox](https://codesandbox.io/s/rctr-react-cities-base-solution-iqcwj3) of the app which we will use as our starter code.
 
 <img src="https://i.imgur.com/LI6KqAI.jpg" width=300/><br>
 
