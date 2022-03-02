@@ -20,7 +20,7 @@ After this lesson you will be able to:
 ## Framing
 
 ### The Chain of Command
-The chain of command is one of the foundational elements of any successful organization.  Decisions are made at the C-Suite level and then passed to their subordinates to execute.  Each group along the way has certain freedoms to carry out the tasks at hand as long as they adhere to the rules and policies that are in place. 
+The chain of command is one of the foundational elements of any successful organization.  Decisions are made at the the very top and then passed down the change of command to execute.  Each group along the way has certain freedoms to carry out the tasks at hand as long as they adhere to the rules and policies that are in place. 
 
 Some decisions will be made and executed at specific levels while others need to be run past a manager for approval. The need to elevate a request up the chain is an example of `lifting state`.  
 
