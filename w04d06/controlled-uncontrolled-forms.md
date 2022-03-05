@@ -253,6 +253,8 @@ Now it's your turn to try.
 
 <hr>
 
+#### Clearing User Input
+
 One last thing we need to do is to clear the input fields when the user submits the form. 
 
 
