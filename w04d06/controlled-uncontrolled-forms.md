@@ -95,7 +95,13 @@ Here is the [CodeSandbox Starter](https://codesandbox.io/s/login-form-starter-0v
 
 Uncontrolled inputs make use of the **useRef** hook which is used to create a reference to an existing DOM element.
 
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity -  We Do - 1min
+
 Let's take a look at the [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html) 
+
+<hr>
 
 #### Import **useRef** 
 
