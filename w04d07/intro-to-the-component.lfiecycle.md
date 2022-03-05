@@ -18,17 +18,17 @@ Creator:  Joe Keohan<br>
 After this lesson you will be able to:
 
 - Explain the 3 phases of the Component lifecycle
-- Use `useEffect` to implement code in each of the 3 main lifecycle methods
+- Use **useEffect** to implement code in each of the 3 main lifecycle methods
 
 ## Framing
 
 So far we've learned that React Components can be used to break down the UI into smaller and smaller bit of reusable functionality. The Component model even encourages going as low level as rendering a single button.
 
-Part of the Component `reusability` design is that it allows them to contain as much logic as needed to adapt to their environment and implementation. That flexibility might require the Component to perform some action when it's first `mounted`, then `updated` and perhap, even when it's `unmounted`.
+Part of the Component **reusability** design is that it allows them to contain as much logic as needed to adapt to their environment and implementation. That flexibility might require the Component to perform some action when it's first **mounted**, then **updated** and perhap, even when it's **unmounted**.
 
 Take for instance AirBnB. When you perform a search, the site returns a set of data points that match the query and must update state in some way in order to render those items as Components.
 
-The Components themselves may need to keep track of if, and when, it's been added as a favorite :heart: or adjust it's own layout based on `mobile` or `tablet` layout.
+The Components themselves may need to keep track of if, and when, it's been added as a favorite :heart: or adjust it's own layout based on **mobile** or **tablet** layout.
 
 <img src="https://i.imgur.com/nCZVlLs.jpg" />
 
@@ -44,8 +44,8 @@ Let's take a look at the following versions of the Mars website that I built in 
 Let's do the following together:
 
 - Open both sites in separate tabs and with DevTools open as well.
-- In DevTools use the `Toggle Device Toolbar` to view the site in Responsive mode
-- Enable `Tablet` view for both web sites
+- In DevTools use the **Toggle Device Toolbar** to view the site in Responsive mode
+- Enable **Tablet** view for both web sites
 - Select and examine the following element:
 
 ```html
@@ -60,7 +60,7 @@ The Instructor will now direct your attention to those elements the difference b
 
 ## The 3 Main Phases Of The Component Lifecycle
 
-As the complexity of the Component grows we can make use of more and `Hooks` to meet the demands of our business logic. Certain functionality might need to be performed only once when Component loads or with each re-render.
+As the complexity of the Component grows we can make use of more and **Hooks** to meet the demands of our business logic. Certain functionality might need to be performed only once when Component loads or multiple times upon each re-render.
 
 Below are the 3 phases that a Component goes through during it's lifetime.
 
@@ -68,11 +68,11 @@ Below are the 3 phases that a Component goes through during it's lifetime.
 - Updating
 - Unmounting
 
-`Mounting` and `Unmounting` occur only once during the lifecycle of the Component with `Updating` occurring as often as the Component is re-rendered.
+**Mounting** and **Unmounting** occur only once during the lifecycle of the Component with **Updating** occurring as often as the Component is re-rendered.
 
-Each phase can call a specific `lifecycle method` that runs as the last function call in that cycle.
+Each phase can call one or more **lifecycle methods** in any of the phases. 
 
-Here are diagrams that convey the lifecycles as they apply to Classes Components.
+Here are diagrams that convey the lifecycles as they apply to **Class Components**.
 
 <img src="https://i.imgur.com/eNlBcr8.png" />
 
@@ -80,7 +80,7 @@ Here are diagrams that convey the lifecycles as they apply to Hook based Compone
 
 <img src="https://i.imgur.com/arj7aZD.png" />
 
-<!-- Although up to this point we've only worked with `Functional` Components, in lue of `Classes`, however under the hood React is indeed initializing and calling them as if they were written as classes.  -->
+<!-- Although up to this point we've only worked with **Functional** Components, in lue of **Classes**, however under the hood React is indeed initializing and calling them as if they were written as classes.  -->
 
 The table below shows the corresponding way to make use of the **useEffect** hook to implement the class based LifeCycle methods.
 
@@ -110,23 +110,23 @@ The table below shows the corresponding way to make use of the **useEffect** hoo
 
 - **useEffect** - `useEffect(() => {})` (No [] included) -->
 
-## The `useEffect` Hook
+## The **useEffect** Hook
 
-Now it's time to add yet another Hook to our collection, the useEffect Hook. This Hook lets us perform `side effects` in functional components.
+Now it's time to add yet another Hook to our collection, the useEffect Hook. This Hook lets us perform **side effects** in functional components.
 
 > A side effect is any application state change that is observable outside the called function other than its return value.
 
-Several examples of `side effects` are:
+Several examples of **side effects** are:
 
 - Logging to the console
 - Making an API call
 - Calling setInterval/setTimeout
 
-As we pointed out during the overview of the React lifecycle, `useEffect` and be run in one of 3 ways:
+As we pointed out during the overview of the React lifecycle, **useEffect** and be run in one of 3 ways:
 
-- `useEffect(() => {}, [])` - empty [] means this will only run once when the Component mounts
-- `useEffect(() => {})` - no [] means this will run on every render/re-render
-- `useEffect(() => {}, [someValueToMonitor])` - run on mount and then only if the value has changed
+- **useEffect(() => {}, [])** - empty [] means this will only run once when the Component mounts
+- **useEffect(() => {})** - no [] means this will run on every render/re-render
+- **useEffect(() => {}, [someValueToMonitor])** - run on mount and then only if the value has changed
 
 <hr>
 
@@ -144,7 +144,7 @@ Here is the starter code we will be working with: [CodeSandbox Starter](https://
 
 ### Mounting
 
-Since every Component requires an initial mounting it makes sense that we start with the `mounting` phase.
+Since every Component requires an initial mounting it makes sense that we start with the **mounting** phase.
 
 Let's take a look at the [Solution](https://9mdkb.csb.app/) we are looking to implement. As we can see the app does the following:
 
@@ -152,12 +152,12 @@ Let's take a look at the [Solution](https://9mdkb.csb.app/) we are looking to im
 
 - timer starts counting when the Component mounts
 - timer increments every second
-- clicking on the `pause` button pauses the timer
-- clicking on `start` re-initiates the counting sequence.
+- clicking on the **pause** button pauses the timer
+- clicking on **start** re-initiates the counting sequence.
 
-Implementing this type of functionality requires that we make use of the  `useEffect` Hook.
+Implementing this type of functionality requires that we make use of the  **useEffect** Hook.
 
-But let's first push the envelope and see how far we can go without `useEffect` before we hit our first wall.
+But let's first push the envelope and see how far we can go without **useEffect** before we hit our first wall.
 
 **Base Functionality**
 
@@ -188,7 +188,7 @@ const Counter = () => {
 
 ### Increment The Counter On Mount
 
-Let's first see if we could at least call `startTimer` when the component is loaded. That's easy to do as we only need to call the function. For now let's put it just above the `return` statement.
+Let's first see if we could at least call **startTimer** when the component is loaded. That's easy to do as we only need to call the function. For now let's put it just above the **return** statement.
 
 ```js
 startTimer()
@@ -198,9 +198,9 @@ return (
 )
 ```
 
-So it seems calling `startTimer()` when the Component loads does indeed execute the function.
+So it seems calling **startTimer()** when the Component loads does indeed execute the function.
 
-Now let's add the logic `startTimer` that will increment the counter just once when it's mounted.
+Now let's add the logic **startTimer** that will increment the counter just once when it's mounted.
 
 ```js
 const startTimer = () => {
@@ -213,22 +213,22 @@ React doesn't like that very much and errors out as it takes us to brink of an i
 
 <img src="https://i.imgur.com/IfesZpZ.png" width=400/>
 
-**Note:** Make sure to delete calling `startTimer()`.
+**Note:** Make sure to delete calling **startTimer()**.
 
 :question: - Why the error?
 
 <details><summary>Answer</summary>
 
-Calling `startTimer()` updates state which triggers the Component to update, which then calls the function again triggering another update..and so on..
+Calling **startTimer()** updates state which triggers the Component to update, which then calls the function again triggering another update..and so on..
 
 </details>
 
 ### ComponentDidMount - Run Once On Mount
 
-So we need a means of calling `startTimer()` when the Component is initially mounted but not on any subsequent re-renders. For that use case we make use of the **useEffect** hook.  
+So we need a means of calling **startTimer()** when the Component is initially mounted but not on any subsequent re-renders. For that use case we make use of the **useEffect** hook.  
 
 
-Since `useEffect` is a hook it needs to be imported.
+Since **useEffect** is a hook it needs to be imported.
 
 ```js
 import React, { useState, useEffect } from 'react';
@@ -242,7 +242,7 @@ useEffect(() => {}, [])
 
 
 
-`useEffect` takes in a callback function as it's first param and an array (optional) `[]` as its second parm. The empty `[]` is how we tell `useEffect` to run only on the initial mount.
+**useEffect** takes in a callback function as it's first param and an array (optional) **[]** as its second parm. The empty **[]** is how we tell **useEffect** to run only on the initial mount.
 
 ```js
 useEffect(() => {
@@ -253,13 +253,13 @@ useEffect(() => {
 
 #### Adding a SetInterval
 
-Ok. So now we have a means of calling it a single time. That's enough to to get us started and now we can add the additional logic `setInterval` logic to increment every second.
+Ok. So now we have a means of calling it a single time. That's enough to to get us started and now we can add the additional logic **setInterval** logic to increment every second.
 
 This also bring us to the following best practice:
 
 :star: - Use the callback function version of useState if you need to reference the previous version of state.
 
-Since `setCounter` is being called in the callback function of `setInterval` this is a perfect use case for using the callback version of `setCounter`
+Since **setCounter** is being called in the callback function of **setInterval** this is a perfect use case for using the callback version of **setCounter**
 
 ```js
 const startTimer = () => {
@@ -280,21 +280,21 @@ This seems to do the trick and were back on track with the Counter app. Now let'
 
 ### Pausing The Timer
 
-With 2 of the app requirements in working order let's see if we can pause the timer. Clicking on `Pause Timer` does indeed execute the function, as seen in the console logs, but does nothing to stop the timer.
+With 2 of the app requirements in working order let's see if we can pause the timer. Clicking on **Pause Timer** does indeed execute the function, as seen in the console logs, but does nothing to stop the timer.
 
-If we also click on `Start Timer` a few times in a row we will see that it increments several times and begins to jump ahead.
+If we also click on **Start Timer** a few times in a row we will see that it increments several times and begins to jump ahead.
 
 #### ComponentWillUnmount
 
-One thing that hasn't been mentioned yet is that every time a re-render happens, we create a new effect replacing the previous one. Although in our use case `useEffect` isn't being called there is still a need to clear the interval just before the re-render. This falls ito the category of `ComponetWillUnmount`
+One thing that hasn't been mentioned yet is that every time a re-render happens, we create a new effect replacing the previous one. Although in our use case **useEffect** isn't being called there is still a need to clear the interval just before the re-render. This falls ito the category of **ComponetWillUnmount**
 
-React must clean up the previous effect before applying the next effect. In our case we need to remove the previous instance of the `setTimer` and create a new instance.
+React must clean up the previous effect before applying the next effect. In our case we need to remove the previous instance of the **setTimer** and create a new instance.
 
-For this we need to refactor `useEffect` to do the following:
+For this we need to refactor **useEffect** to do the following:
 
-- it must clear the previous `setInterval` before the new instance of `useEffect` is called
+- it must clear the previous **setInterval** before the new instance of **useEffect** is called
 
-To do this we add a final `return` statement that is passed a callback function.
+To do this we add a final **return** statement that is passed a callback function.
 
 ```js
 useEffect(() => {
@@ -306,7 +306,7 @@ useEffect(() => {
 
 #### ComponentDidUpdate
 
-This doesn't seem to do the trick. Thats because we need to run `useEffect` on every re-render or when the `ComponentDidUpdate`. In order to do that we remove the `[]`.
+This doesn't seem to do the trick. Thats because we need to run **useEffect** on every re-render or when the **ComponentDidUpdate**. In order to do that we remove the **[]**.
 
 ```js
 useEffect(() => {
@@ -318,9 +318,9 @@ useEffect(() => {
 
 #### ClearInterval Once More
 
-Even with this implementation were still faced with the same problem that multiple clicks to `Start Timer` will cause the timer to count much faster.
+Even with this implementation were still faced with the same problem that multiple clicks to **Start Timer** will cause the timer to count much faster.
 
-In order to resolve this we need to add one more `clearInterval` to `startTimer` to clear out any timer that was initiated before the next interval value.
+In order to resolve this we need to add one more **clearInterval** to **startTimer** to clear out any timer that was initiated before the next interval value.
 
 ```js
 const startTimer = () => {
@@ -329,7 +329,7 @@ const startTimer = () => {
 };
 ```
 
-Here is good summary for implementing `useEffect`.
+Here is good summary for implementing **useEffect**.
 
 <img src="https://i.imgur.com/ViLj2qG.png" width=700/>
 
@@ -349,7 +349,7 @@ const [toggle, setToggle] = useState(false);
 
 **Ternary Operator**
 
-Now we can add the conditional logic needed to toggle between the buttons. We will do this using a `ternary operator`.
+Now we can add the conditional logic needed to toggle between the buttons. We will do this using a **ternary operator**.
 
 ```js
 return (
