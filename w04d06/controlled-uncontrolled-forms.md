@@ -321,7 +321,7 @@ Once the button is clicked React DevTools will reflect the change in state.
 
 Controlled inputs require a bit more setup than their uncontrolled counterparts.  Essentially state needs to be updated with each and every user keystroke so that we can perform some immediate action for each input.
 
-Let's first update App to import and use the other form. 
+Let's first update **App** to import and use the other form. 
 
 ```js
 // import Form from './FormUnControlled'
@@ -344,9 +344,7 @@ Some of the configuration needed for this form is identical to the other so let'
 
 #### Controlling The Input
 
-Controlling the input requires that state be updated with each keystroke. 
-
-In order to do this we need to do the following:
+Controlling the input requires that state be updated with each keystroke. In order to do this we need to do the following:
 
 - add a **value** prop to both inputs and assign it a corresponding state value
 - add an **onChange** event to each input that will be triggered with each key stroke
