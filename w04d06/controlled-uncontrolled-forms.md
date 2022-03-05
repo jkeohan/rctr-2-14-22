@@ -14,8 +14,8 @@ Creator:  Joe Keohan<br>
 After this lesson you will be able to:
 
 - Implement a controlled and uncontrolled form
-- Use the `useRef` Hook to reference an element
-- Leverage the `onChange` event to capture and update live input
+- Use the **useRef** Hook to reference an element
+- Leverage the **onChange** event to capture and update live input
 
 
 ## Inputs...Inputs...Inputs
@@ -70,7 +70,7 @@ Let's start with uncontrolled inputs.  An uncontrolled input has less overhead a
 
 <!-- Here is the starter code we will be working with: [CodeSandbox Starter](https://codesandbox.io/s/rctr-9-8-20-login-form-starter-forked-0v78f)  -->
 
-Working with an uncontrolled input in React involves making use of the `useRef` Hook.  It's a Hook that allows us to `reference` an existing DOM element in order to grab some value or apply some property. 
+Working with an uncontrolled input in React involves making use of the **useRef** Hook.  It's a Hook that allows us to **reference** an existing DOM element in order to grab some value or apply some property. 
 
 
 ### Starter Code
@@ -96,28 +96,28 @@ We will first start with Uncontrolled inputs.
 
 
 
-#### The `useRef` Hook
+#### The **useRef** Hook
 
-Uncontrolled inputs make use of the `useRef` hook which is used to create a reference to an existing DOM element.
+Uncontrolled inputs make use of the **useRef** hook which is used to create a reference to an existing DOM element.
 
 Let's take a look at the [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html) 
 
-#### Import `useRef` 
+#### Import **useRef** 
 
-Like the `useState` Hook it must be imported from React. 
+Like the **useState** Hook it must be imported from React. 
 
 ```js
 import React, { useRef } from "react";
 ```
 
-#### Create a New Instance of `useRef`
-Once imported we create a new instance of `useRef`. 
+#### Create a New Instance of **useRef**
+Once imported we create a new instance of **useRef**. 
 
 ``` js
 const inputRefEmail = useRef()
 ```
 
-Let's also include a console log to see what `useRef` returns. 
+Let's also include a console log to see what **useRef** returns. 
 
 
 ``` js
@@ -129,18 +129,18 @@ In the terminal we should see the following:
 
 <img src="https://i.imgur.com/teFzbUH.png" width=400/>
 
-As we can see  it returns an object with a single key called `current`. 
+As we can see  it returns an object with a single key called **current**. 
 
-Let's also take a look at `React DevTool` and see if shows up under the **hooks** section. 
+Let's also take a look at **React DevTool** and see if shows up under the **hooks** section. 
 
 <img src="https://i.imgur.com/yFZRZdx.png" width=500/>
 
-#### Grabbing a Reference Using the `ref` prop
+#### Grabbing a Reference Using the **ref** prop
 With **useRef** imported and a new instance created we now assign the ref to the DOM element we intend to reference.  
 
-The `ref` is assigned as a `prop` with a value being the name of the ref we created earlier, in this case `inputRefEmail`. 
+The **ref** is assigned as a **prop** with a value being the name of the ref we created earlier, in this case **inputRefEmail**. 
 
-Let's assign this `ref` to the email field. 
+Let's assign this **ref** to the email field. 
 
 ```js
 <input
@@ -156,14 +156,14 @@ Once assigned the previous console log will update to show that the current refe
 
 <img src="https://i.imgur.com/fHHTFA4.png" width=400//>
 
-Let's also take a look at `React DevTool` and see if anything has changed.
+Let's also take a look at **React DevTool** and see if anything has changed.
 
 <img src="https://i.imgur.com/9QezGKs.png" width=500/>
 
 
 #### Submitting the Input
 
-Of course we now expect the user to type something and  to click the `login` button.  
+Of course we now expect the user to type something and  to click the **login** button.  
 
 <hr>
 
@@ -173,9 +173,9 @@ It's your turn to apply your previous knowledge and attempt to set this up.
 
 This requires you do the following:
 
-- Create a handler function and call it `handleSubmit`
-- Add and `onClick` event to the button and assign the handler
-- Add a console log inside `handleSubmit` to confirm it all connected
+- Create a handler function and call it **handleSubmit**
+- Add and **onClick** event to the button and assign the handler
+- Add a console log inside **handleSubmit** to confirm it all connected
 
 :thumbsup: - Click on the thumbs up when you've implemented the solution
 
@@ -189,7 +189,7 @@ This requires you do the following:
 ```
 </details>
 
-In this case we will call the function `handleSubmit` since it's being used to submit the input.   
+In this case we will call the function **handleSubmit** since it's being used to submit the input.   
 
 For now let's also add a console log to confirm the handler is being executed. 
 
@@ -199,7 +199,7 @@ const handleSubmit = () => {
 }
 ```
 
-And now assign the `onClick` to the submit button. 
+And now assign the **onClick** to the submit button. 
 
 ```js
 <button 
@@ -217,7 +217,7 @@ Time to test out the design.  Try clicking the button and confirm we wee the con
 
 #### Grabbing The Input
 
-Since we know that `useRef` allows us to reference to the `input` let's console log the .current` key as well. 
+Since we know that **useRef** allows us to reference to the **input** let's console log the .current** key as well. 
 
 
 ```js
@@ -243,9 +243,9 @@ const handleSubmit = () => {
 
 Now it's your turn to try. 
 
-- Create another instance of `useRef` called `inputRefPassword`
+- Create another instance of **useRef** called **inputRefPassword**
 - Assign it to the password input element
-- Console log the captured value in `handleSubmit`
+- Console log the captured value in **handleSubmit**
 
 :thumbsup: - Click on the thumbs up when you've implemented the solution
 
@@ -291,7 +291,7 @@ Refreshing the page will display the state in the console.
 <img src="https://i.imgur.com/PLfnZ6h.png" width=400/>
 
 
-Let's also take a look at `React DevTool` and see if anything has changed.
+Let's also take a look at **React DevTool** and see if anything has changed.
 
 <img src="https://i.imgur.com/V9sr91n.png" width=500/>
 
@@ -330,9 +330,9 @@ Some of the configuration needed for this form is identical to the other so let'
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - You Do - 5min
 
-- Import `useState` and set it up as we did before
-- Create and setup `handleSubmit` as we did before
-- Confirm that the `handleSubmit` button works by, you guessed it, adding a console log
+- Import **useState** and set it up as we did before
+- Create and setup **handleSubmit** as we did before
+- Confirm that the **handleSubmit** button works by, you guessed it, adding a console log
 
 :thumbsup: - Click on the thumbs up when your done.
 
@@ -344,13 +344,13 @@ Controlling the input requires that state be updated with each keystroke.
 
 In order to do this we need to do the following:
 
-- add a `value` prop to both inputs and assign it a corresponding state value
-- add an `onChange` event to each input that will be triggered with each key stroke
-- create a new `handler` function for the `onChange` event 
+- add a **value** prop to both inputs and assign it a corresponding state value
+- add an **onChange** event to each input that will be triggered with each key stroke
+- create a new **handler** function for the **onChange** event 
 
 #### Assigning a Value Prop
 
-Let's assign a `value` prop to each input. 
+Let's assign a **value** prop to each input. 
 
 ```js
 // EMAIL INPUT
@@ -368,11 +368,11 @@ The reason is that the inputs are assigned values based on the current state val
 
 #### Setting up the Handler and onChange Event
 
-In order to capture every keystroke we need to add an `onChange` event listener to both inputs and assign the corresponding handler function.
+In order to capture every keystroke we need to add an **onChange** event listener to both inputs and assign the corresponding handler function.
 
-Let's first create the handler.  One thing to consider now is that we are no longer using `useRef` to grab a reference of the input so we need another way to distinguish which input called the function.  
+Let's first create the handler.  One thing to consider now is that we are no longer using **useRef** to grab a reference of the input so we need another way to distinguish which input called the function.  
 
-We will do so by referencing the `event` objects `target` property.  
+We will do so by referencing the **event** objects **target** property.  
 
 This means adding a parameter to handleChange that will pass in the event object. 
 
@@ -393,13 +393,13 @@ Try typing a sequence character in the email field and you should see the charac
 
 <img src="https://i.imgur.com/LrWr71O.png" />
 
-Expanding any one of the event objects will show over 2 dozen keys but the one we are interested in is `target` as it shows the target element of the event.
+Expanding any one of the event objects will show over 2 dozen keys but the one we are interested in is **target** as it shows the target element of the event.
 
 <img src="https://i.imgur.com/7wZoY3J.png" width=300/>
 
 #### Capturing the Input Value
 
-Inside of `handleChange` we can now grab the input value using  `event.target.value`. 
+Inside of **handleChange** we can now grab the input value using  **event.target.value**. 
 
 ```js
 const handleChange = (event) => {
@@ -411,7 +411,7 @@ Now type in a sequence of characters and we should see just that input.
 
 <img src="https://i.imgur.com/jNPnZi1.png" width=300/>
 
-Here is the thing though. `handleChange` is being used to capture input for both fields.  We can confirm this by adding another console log that targets: 
+Here is the thing though. **handleChange** is being used to capture input for both fields.  We can confirm this by adding another console log that targets: 
 
 ```js
 console.log('handleChange - event', event.target.name)
@@ -425,7 +425,7 @@ Let's move onto updating state and see how we can work out the logic to update t
 
 #### Updating State
 
-Since state has been assigned an object we will need to update the key that corresponds to the correct input. We could do so by running some conditional logic based on the previous `event.target.name` values but there is a more efficient way to do this. 
+Since state has been assigned an object we will need to update the key that corresponds to the correct input. We could do so by running some conditional logic based on the previous **event.target.name** values but there is a more efficient way to do this. 
 
 
 **Dynamic Object  Keys**
@@ -481,17 +481,17 @@ Doing so will capture both inputs and update state
 
 <img src="https://i.imgur.com/hyMMmMI.png" width=400/>
 
-### Bonus #1- Working With `<form>` Elements
+### Bonus #1- Working With **<form>** Elements
 
-If time permits the instructor will perform a codealong/demo of updating the `Form` Component to include a `<form>` element which makes use of the `onSubmit` event.
+If time permits the instructor will perform a codealong/demo of updating the **Form** Component to include a **<form>** element which makes use of the **onSubmit** event.
 
 
 <!-- 
-For now we are only going to comment out the `setLogin` code in there as you will be working out this logic in the lab. -->
+For now we are only going to comment out the **setLogin** code in there as you will be working out this logic in the lab. -->
 
 <!-- ### Bonus #2- Lifting State
 
-If time permits the instructor will perform a codealong/demo of lifting state and conditional rendering the `Form` Component 
+If time permits the instructor will perform a codealong/demo of lifting state and conditional rendering the **Form** Component 
 -->
 
 
