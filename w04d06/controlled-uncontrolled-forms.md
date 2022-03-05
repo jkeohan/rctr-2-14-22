@@ -66,7 +66,7 @@ This is an example of an **uncontrolled** input as it waits for the user to **su
 
 ## Uncontrolled Inputs
 
-An uncontrolled input has less overhead as it waits until the user to type and then press submit.  Any control checks happen after the submit. 
+Let's start with uncontrolled inputs.  An uncontrolled input has less overhead as it waits until the user has completed inputting options and then submits the form.  Any control checks on the input happen after the submit. 
 
 <!-- Here is the starter code we will be working with: [CodeSandbox Starter](https://codesandbox.io/s/rctr-9-8-20-login-form-starter-forked-0v78f)  -->
 
