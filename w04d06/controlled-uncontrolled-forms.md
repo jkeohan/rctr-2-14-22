@@ -58,9 +58,11 @@ The behavior is to actively capture the input => perform some action => and retu
 
 Other inputs require that you first type all your info before it is captured and some action performed. 
 
-This is an example of an **uncontrolled** input as it waits for the user to **submit** it's input `before it responds. 
+This is an example of an **uncontrolled** input as it waits for the user to **submit** it's input before it responds. 
 
-A good example of an uncontrolled input is a [login form](https://w84fr.csb.app/)
+A few examples of an uncontrolled input are:
+- a [login form](https://w84fr.csb.app/)
+- a search field that waits for the 
 
 
 
