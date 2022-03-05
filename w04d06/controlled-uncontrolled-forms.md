@@ -52,7 +52,7 @@ Some types of inputs can be configured to start capturing each character input a
 - the **location** field on AirBnB 
 - a [password field](https://4vlg9.csb.app/) 
 
-Depending on what characters you type, or the sequence of characters, there is some immediate response to the input.
+The behavior is to actively capture the input => perform some action => and return some result in response to the input. 
 
 #### Uncontrolled
 
