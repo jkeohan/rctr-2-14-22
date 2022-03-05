@@ -184,11 +184,12 @@ This requires you do the following:
 
 <!-- Solution Steps Here... -->
 
-<details><summary>Solution</summary>
+<!-- <details><summary>Solution</summary>
 
 ```js
 ```
-</details>
+
+</details> -->
 
 In this case we will call the function **handleSubmit** since it's being used to submit the input.   
 
