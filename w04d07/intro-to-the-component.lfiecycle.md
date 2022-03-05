@@ -200,7 +200,7 @@ return (
 
 So it seems calling **startTimer()** when the Component loads does indeed execute the function.
 
-Now let's add the logic **startTimer** that will increment the counter just once when it's mounted.
+Now let's add the logic to **startTimer** that will increment the counter just once when it's mounted.
 
 ```js
 const startTimer = () => {
@@ -219,7 +219,7 @@ React doesn't like that very much and errors out as it takes us to brink of an i
 
 <details><summary>Answer</summary>
 
-Calling **startTimer()** updates state which triggers the Component to update, which then calls the function again triggering another update..and so on..
+Calling **startTimer()** updates state which triggers the Component to re-render, which then calls the function again triggering another re-rend..and so on..
 
 </details>
 
@@ -242,7 +242,7 @@ useEffect(() => {}, [])
 
 
 
-**useEffect** takes in a callback function as it's first param and an array (optional) **[]** as its second parm. The empty **[]** is how we tell **useEffect** to run only on the initial mount.
+**useEffect** takes in a callback function as it's first param and an array (optional) **[]** as its second param. The empty **[]** is how we tell **useEffect** to run only on the initial mount.
 
 ```js
 useEffect(() => {
@@ -253,7 +253,7 @@ useEffect(() => {
 
 #### Adding a SetInterval
 
-Ok. So now we have a means of calling it a single time. That's enough to to get us started and now we can add the additional logic **setInterval** logic to increment every second.
+Ok. So now we have a means of calling it a single time. That's enough to to get us started and now we can add the additional **setInterval** logic to increment every second.
 
 This also bring us to the following best practice:
 
