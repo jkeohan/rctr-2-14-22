@@ -286,7 +286,7 @@ If we also click on **Start Timer** a few times in a row we will see that it inc
 
 #### ComponentWillUnmount
 
-One thing that hasn't been mentioned yet is that every time a re-render happens, we create a new effect replacing the previous one. Although in our use case **useEffect** isn't being called there is still a need to clear the interval just before the re-render. This falls ito the category of **ComponetWillUnmount**
+One thing that hasn't been mentioned yet is that every time a re-render happens, we create a new **useEffect** replacing the previous one. Although in our use case **useEffect** isn't being called there is still a need to clear the interval just before the re-render. This falls ito the category of **ComponetWillUnmount**
 
 React must clean up the previous effect before applying the next effect. In our case we need to remove the previous instance of the **setTimer** and create a new instance.
 
