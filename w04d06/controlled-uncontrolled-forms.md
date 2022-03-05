@@ -47,7 +47,7 @@ Let's take a look at the top of [AirBnB's](https://www.airbnb.com/) landing page
 
 #### Controlled
 
-Some inputs are activated the moment you start typing and are considered to be **controlled**. A few examples of this are:
+Some types of inputs can be configured to start capturing each character input and perform some action.  These types of inputs are considered to be **controlled**. A few examples of this are:
 
 - the **location** field on AirBnB is one such type.  
 - setting a [password field](https://4vlg9.csb.app/) that provides immediate criteria status
