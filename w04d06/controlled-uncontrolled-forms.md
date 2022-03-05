@@ -483,9 +483,9 @@ Doing so will capture both inputs and update state
 
 <img src="https://i.imgur.com/hyMMmMI.png" width=400/>
 
-### Bonus #1- Working With **<form>** Elements
+<!-- ### Bonus #1- Working With **<form>** Elements
 
-If time permits the instructor will perform a codealong/demo of updating the **Form** Component to include a **<form>** element which makes use of the **onSubmit** event.
+If time permits the instructor will perform a codealong/demo of updating the **Form** Component to include a **<form>** element which makes use of the **onSubmit** event. -->
 
 
 <!-- 
