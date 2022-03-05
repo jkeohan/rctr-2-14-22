@@ -32,7 +32,7 @@ Let's take a look at the top of [AirBnB's](https://www.airbnb.com/) landing page
 
 <img src="https://i.imgur.com/hMcml6r.jpg" />
 
-:question: - Where do you see inputs and what type are they?
+:question: - Where do you see inputs and what types might they be?
 
 <hr>
 
@@ -45,7 +45,7 @@ Let's take a look at the top of [AirBnB's](https://www.airbnb.com/) landing page
 - AirBnB's 
 - WordPress -->
 
-**Controlled**
+#### Controlled
 
 Some inputs are activated the moment you start typing and are considered to be **controlled**. A few examples of this are:
 
@@ -54,7 +54,7 @@ Some inputs are activated the moment you start typing and are considered to be *
 
 Depending on what characters you type, or the sequence of characters, there is some immediate response to the input.
 
-**Uncontrolled**
+#### Uncontrolled
 
 Other inputs require that you first type all your info before it is captured and some action performed. 
 
