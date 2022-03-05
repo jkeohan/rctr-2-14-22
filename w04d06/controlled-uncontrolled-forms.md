@@ -191,7 +191,7 @@ This requires you do the following:
 
 </details> -->
 
-In this case we will call the function **handleSubmit** since it's being used to submit the input.   
+Let's review the solution. In this case we will call the function **handleSubmit** since it's being used to submit the input.   
 
 For now let's also add a console log to confirm the handler is being executed. 
 
@@ -219,7 +219,7 @@ Time to test out the design.  Try clicking the button and confirm we wee the con
 
 #### Grabbing The Input
 
-Since we know that **useRef** allows us to reference to the **input** let's console log the .current** key as well. 
+Since we know that **useRef** allows us to reference to the **input** let's console log the **.current** key as well. 
 
 
 ```js
