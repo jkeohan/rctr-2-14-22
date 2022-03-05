@@ -47,7 +47,7 @@ Let's take a look at the top of [AirBnB's](https://www.airbnb.com/) landing page
 
 #### Controlled
 
-Some types of inputs can be configured to start capturing each character input and perform some action.  These types of inputs are considered to be **controlled**. A few examples of this are:
+Some types of inputs can be configured to start capturing each character input and perform some action.  These types of inputs are considered to be **controlled**. A few examples of a controlled form are:
 
 - the **location** field on AirBnB 
 - a [password field](https://4vlg9.csb.app/) 
@@ -58,11 +58,9 @@ The behavior is to actively capture the input => perform some action => and retu
 
 Other inputs require that you first type all your info before it is captured and some action performed. 
 
-This is an example of an **uncontrolled** input as it waits for the user to **submit** it's input before it responds. 
-
-A few examples of an uncontrolled input are:
+This is an example of an **uncontrolled** input as it waits for the user to **submit** it's input before it responds. A few example(s) of an uncontrolled input are:
 - a [login form](https://w84fr.csb.app/)
-- a search field that waits for the 
+
 
 
 
