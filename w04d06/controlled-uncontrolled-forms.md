@@ -1,6 +1,6 @@
 <br>
 Title: Controlled-Uncontrolled Forms<br>
-Duration: 2hrs + <br>
+Duration: 1.5hrs + <br>
 Creator:  Joe Keohan<br>
 
 ---
