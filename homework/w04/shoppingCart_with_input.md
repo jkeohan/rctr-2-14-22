@@ -32,7 +32,7 @@ For this exercise you will do the following:
   - product name
   - price
   - submit button
-- The inputs will be `controlled` and only when the user submits will the values be captured
+- Configure the inputs will be `controlled`
 - The Component will pass the data captured to it's parent (App)
 
 #### AllTheThings Component
