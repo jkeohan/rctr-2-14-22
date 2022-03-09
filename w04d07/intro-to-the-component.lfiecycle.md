@@ -219,7 +219,7 @@ Calling **startTimer()** updates state which triggers the Component to re-render
 
 ### ComponentDidMount - Run Once On Mount
 
-So we need a means of calling **startTimer()** when the Component is initially mounted but not on any subsequent re-renders. For that use case we make use of the **useEffect** hook.  
+So we need a means of calling **startTimer()** when the Component is initially mounted but not on any subsequent re-renders. For that to happen we will need to make use of the **useEffect** hook.  
 
 
 Since **useEffect** is a hook it needs to be imported.
