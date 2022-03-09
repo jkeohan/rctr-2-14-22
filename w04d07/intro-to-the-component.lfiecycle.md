@@ -236,7 +236,7 @@ useEffect(() => {}, [])
 
 
 
-**useEffect** takes in a callback function as it's first param and an array (optional) **[]** as its second param. The empty **[]** is how we tell **useEffect** to run only on the initial mount.
+**useEffect** takes in a callback function as it's first param and an optional array **[]** as its second param. The empty **[]** is how we tell **useEffect** to run only on the initial mount.
 
 ```js
 useEffect(() => {
