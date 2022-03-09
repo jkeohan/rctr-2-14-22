@@ -28,7 +28,7 @@ Part of the Component **reusability** design is that it allows them to contain a
 
 Take for instance AirBnB. When you perform a search, the site returns a set of data points that match the query and must update state in some way in order to render those items as Components.
 
-The Components themselves may need to keep track of if it's been added as a favorite :heart: or adjust it's layout based on the current viewport.
+The Components themselves may need to keep track of if it's been added as a favorite :heart: or adjust it's layout based on the current viewport.  
 
 <img src="https://i.imgur.com/nCZVlLs.jpg" />
 
@@ -70,7 +70,7 @@ Below are the 3 phases that a Component goes through during it's lifetime.
 
 **Mounting** and **Unmounting** occur only once during the lifecycle of the Component with **Updating** occurring as often as the Component is re-rendered.
 
-Each phase can call one or more **lifecycle methods** in any of the phases. 
+Each phase will call at least one, if not more, **lifecycle methods**. 
 
 Here are diagrams that convey the lifecycles as they apply to **Class Components**.
 
