@@ -28,7 +28,7 @@ Part of the Component **reusability** design is that it allows them to contain a
 
 Take for instance AirBnB. When you perform a search, the site returns a set of data points that match the query and must update state in some way in order to render those items as Components.
 
-The Components themselves may need to keep track of if, and when, it's been added as a favorite :heart: or adjust it's own layout based on **mobile** or **tablet** layout.
+The Components themselves may need to keep track of if it's been added as a favorite :heart: or adjust it's layout based on the current viewport.
 
 <img src="https://i.imgur.com/nCZVlLs.jpg" />
 
