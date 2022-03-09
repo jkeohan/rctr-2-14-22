@@ -72,11 +72,11 @@ Below are the 3 phases that a Component goes through during it's lifetime.
 
 Each phase will call at least one, if not more, **lifecycle methods**. 
 
-Here are diagrams that convey the lifecycles as they apply to **Class Components**.
+Here is a diagram that conveys the lifecycles as they apply to **Class Components**.  Although our focus is on Functional Components it helps to compare the previous methods with their new Hook counterparts. 
 
 <img src="https://i.imgur.com/eNlBcr8.png" />
 
-Here are diagrams that convey the lifecycles as they apply to Hook based Components.
+And now a diagram that conveys the lifecycles as they apply to Hook based Components.
 
 <img src="https://i.imgur.com/arj7aZD.png" />
 
