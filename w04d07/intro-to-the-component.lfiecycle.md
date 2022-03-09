@@ -207,7 +207,7 @@ React doesn't like that very much and errors out as it takes us to brink of an i
 
 <img src="https://i.imgur.com/IfesZpZ.png" width=400/>
 
-**Note:** Make sure to delete calling **startTimer()**.
+**Note:** Make sure to delete **startTimer()** so we no longer encounter this issue.
 
 :question: - Why the error?
 
