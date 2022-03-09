@@ -128,9 +128,6 @@ As we pointed out during the overview of the React lifecycle, **useEffect** and 
 - **useEffect(() => {})** - no [] means this will run on every render/re-render
 - **useEffect(() => {}, [someValueToMonitor])** - run on mount and then only if the value has changed
 
-<hr>
-
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 1min
 
 #### Starter Code
 
@@ -138,9 +135,6 @@ Here is the starter code we will be working with: [CodeSandbox Starter](https://
 
 <!-- Here is the starter code we will be working with: [odeSandbox Starter](https://codesandbox.io/s/useeffect-starter-9cpw0?file=/src/Counter.js)  -->
 
-:thumbsup: - Click on the thumbs up when you have forked the starter code.
-
-<hr>
 
 ### Mounting
 
