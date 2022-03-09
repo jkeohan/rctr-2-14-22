@@ -129,7 +129,7 @@ As we pointed out during the overview of the React lifecycle, **useEffect** and 
 - **useEffect(() => {}, [someValueToMonitor])** - run on mount and then only if the value has changed
 
 
-#### Starter Code
+### Starter Code
 
 Here is the starter code we will be working with: [CodeSandbox Starter](https://codesandbox.io/s/useeffect-starter-forked-t9j5u?file=/src/Counter.js)
 
