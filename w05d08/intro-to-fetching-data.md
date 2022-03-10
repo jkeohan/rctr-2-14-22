@@ -128,7 +128,7 @@ You've seen a few examples of JSON and how data can be organized. Here is some d
 
 ## Tools Of The Trade
 
-jQuery was one of the first libraries to provide an easy way to make AJAX requests. Over time, new libraries were introduced, and with the introduction of ES6 the `fetch` api. 
+jQuery was one of the first libraries to provide an easy way to make Asynchronous JavaScript and XML (AJAX) requests. Over time, new libraries were introduced, and with the introduction of ES6 the `fetch` api. 
 
 Some top choices
 - [$.ajax] (https://api.jquery.com/jquery.ajax/)
