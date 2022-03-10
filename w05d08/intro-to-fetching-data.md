@@ -73,7 +73,7 @@ Go back and view the data as `Parsed` and take a moment to examine the results
 
 ### What is Serialized Data?
 
-As we just saw when viewing the  all data sent via HTTP are strings. Unfortunately, what we really want to pass between web applications is **structured data** (i.e., arrays and hashes). Thus, native data structures can be **serialized**  into a string representation of the data. 
+We confirmed that the Raw data sent via HTTP is a string. Unfortunately, what we really want to pass between web applications is **structured data** (i.e., arrays and hashes). Thus, native data structures can be **serialized**  into a string representation of the data. 
 
 This string can be transmitted and then **parsed** back into data by another web agent.
 
