@@ -139,7 +139,7 @@ Two of the most popular tools to fetch data are:
 
 Many web sites have their own data which they make available to developers either for free or a small fee, while others charge quite a bit and are very expensive.
 
-Below is a non-exhaustive list of some free API's you can use. There are _many_ API's out there, however, so if you find one not on this list that you'd like to use, feel free! Please note that some may require signing up for an API key (e.g. the Marvel API).
+Below is a non-exhaustive list of some free API's you can use. Please note that some may require signing up for an API key (e.g. the Marvel API).
 
 #### No Key Required
   1. Pokemon: http://pokeapi.co/
