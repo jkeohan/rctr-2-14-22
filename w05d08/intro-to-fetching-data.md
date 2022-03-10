@@ -75,7 +75,7 @@ Go back and view the data as `Parsed` and take a moment to examine the results
 
 We confirmed that the Raw data sent via HTTP is a string and is done so because it's more efficient.  We call data in this form **"stringified"**.  They are native data structures which are **serialized**  into a string representation of the data. 
 
-Although the data is transmitted as a string it must be  **parsed** back into it's native form for us to make use of it.  
+Although the data is transmitted as a string it must be  **parsed** back into it's native form for JS to make use of it.  
 
 There are **two** major serialized data formats...
 
@@ -88,8 +88,8 @@ There are **two** major serialized data formats...
   "users": [{ "name": "Bob", "id": 23 }, { "name": "Tim", "id": 72 }]
 }
 ```
-
-> Remember, JSON is a serialized format. While it may look like an object, it needs to be parsed so we can interact with it as a true Javascript object.
+<!-- 
+> Remember, JSON is a serialized format. While it may look like an object, it needs to be parsed so we can interact with it as a true Javascript object. -->
 
 #### XML
 
