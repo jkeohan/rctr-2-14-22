@@ -204,7 +204,7 @@ Here we request 5 users
 https://randomuser.me/api/?results=5
 ```
 
-We can also add multiple search queries using the `&` symbol and the additional query values. 
+We can also add multiple search queries using the `&` symbol along with additional query values. 
 ```js
 https://randomuser.me/api/?results=5&gender=female
 ```
