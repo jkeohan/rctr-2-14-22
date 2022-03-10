@@ -75,7 +75,7 @@ Go back and view the data as `Parsed` and take a moment to examine the results
 
 We confirmed that the Raw data sent via HTTP is a string and is done so because it's more efficient.  We call data in this form **"stringified"**.  They are native data structures which are **serialized**  into a string representation of the data. 
 
-This string can be transmitted and then **parsed** back into data by another web agent.
+Although the data is transmitted as a string it must be  **parsed** back into it's native form for us to make use of it.  
 
 There are **two** major serialized data formats...
 
