@@ -139,7 +139,7 @@ Two of the most popular tools to fetch data are:
 
 Many web sites have their own data which they make available to developers either for free or a small fee, while others charge quite a bit and are very expensive.
 
-Below is a non-exhaustive list of some free API's you can use. Please note that some may require signing up for an API key (e.g. the Marvel API).
+Below is a non-exhaustive list of some free API's you can use. Please note that some may require signing up for an API key (e.g. Giphy) and others require a bit more setup (e.g. the Marvel API)
 
 #### No Key Required
   1. Pokemon: http://pokeapi.co/
@@ -152,7 +152,7 @@ Below is a non-exhaustive list of some free API's you can use. Please note that 
   1. Star Wars: https://swapi.co/
 
 
-#### Kew Required
+#### Key Required
   1. Marvel: https://developer.marvel.com/
   1. Weather: https://openweathermap.org/api
   1. Giphy: https://developers.giphy.com/ 
