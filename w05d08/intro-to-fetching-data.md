@@ -372,7 +372,7 @@ We're going to be making requests to OMDB using `fetch`. We'll be viewing those 
 
 Let's build our first fetch request.
 
-`fetch` is a function that returns a JS **Promise**.  Does anyone know what a **Promise** is? 
+`fetch` is a function that returns a JS **Promise**.  A `Promise` is used to allow developers run code asynchronously.  
 
 ```js
 fetch(someUrl)
