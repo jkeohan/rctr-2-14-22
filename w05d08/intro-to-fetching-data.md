@@ -299,9 +299,9 @@ The OMDB API first uses JSON.stringify() to convert the data into a string and t
 
 We can use these JSON methods in our own JS code when needed. 
 
-<hr>
+<!-- <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min -->
 
 Let's test them out in DevTools and see what they return. 
 
@@ -332,7 +332,7 @@ parsedMovie
 => {Title: "Eraserhead", Year: "1977", Website: "N/A", Response: "True"}
 ```
 
-<hr>
+<!-- <hr> -->
 
 ## Mini Movie App
 
