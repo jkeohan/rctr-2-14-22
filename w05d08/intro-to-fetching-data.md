@@ -378,7 +378,7 @@ Let's build our first fetch request.
 fetch(someUrl)
 ```
 
-`fetch` will retrieve the data and `.then()` will work with returned data once the `Promise` is resolved.    
+`fetch` will retrieve the data and once resolved will pass it to the  `.then()` method. 
 
 ```js
 fetch(someUrl)
