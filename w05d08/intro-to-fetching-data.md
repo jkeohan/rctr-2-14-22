@@ -533,7 +533,7 @@ As we can see no movie data is being fetched when the user submits a new query.
 
 So let's configure `useEffect` to re-run anytime the `movieTitle` has been updated.  
 
-To do this we will add a watch variable to `useEffect`. 
+To do this we will add a value to the `useEffect` dependency array. 
   
 ```js
 useEffect(() => {
