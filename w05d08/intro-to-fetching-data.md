@@ -7,14 +7,6 @@ Creator:  Joe Keohan<br>
 
 # Intro to AJAX and HTTP Service
 
-## Prerequisites
-
-- React
-- Components
-- State and props
-- Working with useEffect
-
-
 **Note:**  If you haven't yet done so [request a FREE api key from OMDB](http://www.omdbapi.com/apikey.aspx)
 
 ## Learning Objectives
