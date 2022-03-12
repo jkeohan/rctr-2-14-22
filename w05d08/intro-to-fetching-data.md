@@ -10,13 +10,10 @@ Creator:  Joe Keohan<br>
 **Note:**  If you haven't yet done so [request a FREE api key from OMDB](http://www.omdbapi.com/apikey.aspx)
 
 ## Learning Objectives
-- Describe what is AJAX
 - Describe what are 3rd Party APIs and how they are used
-- Describe what are API keys and how to use them
 - Review Query Parameters and how they can be used in 3rd Party API requests
 - Set up fetch and make API request in a React App
 - Learn to work with ES8 Async/Await as a way to handle Promises used in fetch
-- Working with the useEffect hook
 
 ## What We Are Building
 
