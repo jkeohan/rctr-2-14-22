@@ -1,4 +1,4 @@
-![giphy-fun](https://i.imgur.com/wAgoirm.png)
+![giphy-fun](https://i.imgur.com/DrAlUbT.png)
 
 Let's build a react giphy app!
 
