@@ -1,6 +1,10 @@
-![giphy-fun](https://i.imgur.com/DrAlUbT.png)
+# React Giphy App
 
 Let's build a react giphy app!
+
+![giphy-fun](https://i.imgur.com/DrAlUbT.png)
+
+
 
 Here is a [working version of the basic Giphy App](https://pl515.csb.app/)
 
