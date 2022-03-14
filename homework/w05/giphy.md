@@ -2,7 +2,7 @@
 
 Let's build a react giphy app!
 
-Here is a [working version of the Giphy App without bonus](https://pl515.csb.app/)
+Here is a [working version of the basic Giphy App](https://pl515.csb.app/)
 
 #### Your task is
 
@@ -26,9 +26,10 @@ Here is a [working version of the Giphy App without bonus](https://pl515.csb.app
 
 #### Bonus - Add Context
 
+* Create a new context in App and have the Giph Component consume it.
+
 Here is a working version with **[Context Added](<https://udt5gq.csb.app/>
 )**
-* Create a new context in App and have the Giph Component consume it.
 
 #### Bonus - Add History
 
