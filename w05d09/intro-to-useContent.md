@@ -102,7 +102,7 @@ When using Context, you'll be dealing with a *Provider* component and *Consumer*
 
 Lets take a look at [AirBnB](https://www.airbnb.com/) in DevTools in order to see the `Provider/Consumer` model in action. 
 
-And let's also take a look at [Dropbox](https://i.imgur.com/Nfd511p.png) and see an example of how context is used to pass a theme. 
+And let's also take a look at how a [Theme](https://i.imgur.com/Nfd511p.png) can be passed using the **useContext**.
 
 <hr>
 

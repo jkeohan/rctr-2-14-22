@@ -17,7 +17,7 @@ Creator:  Joe Keohan<br>
 
 ## What We Are Building
 
-<!-- Here is a working version of the [OMBd Movie App](https://jmk0w.csb.app/) we will be building together.  -->
+Here is a working version of the [OMBd Movie App](https://jmk0w.csb.app/) we will be building together. 
 
 ## Framing
 
