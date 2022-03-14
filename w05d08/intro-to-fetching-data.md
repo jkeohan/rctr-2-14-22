@@ -543,7 +543,6 @@ useEffect(() => {
 
 [Solution CodeSandbox](https://codesandbox.io/s/omdb-movie-app-starter-forked-3ivxv)
 
-##  Bonus - ES8 - Async/Await Functions
 
 Up to this point we've covered quite a few ES6 features however many more features have been introduced with ES7, ES8, ES9 and the most recent, ES10.
 
