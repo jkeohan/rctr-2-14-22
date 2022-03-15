@@ -41,6 +41,7 @@ As our app grows, the `tree of components` grows with it. Soon the decision to c
 How would you answer the following question:
 
 <hr>
+
 :question: **Where should you store and manage single or multiple instances of state in any of the apps you build?**
 
 <hr>
