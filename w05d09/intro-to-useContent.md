@@ -135,7 +135,7 @@ match: {path: "/", url: "/", isExact: true, params: {…}}
 
 The Instructor will perform a demo of using `prop drilling` to pass state from App to it's lowest level child Components.  
 
-In this demo we will be using the following starter code: [React Context CodeSandbox](https://codesandbox.io/s/usecontext-starter-dont-edit-4v65w?file=/src/components/App.js)
+In this demo we will be using the following starter code: <a target="_" href="https://codesandbox.io/s/usecontext-starter-dont-edit-4v65w?file=/src/components/App"> React Context CodeSandbox</a>
 
 <!-- Here is the [Prop Drilling Solution Code](https://codesandbox.io/s/usecontext-solution-prop-drilling-wvfrc?file=/src/components/ComponentD.js) -->
 
