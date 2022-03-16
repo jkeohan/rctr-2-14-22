@@ -46,21 +46,25 @@ How would you answer the following question:
 
 <hr>
 
+#### Colocation
+There are a lot of ways to answer this question but the best approach is to place state in the Component that need to make use of it,  which is also known as **Colocation**.  Kent C. Dodds put together a great article called [State Colocation Will Make Your React App Faster](https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster).
 
-There are a lot of ways to answer this question - ultimately, it comes down to your own understanding of the app, and your preferences as a developer. But, a generic way to answer this question would be: 
+If we take a look at our **Shopping Cart** assignment we can see that it makes more sense to place state in both the App and Form Components. 
 
-<details><summary>Answer</summary>
+ <img src="https://i.imgur.com/SdWgQNt.png" />
+
+<!-- <details><summary>Answer</summary>
 
 **Manage state in the Component or nearest "ancestor" of the components that need to make use of it**.
  
  <img src="https://i.imgur.com/SdWgQNt.png" />
 
-</details>
+</details> -->
 
 
 ### App-level state
 
-We discussed this briefly when we covered *lifting state* - when we had two sibling components that needed to share some state, we "lifted" the state up to the parent component.
+We discussed this briefly when we covered *lifting state* - where we had two sibling components that needed to share some state so we "lifted" the state up to the parent component.
 
 But, there are times where pieces of state need to be used across the entire app. For instance:
 
@@ -70,15 +74,15 @@ But, there are times where pieces of state need to be used across the entire app
 
 ### Avoiding Prop Drilling
 
-So far, we have been passing props down from parent to child components. In most instances, this is the easiest way to handle sharing information between parent and child components.
+So far, we have been passing down down from parent to child components. In most instances, this is the easiest way to pass information between parent and child components.
 
 But, as your tree grows, you'll find yourself passing props down multiple levels. In the example below sending a single value of state all the way down to the the last child requires passing it down as props through every intermediary Component in the hierarchy. 
 
 <img src="https://i.imgur.com/G08K3c9.png" width=400/>
 
-#### Use useContent
+#### The useContent Hook
 
-A much better way would be to provide access to state at a global level and have the child Component access it directly.  This is where we would make use of the **useContext** hook. 
+A much better way would be to provide access to state at a global level and have the child Component access it directly.  This is where we would create a global context which the **useContext** hook would consume. 
 
 <img src="https://i.imgur.com/izs3Rxn.png" width=400/>
 
@@ -91,11 +95,11 @@ So the two main reasons we should make use of useContext are:
 
 ## Context Provider and Consumer Model
 
-When using Context, you'll be dealing with a *Provider* component and *Consumer* components.
+When making use of Context, you'll be dealing with **Provider** and **Consumer** components.
 
-*Providers* are components that exist higher up on the tree, sending - or _providing_ - information to other components that are further down. This component must wrap the parts of the tree that it will be communicating with.
+**Providers** are components that exist higher up on the tree, sending - or _providing_ - state to other components further down the hierarchy. 
 
-*Consumers* are components that receive - or _consume_ - information from their Provider ancestor. Consumer components use the *function as a child* pattern to 'extract' these values so we can use them in our own components.
+**Consumers** are components that receive - or _consume_ - state from their Provider. Consumer components 'extract' the desired state values to be used them in our own components.
 
 <hr>
 
@@ -103,7 +107,7 @@ When using Context, you'll be dealing with a *Provider* component and *Consumer*
 
 Lets take a look at [AirBnB](https://www.airbnb.com/) in DevTools in order to see the `Provider/Consumer` model in action. 
 
-And let's also take a look at how a [Theme](https://i.imgur.com/Nfd511p.png) can be passed using the **useContext**.
+And let's also take a look at how a [Theme](https://lt9tx.csb.app/) can be passed using the **useContext**.
 
 <hr>
 
@@ -142,13 +146,13 @@ In this demo we will be using the following starter code: [React Context CodeSan
 
 Working with React Context involves setting up context in the parent Component and then consuming it in the child.  In order to work with context  we will need to do the following:
 
-In the App Component:
+In the **App Component**:
 - import `createContext` from react
 - create and export an instance of `createContext`
 - set up a `context.Provider `
 - provide the data via the `context.Provider`
 
-In the Child Components:
+In the **Child Components**:
 - import the `useContext`
 - import the `context` from App
 - instantiate `useContext` to use the imported `context` from App
