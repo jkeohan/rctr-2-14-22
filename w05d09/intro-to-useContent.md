@@ -47,7 +47,7 @@ As our app grows, the `tree of components` grows with it. Soon the decision to c
 <hr> -->
 
 #### Colocation
-There are a lot of ways to answer this question but the best approach is to place state in the Component that need to make use of it,  which is also known as **Colocation**.  Kent C. Dodds put together a great article called [State Colocation Will Make Your React App Faster](https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster).
+Where should state live? There are a lot of ways to answer this question but the best approach is to place state in the Component that need to make use of it,  which is also known as **Colocation**.  Kent C. Dodds put together a great article called [State Colocation Will Make Your React App Faster](https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster).
 
 If we take a look at our **Shopping Cart** assignment we can see that it makes more sense to place state in both the App and Form Components. 
 
