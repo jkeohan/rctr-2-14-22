@@ -38,7 +38,7 @@ As we've covered before, React has a unidirectional data flow, passing props fro
 
 As our app grows, the `tree of components` grows with it. Soon the decision to create additional state may require that you pass pass and/or lift state further and farther in the React hierarchy.
 
-How would you answer the following question:
+<!-- How would you answer the following question: -->
 
 <!-- <hr>
 
