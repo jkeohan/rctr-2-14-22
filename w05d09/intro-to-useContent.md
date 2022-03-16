@@ -40,11 +40,11 @@ As our app grows, the `tree of components` grows with it. Soon the decision to c
 
 How would you answer the following question:
 
-<hr>
+<!-- <hr>
 
 :question: **Where should you store and manage single or multiple instances of state in any of the apps you build?**
 
-<hr>
+<hr> -->
 
 #### Colocation
 There are a lot of ways to answer this question but the best approach is to place state in the Component that need to make use of it,  which is also known as **Colocation**.  Kent C. Dodds put together a great article called [State Colocation Will Make Your React App Faster](https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster).
