@@ -77,14 +77,14 @@ Fork the [Starter CodeSandbox](https://codesandbox.io/s/counter-class-to-functio
 
 So the concept of a **reducer** has been around for sometime in JavaScript long before the introduction of **Array.reduce**.
 
-When applied to building an application it becomes a tool which we use to manage both the **state** of an application and the** business logic** as well.
+When applied to building an application it becomes a tool which we use to manage both the **state** of an application and the **business logic** as well.
 
 So the **reducer** is essentially a function that takes in the following params:
 
 - current state
 - the action to be performed on state
 
-**returns**
+and returns:
 
 - a new/updated version of state (old state is never mutated)
 
@@ -279,7 +279,8 @@ Here is the final solution code:
 [CodeSandbox - Counter Reducer - Solution](https://codesandbox.io/s/counter-usereducer-starter-luru8?file=/src/components/Counter.js:487-488) 
 
 <hr>
-#### :question: How does working with **useReducer** improve the readability and organization of our code?
+##### In Your Own Words
+How does working with **useReducer** improve the readability and organization of our code?
 <hr>
 
 ## Bonus Material

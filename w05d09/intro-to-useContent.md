@@ -231,6 +231,22 @@ function ComponentD() {
 
 Here is the [final solution code](https://codesandbox.io/s/usecontext-demo-solution-tujgu?file=/src/components/App.js) 
 
+#### Lab Time
+
+====================================
+
+**Lab:** Refactor Shopping Cart to Include useContext
+
+Fork this [Shopping Cart CodeSandbox](https://codesandbox.io/s/react-shopping-cart-input-solution-cmix9?file=/src/App.js) or feel free to work through your own solution.
+
+Add Context to App and have  the AllTheThings & MyShoppingCart Components consume it.
+
+**Bonus:** Configure the Form Component to consume context
+
+====================================
+
+[Solution CodeSandbox](https://codesandbox.io/s/react-shopping-cart-input-solution-usecontext-3-16-22-rjv9rt)
+
 
 # Resources
 - [React v16.8](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)
