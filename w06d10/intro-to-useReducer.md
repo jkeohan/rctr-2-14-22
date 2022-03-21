@@ -279,9 +279,11 @@ Here is the final solution code:
 [CodeSandbox - Counter Reducer - Solution](https://codesandbox.io/s/counter-usereducer-starter-luru8?file=/src/components/Counter.js:487-488) 
 
 <hr>
+
 ##### In Your Own Words
 
 How does working with **useReducer** improve the readability and organization of our code?
+
 <hr>
 
 ## Bonus Material
