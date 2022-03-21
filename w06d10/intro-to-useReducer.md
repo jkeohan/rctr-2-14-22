@@ -179,7 +179,9 @@ function counterReducer(state, action) {
 From the looks of it the switch statement does indeed make it easier to read.
 
 <hr>
+
 ##### In Your Own Words
+
 What are the benefits of managing the applications state using a **reducer** function?
 
 <hr>
