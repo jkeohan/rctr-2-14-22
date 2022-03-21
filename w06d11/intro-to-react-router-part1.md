@@ -40,17 +40,14 @@ Let's take a minute once again to open the solution code and view that model aga
 
 ## React Router Setup 
 
-Here is our [Starter Code](https://codesandbox.io/s/bitcoin-starter-swwzg)
-
-Let's bring in React Router and set it up to allow us to display
-multiple components.
-
 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-Lets take a look at the [React Router Documentation](https://reacttraining.com/react-router/web/guides/quick-start) first before we get started. 
+Lets take a look at the [React Router Documentation](https://reacttraining.com/react-router/web/guides/quick-start) first before we get started.  
+
+**Note:** React Router has recently been upgraded to v6 however we will be working with v5 during this lecture.
 
 <hr>
 
@@ -58,10 +55,14 @@ Lets take a look at the [React Router Documentation](https://reacttraining.com/r
 
 ### Importing Dependencies
 
-First, we need to install the following:
+Here is our [Starter Code](https://codesandbox.io/s/bitcoin-starter-swwzg)
 
-- `react-router`
-- `react-router-dom` 
+Let's bring in React Router and set it up to allow us to display multiple components.
+
+First, we need to import the following dependencies:
+
+- `react-router v5.2.1`
+- `react-router-dom v.5.2.1` 
 
 ### Setting Up React Router
 
@@ -128,19 +129,19 @@ And now configure it to render the default route of `Home`.
 
 ```html
 return (
-	<div>
-	  <nav>
+  <div>
+    <nav>
       <a href="/">
         <img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" alt=""/>
         <h1>Bitcoin prices</h1>
       </a>
       <a href='/currencies'>Currencies</a>
-	  </nav>
-	  <main>
+    </nav>
+    <main>
         <Home />
         <Route path="/" component={Home}/>
-	  </main>
-	</div>
+    </main>
+  </div>
 )
 ```
 
@@ -194,21 +195,21 @@ And now we add the route
 
 ```html
 
-  return(
-    <div>
-    	<nav>
-        <a href="/">
-          <img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" alt="" />
-          <h1>Bitcoin prices</h1>
-        </a>
-        <a href='/currencies'>Currencies</a>
-	  </nav>
-      <main>
-        <Route path="/" component={Home} />
-        <Route path="/currencies" component={Currencies}/>
-      </main>
-    </div>
-  )
+return(
+  <div>
+    <nav>
+      <a href="/">
+        <img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" alt="" />
+        <h1>Bitcoin prices</h1>
+      </a>
+      <a href='/currencies'>Currencies</a>
+    </nav>
+    <main>
+      <Route path="/" component={Home} />
+      <Route path="/currencies" component={Currencies}/>
+    </main>
+  </div>
+)
 ```
 
 Now we've got two components and two route and both have be activated by clicking on the links in the nav. Two things to note however are:
