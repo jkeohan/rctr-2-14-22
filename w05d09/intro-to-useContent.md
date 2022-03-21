@@ -233,7 +233,7 @@ Here is the [final solution code](https://codesandbox.io/s/usecontext-demo-solut
 
 #### Lab Time
 
-====================================
+<hr>
 
 **Lab:** Refactor Shopping Cart to Include useContext
 
@@ -243,7 +243,7 @@ Add Context to App and have  the AllTheThings & MyShoppingCart Components consum
 
 **Bonus:** Configure the Form Component to consume context
 
-====================================
+<hr>
 
 [Solution CodeSandbox](https://codesandbox.io/s/react-shopping-cart-input-solution-usecontext-3-16-22-rjv9rt)
 

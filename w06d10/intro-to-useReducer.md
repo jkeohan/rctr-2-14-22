@@ -280,6 +280,7 @@ Here is the final solution code:
 
 <hr>
 ##### In Your Own Words
+
 How does working with **useReducer** improve the readability and organization of our code?
 <hr>
 
