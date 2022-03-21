@@ -103,8 +103,7 @@ ReactDOM.render(
 By making `Router` the root component of our app, it will pass down several
 router-specific objects to any components that rendered via `Router`.
 
-Things like current location and url can be accessed or changed. Additionally, in order to use the other
-routing components provided by React Router, a `Router` parent component is necessary.
+Things like current location and url can be accessed or changed. Additionally, in order to use the other routing components provided by React Router, a `Router` parent component is necessary.
 
 ### Working With Route
 
