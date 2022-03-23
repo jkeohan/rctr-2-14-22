@@ -43,14 +43,14 @@ The class schedule is as follows:
 |9 | Wed 03/16| <li>[useContext Hook](https://github.com/jkeohan/rctr-2-14-22/blob/main/w05d09/intro-to-useContent.md)</li><li>Mid Course Survey</li>|<li>Do: [Giphy App](https://github.com/jkeohan/rctr-2-14-22/blob/main/homework/w05/giphy.md)</li><li> Read: [The useReducer Hook](https://www.robinwieruch.de/react-usereducer-hook) </li> <li>Read: [Managing Complex State Transitions with useReducer](<https://medium.com/swlh/react-managing-complex-state-transitions-with-usereducer-e37536b12944>)</li> |[Recording](https://generalassembly.zoom.us/rec/share/LkP2TM9dw3x_0s4dRPItNizHOsbtyv19Yjyto-XYlCoIJg-2pXF3peSPNUVBO_qt.t4BsYIWVJT1m0HUF?startTime=1647471730000)|
 |10 | Mon 03/21|<li>[useReducer Hook](https://github.com/jkeohan/rctr-2-14-22/blob/main/w06d10/intro-to-useReducer.md)</li>|<li>Read: [React Router in 5 Minutes](https://www.freecodecamp.org/news/react-router-in-5-minutes/)</li>|[Recording](https://generalassembly.zoom.us/rec/share/IMlRCwN4KK87nYDq4D8a1QOQC4DNTIEI5D3najsAs-CYQLq-2duBhf6YGuCImuLr.BvkUEVfd2TUY6Ubh?startTime=1647903967000)|
 |11 | Wed 03/23|<li>[React Router](https://github.com/jkeohan/rctr-2-14-22/blob/main/w06d11/intro-to-react-router-part1.md)</li>|<li>Do: [Final Project](https://github.com/jkeohan/rctr-final-project)</li><li>Read: [React Router - Complete Guide](https://www.sitepoint.com/react-router-complete-guide/)</li>|Recording|
-|12 | Mon 03/28|<li>React Router Cont...</li>||Recording|
+|12 | Mon 03/28|<li>Intro to Redux</li>||Recording|
 |13 | Wed 03/30|<li>Final Project 1on1's</li>||Recording|
 |14 | Mon 04/04|<li>Styling Components</li>||Recording|
-|15 | Wed 04/06|<li>Intro to Redux</li>||Recording|
+|15 | Wed 04/06|<li>Testing in React</li>||Recording|
 |16 | Mon 04/11|<li>Custom Hooks</li>||Recording|
-|17 | Wed 04/13|<li>Testing in React</li>||Recording|
+|17 | Wed 04/13|<li>React & Mapbox</li>||Recording|
 |18 | Mon 04/18|<li>Final Project 1on1's</li>||Recording|
-|19 | Wed 04/20|<li>React & Mapbox</li>||Recording|
+|19 | Wed 04/20|<li>React & Shopify</li>||Recording|
 |20 | Mon 04/25|<li>Project Presentations</li>||Recording|
 
 <!--  -->
