@@ -15,13 +15,11 @@
 ## Framing 
 
 Up to this point, our React applications have been limited in size, allowing us
-to use basic control flow in deciding what components to render. However, as our React applications grow in size and scope, we need a more robust way of rendering different components.
+to use basic control flow in deciding what components to render. However, as our React applications grow in size and scope, we need a more robust way of rendering different views.
 
 We will replace standard conditional logic with the ability to render components based on changes to the url. 
 
-React Router is the most commonly-used routing library for React. It is relatively straightforward to configure and integrates with the component architecture nicely (since it's just a collection of components).
-
-We will configure it as the root component in a React application. Then we'll
+React Router is the most commonly-used routing library for React and we will configure it as the root component in a React application. Then we'll
 tell it to render other components within itself depending on the path in the
 url. This way we don't have to reload the entire page to swap out some data.
 
@@ -72,7 +70,6 @@ There are several Components that will need to make use of from the React Router
 
 React Router first provides us the `Router` component. It talks to the browser and allows us to create `history` (the ability to use the forward/back buttons) with our app, even though we are still on a single-page app.  It also provides us the ability to update the URL to redirect by updating the history object.
 
-As with a components `return` statement the `Router` component also expects to receive only one child element.  The child element can have routes defined or those routes could be even nested further.  
 
 ### `Route`
 
