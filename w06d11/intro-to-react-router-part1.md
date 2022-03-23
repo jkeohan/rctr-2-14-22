@@ -275,6 +275,8 @@ Let's create a route to handle if/when a user manually types in a route that doe
 
 And it looks like were done for now. 
 
+Here is the [Solution Code](https://codesandbox.io/s/bitcoin-starter-8-2-21-iidrb?file=/src/components/App/App.js)
+
 
 ### Resources
 
