@@ -13,7 +13,7 @@ It does not contain `Redux`
 <!-- Here is our [Starter CodeSandbox](https://codesandbox.io/s/light-levels-redux-starter-forked-r22cl3?file=/src/Components/App.js) -->
 
 <!-- this starter code includes basic useState solution -->
-Here is our [Starter CodeSandbox](https://codesandbox.io/s/light-levels-usereducer-starter-qf13z?file=/src/Components/Controls.js)
+Here is our [Starter CodeSandbox](https://codesandbox.io/s/light-levels-redux-starter-ebp97o)
 
 
 
