@@ -22,7 +22,7 @@ Before we jump into Redux let's take a minute to answer a few questions regardin
 
 :question: What are some of the differences between **useState** and **useReducer**? 
 
-<details><summary>Answer</summary>
+<!-- <details><summary>Answer</summary>
 
 <br>
 
@@ -36,12 +36,13 @@ Before we jump into Redux let's take a minute to answer a few questions regardin
 - encapsulates all business logic needed to update state
 
 
-</details>
-<br>
+</details> -->
+
+
 
 :question: When would you opt to use **useReducer** over **useState**? 
 
-<details><summary>Answer</summary>
+<!-- <details><summary>Answer</summary>
 <br>
 
 **Reasons to use **useReducer****
@@ -50,12 +51,13 @@ Before we jump into Redux let's take a minute to answer a few questions regardin
 - when you need to manage more complex state transitions
 - when you want more predictable state transitions than useState.
 
-</details>
-<br>
+</details> -->
+
+
 
 :question: When would you choose to use **useContent** and  **useReducer** over**useState** and provide a use case?
 
-<details><summary>Answer</summary>
+<!-- <details><summary>Answer</summary>
 <br>
 
 **Reasons to use useContext**
@@ -68,7 +70,7 @@ Before we jump into Redux let's take a minute to answer a few questions regardin
 - To apply specific themes throughout the app
 
 
-</details>
+</details> -->
 
 
 ## Intro To Redux
