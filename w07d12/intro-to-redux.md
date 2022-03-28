@@ -82,7 +82,7 @@ If your learning about Redux then it's safe to assume that you are already famil
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
 
-Let's take a look at the documentation on the official [Redux](https://react-redux.js.org/introduction/quick-start) site.
+Let's take a look at the documentation on the official [Redux](https://redux.js.org/) site.
 
 <hr>
 
