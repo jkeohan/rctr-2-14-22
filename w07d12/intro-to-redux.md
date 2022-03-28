@@ -6,7 +6,7 @@
 
 - Introduce Redux and why it's used to manage state
 - Understand Redux Terminology such as `Store`, `Actions`, and `Reducers`
-- Add Redux to a project and use it as a `global store` for state management
+- Add Redux to a project and configure a single `global store` for state management
 - Refactor a Counter Component to use Redux
 
 ## Preparation
