@@ -35,7 +35,7 @@ The documenation provides a CodeSandbox link to begin working with the Component
 
 The layout of the form will need some work but for now let's copy/paste this into our exising file and then configure our App to import and render the Component. 
 
-#### Missing AppProvider
+### Missing AppProvider
 
 Instead of rendering the Form as was displayed in the example CodeSandbox we are instead met with the following error: 
 
@@ -49,7 +49,7 @@ To do this we will import it into **index.js** which is the highest level of our
 
 <img src="https://screenshot.click/30-13-cvklu-p12gr.png" />
 
-#### Rebuilding The Existing Form
+### Rebuilding The Existing Form
 
 With our Form in working condition we can start making the edits needed to recreate the existing Form desing and functionality. 
 
@@ -77,7 +77,7 @@ With all those changes in place our Form should now look like the following:
 
 <img src="https://screenshot.click/30-37-wx9a1-phlp7.png" />
 
-#### Styling The Form
+### Styling The Form
 
 Although we could always opt to use our own CSS to apply the styling there are several additional Shopify Components that we can use to bring us closer to the design. The ones we will work with now can be found under their corresponding categories:
 
@@ -145,7 +145,7 @@ Here is how the Form should look with all the changes we've made:
 
 <img src="https://screenshot.click/30-22-hfpty-n4cfl.png" />
 
-#### Last of the Styling
+### Last of the Styling
 
 Form is coming along and requires only a few more subtle tweaks to make it look like our original design.  Two things we still need to implement: 
 
@@ -175,4 +175,39 @@ If we take a look at Dev Tools we shoudl see the setting for **Polaris-Page** an
 ```
 
 ### Working With Shopify's React-Form Package
+
+Since working with Forms is a common occurence in the **Admin** tool at Shopify, their developers took it one step further and created an entire **React-Form** npm pacakge The package is one of many which are included in their **Quilt library**.
+
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+<br>
+
+Let's take a closer look at the publicly available [Quilt](https://github.com/Shopify/quilt) library and then specifically the [react-form](https://github.com/Shopify/quilt) package.
+
+<img src="https://screenshot.click/30-34-e4e5r-mysts.png" />
+
+<hr>
+
+### Initial Form
+
+In order to demo **react-form** without rebuilding the template, we've incorporated our previous Polaris Form Component along with a few changes. 
+
+Let's first take a look at the hooks we've imported from **react-form**.
+
+```js
+import {
+  useField,
+  useForm,
+  notEmpty,
+} from "@shopify/react-form";
+```
+
+From these hooks will import additional functionality needed to replace **state** and the **handlerFunction** which were included in the previous **Polaris Form** starter code. 
+
+#### useForm
+
+Let's start with **useForm**. 
+
+<img src="https://screenshot.click/30-05-meguy-b75v1.png">
 
