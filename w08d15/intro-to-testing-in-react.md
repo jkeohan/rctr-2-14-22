@@ -9,9 +9,9 @@
 
 ## Framing 
 
-We all run `tests` with each line of code we write.  That test is `did the thing work as expected` or did it break something.  Although we can't truly escape writing our code in this fashion  there is a flaw in that approach and one we have all experienced at some point. Fixing one problem breaks something else all together. 
+We all run **tests** with each line of code we write.  That test is **did the thing work as expected** or did it break something.  Although we can't truly escape writing our code in this fashion  there is a flaw in that approach and one we have all experienced at some point. Fixing one problem breaks something else all together. 
 
-This is where formal testing comes in. It ensures that your app is continuing to function as expected, and can save you a massive headache down the road, a few of which are:
+This is where formal testing comes in. It ensures that your app continues to function as expected, and can save you massive headaches down the road, a few of which are:
 
 - Ensuring that the code continues to yield the desired result, and does not break with further development.
 - Testing for various use cases, rather than just the one that you performed.
@@ -37,10 +37,10 @@ We will be using the following libraries to create and run our tests.
 [Jest](https://jestjs.io/en/) is an easy to configure testing framework built by Facebook for testing JavaScript code. 
 
 ### Running A Single Test
-Test are created using either `it()` or `test()` functions.  Both functions are the same and take in 2 params: 
+Test are created using either the **it()** or **test()** functions and take in 2 params: 
 
-- the test message
-- callback function
+- a message which describes the test
+- callback function which contains the test
 
 ```js
 test('does this thing', () => {});
@@ -51,22 +51,22 @@ it('should do this thing', () => {});
 ```
 
 ### Creating A Suite Of Tests
-Several tests can be run against a common feature and should be combined into a `suite` of tests.  This can be done by wrapping them in `describe()` which also takes in 2 params:
+Several tests can be run against a common feature and should be combined into a **suite** of tests.  This can be done by wrapping them in **describe()** which also takes in 2 params:
 
-- the describe message
-- callback function
+- a message which describes the test block
+- callback function which contains all the tests
 
 Here is an example of several tests being run against an algo that flattens an array. 
 ```js
 // TEST SUITE
 describe('Flatten Array Tests', () => {
-    // TEST CASE
+  // TEST CASE
   it("should flatten an array.", () => {
     // test goes here
   })
-
+  // TEST CASE
   it("should return an empty array if the input is an empty array.", () => {
-      // test goes here
+    // test goes here
   })
 })
 ```
@@ -82,7 +82,7 @@ Let's take a look at the docs on running tests in [CodeSandbox](https://codesand
 
 ## Starter Code
 
-<!-- The starter code we will be using is a full `create-react-app` build and is slightly different then the React app we are able to spin up using the **React CodeSandbox** template.   -->
+<!-- The starter code we will be using is a full **create-react-app** build and is slightly different then the React app we are able to spin up using the **React CodeSandbox** template.   -->
 
 <!-- Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-7w0uk) -->
 Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-forked-ldlz8)
@@ -91,12 +91,12 @@ Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/r
 
 ## Flatten An Array Test
 
-Let's write our first test. Inside the `src` folder there is a folder called `algos` which contains two files: `flatten.js` and `flatten.test.js`
+Let's write our first test. Inside the **src** folder there is a folder called **algos** which contains two files: **flatten.js** and **flatten.test.js**
 
 <img src="https://i.imgur.com/YyYVKdg.png" />
 
 
-If we take a look at `flatten.js` we will see it contains the code needed to flatten an array of nested arrays.  
+If we take a look at **flatten.js** we will see it contains the code needed to flatten an array of nested arrays.  
 
 ```js
 function flatten(arr, result = []) {
@@ -125,7 +125,7 @@ flatten([1,[2,3],[[4],5]]) => [1,2,3,4,5]
 
 ### Our First Test
 
-If we take a look at `flatten.test.js` we see that contains no code and since there are no tests to run our testing results should be empty. 
+If we take a look at **flatten.test.js** we see that contains no code and since there are no tests to run our testing results should be empty. 
 
 <img src="https://i.imgur.com/lKclmfd.png" />
 
@@ -238,7 +238,7 @@ it('should determine input in an array', () => {
 
 
 ### Test Suites
-Being that these tests are meant to test the validity of the same code we could have placed them in a `describe()` so they are viewed as a suite of tests. 
+Being that these tests are meant to test the validity of the same code we could have placed them in a **describe()** so they are viewed as a suite of tests. 
 
 
 ```js
@@ -262,10 +262,10 @@ describe("flatten tests", () => {
 
 Testing in React uses the same approach for creating individual tests and organizing them into a suite of tests.  
 
-We do however need to leverage the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).  For even more advanced testing where we can't manipulate the DOM, we would need the assist of `Enzyme`. 
+We do however need to leverage the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).  For even more advanced testing where we can't manipulate the DOM, we would need the assist of **Enzyme**. 
 
 ### Setup
-Let's first create a filed called `App.test.js` and import **react**, the component we want to run test against, and both **render** and **screen** from the **React Testing** library.
+Let's first create a filed called **App.test.js** and import **react**, the component we want to run test against, and both **render** and **screen** from the **React Testing** library.
 
 ```js
 import React from 'react'
@@ -378,7 +378,7 @@ Now our test should pass.
 
 
 ## What is Enzyme?
-[Enzyme](https://github.com/airbnb/enzyme) mimics JQuery's DOM manipulation library to make testing React easier. Using Enzyme we can also directly test `state` within a class based component (it doesn't yet support hooks) which the `React Testing Library` cannot do. 
+[Enzyme](https://github.com/airbnb/enzyme) mimics JQuery's DOM manipulation library to make testing React easier. Using Enzyme we can also directly test **state** within a class based component (it doesn't yet support hooks) which the **React Testing Library** cannot do. 
 
 
 ### Setting Up Our Environment For Enzyme 
@@ -394,7 +394,7 @@ At the moment, Enzyme has adapters that provide compatibility for different vers
 **Create setupTest.js file**
 
 
-Then we need to create a **setUpTests.js** file. Create-react-app reads this file to see if there is any additional setup for the tests. In that file let's import the `jest-dom` library and then configure Enzyme to use an `Adapter`
+Then we need to create a **setUpTests.js** file. Create-react-app reads this file to see if there is any additional setup for the tests. In that file let's import the **jest-dom** library and then configure Enzyme to use an **Adapter**
 
 ```js
 import '@testing-library/jest-dom';
@@ -406,15 +406,15 @@ configure({ adapter: new Adapter() })
 export default Adapter
 ```
 
-We just need to keep in mind that we will need to import this file into any of our `*.test.js` files that require Enzyme. 
+We just need to keep in mind that we will need to import this file into any of our ***.test.js** files that require Enzyme. 
 
 ## Writing Tests Using Enzyme
-Inside the `components` folder we will find both `Counter` and `HelloWorld`.  We will be using these folder to organize our code for testing. 
+Inside the **components** folder we will find both **Counter** and **HelloWorld**.  We will be using these folder to organize our code for testing. 
 
-We will start with `HelloWorld` and need 2 files, one for our Component and the other to run our tests. 
+We will start with **HelloWorld** and need 2 files, one for our Component and the other to run our tests. 
 
-- `src/components/HelloWorld/HelloWorld.js` 
-- `src/components/HelloWorld/HelloWorld.test.js`
+- **src/components/HelloWorld/HelloWorld.js** 
+- **src/components/HelloWorld/HelloWorld.test.js**
 
 As before React will detect that there is a test but since there isn't anything in it nothing will happen. 
 
@@ -456,7 +456,7 @@ describe('Hello world component', () => {
 })
 ```
 
-Here we will be testing to confirm that the HelloWorld component was passed a prop value of `Your name`. 
+Here we will be testing to confirm that the HelloWorld component was passed a prop value of **Your name**. 
 
 ```js
 //...previous imports
@@ -476,7 +476,7 @@ The testing engine should rerun automatically and this time the App and flatten 
 
 Of course the reason being that we haven't written the actual HelloWorld Component as of yet. 
 
-Let's write the minimum amount of code needed for it to pass. In this example, we just need a component that renders `prop.name`.
+Let's write the minimum amount of code needed for it to pass. In this example, we just need a component that renders **prop.name**.
 
 ```js
 import React from 'react';
@@ -501,9 +501,9 @@ We want to build a counter app. When we press a button, we want a number stored 
 ### Initial Setup
 Let's add a **Counter.test.js** file 
 
-- `src/components/Counter/Counter.test.js`
+- **src/components/Counter/Counter.test.js**
 
-<!-- Copy the following code into the `Counter.js` component and we will write our tests to validate  this code. 
+<!-- Copy the following code into the **Counter.js** component and we will write our tests to validate  this code. 
 
 ```js
 import React, {useState} from 'react'
@@ -527,7 +527,7 @@ export default function Counter(props) {
 ``` -->
 
 
-Copy the following code into `Counter.test.js` to get us started. 
+Copy the following code into **Counter.test.js** to get us started. 
 
 
 ```js
@@ -565,9 +565,9 @@ Here are the functions that we will be using in case we want to review the [Jest
 Here are the tests we will create to test the Counter component and it's functionality. 
 
 - should have a header that says "Counter"
-- should display the current number in an element with the class name of `number`
-- should have a button with a class name of `plus` that increases the number in state
-- should have a button with a class name of  `minus` that decreases the number in state
+- should display the current number in an element with the class name of **number**
+- should have a button with a class name of **plus** that increases the number in state
+- should have a button with a class name of  **minus** that decreases the number in state
 
 
 
@@ -737,7 +737,7 @@ export default function Counter(props) {
 
 Write the following test: 
 
-- it should have a button with a class name of  `minus` that decreases the number in state
+- it should have a button with a class name of  **minus** that decreases the number in state
 
 
 
@@ -766,9 +766,9 @@ describe('Counter component', () => {
 
 
 <!-- ## Bonus (Time Permitting): To Do List App 
-As a bonus let's now create a `ToDo` list app using test driven development. First let's create our files.
+As a bonus let's now create a **ToDo** list app using test driven development. First let's create our files.
 
-We will have two components: a `ToDos.js` component which will hold individual `Todo.js` components.
+We will have two components: a **ToDos.js** component which will hold individual **Todo.js** components.
 
 
 - src/components/ToDos/ToDos.js
@@ -806,7 +806,7 @@ describe('ToDos Component', () => {
 
 })
 ```
-This looks pretty similar to our other testing blocks, but this time in `beforeEach()` we will use `mount` instead of `shallow` since we are going to have subcomponents within our parent component.  
+This looks pretty similar to our other testing blocks, but this time in **beforeEach()** we will use **mount** instead of **shallow** since we are going to have subcomponents within our parent component.  
 
 #### Counting Subcomponennts 
 
@@ -890,9 +890,9 @@ Now let's create functionality for making a new list item.
     expect(component.find('.input').text()).toEqual("hello")
   })
 ```
-Note that we can mock events by adding targets and values to the `simulate` method! We normally access `e.target.value`, so we create a similar structure when we mock the event!
+Note that we can mock events by adding targets and values to the **simulate** method! We normally access **e.target.value**, so we create a similar structure when we mock the event!
 
-`ToDos.js`
+**ToDos.js**
 ```diff
 function ToDos(props) {
   const [newTodo, setNewTodo] = useState('')
@@ -913,9 +913,9 @@ function ToDos(props) {
 #### You Do: Finish To Do App 
 
 Write the following tests. After writing a test, implement the React code to pass that test.
-* `Should create a new todo on the click of a button and update the UI with it`
+* **Should create a new todo on the click of a button and update the UI with it**
 
-* `Should mark todos as done on the click of a button`
+* **Should mark todos as done on the click of a button**
 
 
 
@@ -1034,7 +1034,7 @@ describe('ToDos Component', () => {
 ## Review
 
 * What is Jest? How about Enzyme?
-* What is the difference between `shallow` and `mount`? -->
+* What is the difference between **shallow** and **mount**? -->
 
 ## Resources
 - [React Testing Libraries](https://medium.com/javascript-in-plain-english/testing-in-react-part-2-react-testing-library-f32432b93c6c)
