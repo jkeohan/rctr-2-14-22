@@ -174,7 +174,7 @@ If we take a look at Dev Tools we shoudl see the setting for **Polaris-Page** an
 }
 ```
 
-**]Solution CodeSandbox](https://codesandbox.io/s/login-form-starter-polaris-duhck8?file=/src/components/FormPolaris.js)**
+**[Solution CodeSandbox](https://codesandbox.io/s/login-form-starter-polaris-duhck8?file=/src/components/FormPolaris.js)**
 
 ### Working With Shopify's React-Form Package
 
@@ -212,4 +212,3 @@ From these hooks will import additional functionality needed to replace **state*
 Let's start with **useForm**. 
 
 <img src="https://screenshot.click/30-05-meguy-b75v1.png">
-
