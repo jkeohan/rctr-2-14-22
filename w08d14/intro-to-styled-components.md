@@ -295,7 +295,6 @@ Since `styled components` in a third party library it must first be installed as
 <img src="https://i.imgur.com/zCX1cFF.png" />
 
 <br>
-<br>
 
 **Import The Library**
 
@@ -428,7 +427,7 @@ const PrimaryButton = styled.button`
 `;
 ```
 
-Here is what the rendered Components look like in React DevTools.  It's clear that there is no prop of **primary** being passed down. 
+Here is what the rendered Components look like in React DevTools.  It's clear that there is no prop of **primary** being passed down, however there is the following prop: **children: "Primary"**. 
 
 <img src="https://i.imgur.com/3Bn8TWF.png" width=300/>
 
