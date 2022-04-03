@@ -608,7 +608,7 @@ Here is the [Solution Code](https://codesandbox.io/s/styles-4-ways-starter-8-2-2
 
 <!-- Here is the [Solution Code](https://codesandbox.io/s/styles-4-ways-starter-10-22-20-gpf9t?file=/src/StyledComponents/index.js) -->
 
-### Bonus - Sass/SCSS
+<!-- ### Bonus - Sass/SCSS
 
 Both Sass (Syntactically Awesome Style Sheets) and SCSS (Sassy CSS) are extensions to CSS and provide a robust set of functionality.
 
@@ -620,9 +620,9 @@ Let's take a look at the [Sass](https://sass-lang.com/guide) documentation
 
 <hr>
 
-[Sass Solution](https://codesandbox.io/s/styles-4-ways-solution-wumw8?file=/src/Modules/styles.module.scss)
+[Sass Solution](https://codesandbox.io/s/styles-4-ways-solution-wumw8?file=/src/Modules/styles.module.scss) -->
 
-### Extra Bonus - Tailwind CSS
+### Bonus - Tailwind CSS
 
 Tailwind CSS is a utility-first CSS framework that is used to rapidly build custom UI interfaces.
 
