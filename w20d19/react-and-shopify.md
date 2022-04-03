@@ -170,7 +170,7 @@ If we take a look at Dev Tools we shoudl see the setting for **Polaris-Page** an
 
 ```css
 .Polaris-Page {
-    max-width: 380px;
+    max-width: 420px;
 }
 ```
 
