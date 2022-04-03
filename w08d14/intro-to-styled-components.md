@@ -39,11 +39,9 @@ Every React app will require styling and depending on your needs and/or level of
 
 Here is a subsesction of **Styling** as per the [2021 React Developers Roadmap](https://1.bp.blogspot.com/-evyQ2_bYeT8/YAl1uSUr9oI/AAAAAAAAl0o/eRsyUSaBLP8Rv7BKokqDIAYyr92SOyNzwCLcBGAsYHQ/s2048/The%2BReact%2BRoadMap%2Bfor%2BWeb%2BDevelopers.png)
 
-
 <img src="https://i.imgur.com/N1o3TCM.png">
 
 <hr>
-
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
@@ -64,7 +62,8 @@ Based on the answers provided to the previous question it's clear that the first
 Components, React or otherwise, are now becoming the standard for sharing small pieces of functionality.
 
 Let's take a look at 2 different Component libraries:
--  [https://bit.dev/](https://bit.dev/) 
+
+- [https://bit.dev/](https://bit.dev/)
 - [Shopify Polaris](https://polaris.shopify.com/components/get-started#navigation)
 
 There is also another powerful site called [StoryBook](https://storybook.js.org/) that enables developers to create and share Components.
@@ -146,7 +145,7 @@ export default function InlineStyle() {
  <button style={buttonStyles}>Primary</button>
 ```
 
-We could also use another object that defines styles for a specific button but yet inherits all the previous button styles. 
+We could also use another object that defines styles for a specific button but yet inherits all the previous button styles.
 
 ```js
 const primaryStyles = {
@@ -169,8 +168,8 @@ We can also used conditional logic to determine which values should be assigned 
 
 ```js
 const buttonStyles = {
-	backgroundColor: props.primary ? primary : danger,
-	// ...rest of styles
+  backgroundColor: props.primary ? primary : danger,
+  // ...rest of styles
 };
 ```
 
@@ -239,9 +238,9 @@ The rules are then applied to the elements using dot notation.
 
 ```html
 <div className="{styles.container}">
-	<h2>Modules</h2>
-	<button className="{styles.button}">Primary</button>
-	<button>Secondary</button>
+  <h2>Modules</h2>
+  <button className="{styles.button}">Primary</button>
+  <button>Secondary</button>
 </div>
 ```
 
@@ -278,7 +277,7 @@ One of the most popular and advanced CSS-in-JS libraries is [Styled Components](
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
-Now that were jumping into styled components let's take a look at a [CoinMarketCap](https://coinmarketcap.com/) and see styled components in action. If React Developer Tools if we highlight the navigation we can reference to **sytled.div**. 
+Now that were jumping into styled components let's take a look at a [CoinMarketCap](https://coinmarketcap.com/) and see styled components in action. If React Developer Tools if we highlight the navigation we can reference to **sytled.div**.
 
 <!-- <img src="https://i.imgur.com/NW34yw7.png"> -->
 
@@ -323,11 +322,11 @@ Let's add some styles to the `Container`. Adding a `color` can be done by either
 
 ```js
 const Container = styled.div`
-	color: ${warning};
+  color: ${warning};
 `;
 ```
 
-Now the `Button`. 
+Now the `Button`.
 
 ```js
 const PrimaryButton = styled.button`
@@ -338,18 +337,18 @@ const PrimaryButton = styled.button`
 Let's make use of the new styled components.
 
 ```html
-  <Container>
-    <h2>Styled Components</h2>
-    <PrimaryButton>Primary</PrimaryButton>
-    <button>Secondary</button>
-  </Container>
+<Container>
+  <h2>Styled Components</h2>
+  <PrimaryButton>Primary</PrimaryButton>
+  <button>Secondary</button>
+</Container>
 ```
 
 If we take a look at those elements in the `Elements` Tab of DevTools we will see that the class names begin with `sc-` and then end with a mix of difference characters.
 
 <img src="https://i.imgur.com/QYiiYxc.png" />
 
-Let's also take a look in React Dev Tools. 
+Let's also take a look in React Dev Tools.
 
 <img src="https://i.imgur.com/96JeTdo.png">
 
@@ -367,11 +366,11 @@ Then we create our shared styles.
 
 ```js
 const sharedStyles = css`
-    color: #fff;
-    padding: 7px 14px;
-    margin:0 5px;
-    border-radius: 5px;
-    border: 1px solid transparent;
+  color: #fff;
+  padding: 7px 14px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
 `;
 ```
 
@@ -386,22 +385,21 @@ const PrimaryButton = styled.button`
 
 #### Adding Hover
 
-Let's also add a `hover` effect as well.  Styled Components make use of Sass/SCSS syntax and since `hover` is a `pseudoclass` so we must include `&:hover`.
-
+Let's also add a `hover` effect as well. Styled Components make use of Sass/SCSS syntax and since `hover` is a `pseudoclass` so we must include `&:hover`.
 
 ```js
 const PrimaryButton = styled.button`
- ${(props) => sharedStyles};
+  ${(props) => sharedStyles};
   background-color: ${primary};
   &:hover {
     background-color: red;
-  };
+  }
 `;
 ```
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min 
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
 Create a **SecondaryButton** Styled Component
 
@@ -418,23 +416,23 @@ Conditional logic can be added in the following ways:
 
 #### Ternary Operator
 
-Let's try and set the `border-radius` based on a prop value passed from the parent. 
+Let's try and set the `border-radius` based on a prop value passed from the parent.
 
 Being that were using `string template literals` when creating the component we must include `${}` when referencing variables.
 
 ```js
 const PrimaryButton = styled.button`
-	border-radius:  ${props.primary ? '5px' : '20px'};
+  border-radius: ${props.primary ? '5px' : '20px'};
 `;
 ```
 
-Here is what the rendered Components look like in React DevTools.  It's clear that there is no prop of **primary** being passed down. 
+Here is what the rendered Components look like in React DevTools. It's clear that there is no prop of **primary** being passed down.
 
 <img src="https://i.imgur.com/3Bn8TWF.png" width=300/>
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min 
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
 Refactor the route in App.js to pass down a prop of **primary={true}**
 
@@ -472,12 +470,11 @@ border-radius: ${props => {
 }};
 ```
 
-Note: This props is not the same as the props being passed down from the parent. 
+Note: This props is not the same as the props being passed down from the parent.
 
 Here is what the console log looks like
 
 <img src="https://i.imgur.com/JvgqV1F.png" />
-
 
 And then we can either use it directly as assigned or run conditional logic.
 
@@ -494,10 +491,9 @@ We do have the option to also pass the prop a value as well.
 <ButtonTwo primary={false}>Customized</ButtonTwo>
 ```
 
-
 ### Helpers
 
-Styled components come with several additional [Helper functions](https://styled-components.com/docs/api#helpers).  We've taken a look at **css** so now lets take a look at **keyframes**
+Styled components come with several additional [Helper functions](https://styled-components.com/docs/api#helpers). We've taken a look at **css** so now lets take a look at **keyframes**
 
 <!-- **CSS**
 
@@ -625,6 +621,20 @@ Let's take a look at the [Sass](https://sass-lang.com/guide) documentation
 <hr>
 
 [Sass Solution](https://codesandbox.io/s/styles-4-ways-solution-wumw8?file=/src/Modules/styles.module.scss)
+
+### Extra Bonus - Tailwind CSS
+
+Tailwind CSS is a utility-first CSS framework that is used to rapidly build custom UI interfaces.
+
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+
+Let's take a look at the [Tailwind CSS](https://v2.tailwindcss.com/docs) documentation
+
+<hr>
+
+Here is an example of a [Portfolio Landing Page](https://codepen.io/GSometimes/pen/VwMoyPb) made with Tailwind CSS.
 
 ## Additional Resources
 
