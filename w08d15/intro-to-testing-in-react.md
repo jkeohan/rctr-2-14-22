@@ -1,8 +1,8 @@
-# Testing in React with Jest
+# Testing in React 
 
 ## Learning Objectives
 * Discuss the features of Jest and Enzyme
-* Finish setting up a development environment with create-react-app
+
 * Implement test driven development processes
 * Use Jest and Enzyme to test React applications
 
@@ -85,7 +85,7 @@ Let's take a look at the docs on running tests in [CodeSandbox](https://codesand
 <!-- The starter code we will be using is a full **create-react-app** build and is slightly different then the React app we are able to spin up using the **React CodeSandbox** template.   -->
 
 <!-- Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-7w0uk) -->
-Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-forked-ldlz8)
+Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-starter-ldlz8)
 
 <!-- [Solution Code](https://codesandbox.io/s/rctr-react-testing-solution-up-to-counter-v1ccw?file=/src/App.js) -->
 
@@ -229,8 +229,6 @@ it('should determine input in an array', () => {
   // input
   const nestedArray = [];
   // expected output
-  const flatArray = [];
-  // match our expectations
   expect(nestedArray).toEqual(expect.any(Array));
 });
 ```
