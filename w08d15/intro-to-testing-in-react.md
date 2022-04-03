@@ -198,11 +198,9 @@ Now it's your turn to create the following tests:
 
 Review the following:
 - [expect.any(constructor)](https://jestjs.io/docs/expect#expectanyconstructor)
-- [Test if object, array or string](https://github.com/facebook/jest/issues/3457) - 4th thread from bottom of page
+- [test if object, array or string](https://github.com/facebook/jest/issues/3457) - 4th thread from bottom of page
 
 <hr>
-
-ADD SOLUTION CODE HERE
 
 <details><summary>Solution</summary>
 
@@ -375,7 +373,7 @@ Now our test should pass.
 <img src="https://i.imgur.com/3vVg5CJ.png" width=500/>
 
 
-## What is Enzyme?
+## Working with Enzyme
 [Enzyme](https://github.com/airbnb/enzyme) mimics JQuery's DOM manipulation library to make testing React easier. Using Enzyme we can also directly test **state** within a class based component (it doesn't yet support hooks) which the **React Testing Library** cannot do. 
 
 
@@ -760,7 +758,7 @@ describe('Counter component', () => {
 
 </details>
 
-<!-- [CodeSandbox Solution](https://codesandbox.io/s/rctr-react-testing-forked-v1ccw?file=/src/components/Counter/Counter.test.js) -->
+[CodeSandbox Solution](https://codesandbox.io/s/rctr-react-testing-forked-v1ccw?file=/src/components/Counter/Counter.test.js)
 
 
 <!-- ## Bonus (Time Permitting): To Do List App 
