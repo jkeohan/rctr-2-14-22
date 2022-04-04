@@ -40,7 +40,7 @@ Every React app will require styling and depending on your needs and/or level of
 Here is a subsesction of **Styling** as per the [2021 React Developers Roadmap](https://1.bp.blogspot.com/-evyQ2_bYeT8/YAl1uSUr9oI/AAAAAAAAl0o/eRsyUSaBLP8Rv7BKokqDIAYyr92SOyNzwCLcBGAsYHQ/s2048/The%2BReact%2BRoadMap%2Bfor%2BWeb%2BDevelopers.png)
 
 <img src="https://i.imgur.com/N1o3TCM.png">
-
+<!-- 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
@@ -49,7 +49,7 @@ Before we go on let's take a moment to answer the following question:
 
 :question: How would you define what a Component is and what you would consider when creating them?
 
-<hr>
+<hr> -->
 
 ## Components As Self-Contained
 
