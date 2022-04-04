@@ -133,7 +133,7 @@ Inline styles, particularly in the context of components, do make a lot of sense
     }}>Primary</button>
 ``` -->
 
-When using `inline-styles` we might create a **styles** object that includes the default styles for all buttons and assign those styles directly.
+When using **inline-styles** we might create a **styles** object that includes the default styles for all buttons and assign those styles directly.
 
 ```js
 export default function InlineStyle() {
