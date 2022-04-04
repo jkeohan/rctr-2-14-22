@@ -436,11 +436,11 @@ Here is what the rendered Components look like in React DevTools.  It's clear th
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
 Refactor the route in App.js to pass down a prop of **primary={true}**
 
-**Note:** You will have to refactor the route to make use of the **render** method instead of **component**
+<!-- **Note:** You will have to refactor the route to make use of the **render** method instead of **component** -->
 
 <hr>
 
