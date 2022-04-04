@@ -45,8 +45,8 @@ The class schedule is as follows:
 |11 | Wed 03/23|<li>[React Router](https://github.com/jkeohan/rctr-2-14-22/blob/main/w06d11/intro-to-react-router.md)</li>|<li>Do: [Final Project](https://github.com/jkeohan/rctr-final-project)</li><li>Read: [React Router - Complete Guide](https://www.sitepoint.com/react-router-complete-guide/)</li>|[Recording](https://generalassembly.zoom.us/rec/share/V7JW-rV6OiUpwBEBTHjnkR1jCOCU8HP63I5s3HBGWqsE1ysJy90_5TkTHmPjdkdH.ShhojmR5INjSwNLt?startTime=1648076438000)|
 |12 | Mon 03/28|<li>[Intro to Redux](https://github.com/jkeohan/rctr-2-14-22/blob/main/w07d12/intro-to-redux.md)</li>|<li>Read: [What Does Redux Do?](https://daveceddia.com/what-does-redux-do/)</li>|Recording|
 |13 | Wed 03/30|<li>[Final Project 1on1's](https://docs.google.com/spreadsheets/d/1d4JVrnePPau9VtGB-aHjp7hE4CijMgGwC0fo45TxaKo/edit?userstoinvite=bgirldefy@yahoo.com&actionButton=1#gid=367518296)</li>|<li>Read: [5 Ways To Style React in 2021](https://www.freecodecamp.org/news/how-to-style-react-apps-with-css/#:~:text=Inline%20styles%20are%20the%20most,stylesheet%20also%20have%20higher%20precedence.)|Recording|
-|14 | Mon 04/04|<li>Styling Components</li>||Recording|
-|15 | Wed 04/06|<li>Testing in React</li>||Recording|
+|14 | Mon 04/04|<li>[Styling Components](https://github.com/jkeohan/rctr-2-14-22/blob/main/w08d14/intro-to-styled-components.md)</li>||Recording|
+|15 | Wed 04/06|<li>[Testing in React](https://github.com/jkeohan/rctr-2-14-22/blob/main/w08d15/intro-to-testing-in-react.md)</li>||Recording|
 |16 | Mon 04/11|<li>Custom Hooks</li>||Recording|
 |17 | Wed 04/13|<li>React & Mapbox</li>||Recording|
 |18 | Mon 04/18|<li>[Final Project 1on1's](https://docs.google.com/spreadsheets/d/1d4JVrnePPau9VtGB-aHjp7hE4CijMgGwC0fo45TxaKo/edit?userstoinvite=bgirldefy@yahoo.com&actionButton=1#gid=1711570661)</li>||Recording|
