@@ -199,7 +199,7 @@ CSS in JS lets you you style your Components with JavaScript instead of CSS. The
 
 One major issues of standard CSS or Sass/SCSS is that there is no concept of true encapsulation and requires that the developer define each and every unique class name.
 
-`CSS modules` however create dynamic class names for each locally defined style thereby making sure classnames didn't conflict.
+**CSS modules** however create dynamic class names for each locally defined style thereby making sure classnames didn't conflict.
 
 It's creators designed it to be lightweight and so it only support a handful of features.
 
@@ -209,7 +209,7 @@ It's creators designed it to be lightweight and so it only support a handful of 
 
 Let's take a look at a site like [Buffer](https://buffer.com/) which uses CSS Modules.
 
-We will focus our attention specifically on the `header` element of their home page and the class names.
+We will focus our attention specifically on the **header** element of their home page and the class names.
 
 <img src="https://i.imgur.com/W19mc86.png" width=500/>
 
