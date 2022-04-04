@@ -51,11 +51,11 @@ Before we go on let's take a moment to answer the following question:
 
 <hr> -->
 
-## Components As Self-Contained
+<!-- ## Components As Self-Contained
 
 Based on the answers provided to the previous question it's clear that the first concept we need to keep in mind is that `Components` are meant to be **self-contained** and **reusable**.
 
-<hr>
+<hr> -->
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
