@@ -293,7 +293,7 @@ Now that were jumping into styled components let's take a look at a [CoinMarketC
 
 **Install Styled Components**
 
-Since **styled components** in a third party library it must first be installed as an NPM package.
+Since **styled components** is a third party library it must first be installed as an NPM package.
 
 <img src="https://i.imgur.com/zCX1cFF.png" />
 
