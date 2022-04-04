@@ -70,7 +70,7 @@ Let's take a look at a few different Component libraries:
 - [Reactstrap](https://reactstrap.github.io/?path=/story/home-installation--page)
 - [Shopify Polaris](https://polaris.shopify.com/components/get-started#navigation)
 
-There is also another powerful site called [StoryBook](https://storybook.js.org/) that enables developers to create and share Components.
+There is also another powerful site called [StoryBook](https://storybook.js.org/) that enables developers to create, test and share Components.
 
 <!-- <hr> -->
 <!-- 
