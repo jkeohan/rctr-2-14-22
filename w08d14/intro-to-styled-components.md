@@ -642,7 +642,7 @@ Here is an example of a [Portfolio Landing Page](https://codepen.io/GSometimes/p
 
 ## Additional Resources
 
-- [CSS Modules](https://github.com/css-modules/css-modules#composition).
+- [CSS Modules](https://github.com/css-modules/css-modules).
 - [Styled Components](https://styled-components.com/docs/faqs)
 - [Building a reusable Component System with React.js and styled-components](https://levelup.gitconnected.com/building-a-reusable-component-system-with-react-js-and-styled-components-4e9f1018a31c)
 - [React Styling Options](https://www.sitepoint.com/react-components-styling-options/)
