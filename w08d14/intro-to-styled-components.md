@@ -84,7 +84,7 @@ Fortunately, lots of techniques, frameworks, tooling and other open source proje
 - Inline Styles
 - CSS-in-JS (CSS Modules & Styled Components) -->
 
-## Starter Code
+### Starter Code
 
 Here is the [Starter Code](https://codesandbox.io/s/styles-4-ways-starter-13qy5?file=/src/App.js) we will be using for this lecture.
 
