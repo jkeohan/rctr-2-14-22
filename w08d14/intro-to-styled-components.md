@@ -64,9 +64,10 @@ Based on the answers provided to the previous question it's clear that the first
 
 Components, React or otherwise, are now becoming the standard for sharing small pieces of functionality.
 
-Let's take a look at 2 different Component libraries:
+Let's take a look at a few different Component libraries:
 
 - [https://bit.dev/](https://bit.dev/)
+- [Reactstrap](https://reactstrap.github.io/?path=/story/home-installation--page)
 - [Shopify Polaris](https://polaris.shopify.com/components/get-started#navigation)
 
 There is also another powerful site called [StoryBook](https://storybook.js.org/) that enables developers to create and share Components.
