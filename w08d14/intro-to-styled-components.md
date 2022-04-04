@@ -57,7 +57,10 @@ Based on the answers provided to the previous question it's clear that the first
 
 <hr> -->
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+## Components As Self-Contained
+
+
+<!-- #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min -->
 
 Components, React or otherwise, are now becoming the standard for sharing small pieces of functionality.
 
@@ -68,7 +71,7 @@ Let's take a look at 2 different Component libraries:
 
 There is also another powerful site called [StoryBook](https://storybook.js.org/) that enables developers to create and share Components.
 
-<hr>
+<!-- <hr> -->
 <!-- 
 Since Components should be built as self contained and reusable entities it makes sense they would be constructed with all the internal logic needed to control their behavior.
 
