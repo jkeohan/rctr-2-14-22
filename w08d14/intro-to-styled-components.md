@@ -10,7 +10,7 @@
 
 ## Framing
 
-As with all things `coding` there are many ways to accomplish the same thing. Take for instance the need to run simple conditional logic. Depending on the use case any of the follow might suffice:
+As with all things **coding** there are many ways to accomplish the same thing. Take for instance the need to run simple conditional logic. Depending on the use case any of the follow might suffice:
 
 - if/else
 - switch statement
@@ -53,7 +53,7 @@ Before we go on let's take a moment to answer the following question:
 
 <!-- ## Components As Self-Contained
 
-Based on the answers provided to the previous question it's clear that the first concept we need to keep in mind is that `Components` are meant to be **self-contained** and **reusable**.
+Based on the answers provided to the previous question it's clear that the first concept we need to keep in mind is that **Components** are meant to be **self-contained** and **reusable**.
 
 <hr> -->
 
@@ -76,7 +76,7 @@ There is also another powerful site called [StoryBook](https://storybook.js.org/
 <!-- 
 Since Components should be built as self contained and reusable entities it makes sense they would be constructed with all the internal logic needed to control their behavior.
 
-We can use values in `props` and `state` to thoroughly control the view, including styling.
+We can use values in **props** and **state** to thoroughly control the view, including styling.
 
 Fortunately, lots of techniques, frameworks, tooling and other open source projects have been built and popularized to fill these gaps. Three popular ways that you'll likely encounter are:
 
@@ -215,11 +215,11 @@ We will focus our attention specifically on the **header** element of their home
 
 <hr>
 
-The basic premise is that the css classes are converted using a preprocessor into unique names in order to create `local scoping`.
+The basic premise is that the css classes are converted using a preprocessor into unique names in order to create **local scoping**.
 
-While additional tooling is needed to handle the processing of the files, `create-react-app`, which `CodeSandox` uses, includes this tooling by default.
+While additional tooling is needed to handle the processing of the files, **create-react-app**, which **CodeSandox** uses, includes this tooling by default.
 
-The actual css file must include `.module` in it's name. So if you are using standard css then the name might be `styles.module.css` but if your using SCSS then it would be `styles.module.scss`.
+The actual css file must include **.module** in it's name. So if you are using standard css then the name might be **styles.module.css** but if your using SCSS then it would be **styles.module.scss**.
 
 <img src="https://i.imgur.com/FWdD5YU.png" />
 
@@ -234,7 +234,7 @@ import styles from './styles.module.css';
 console.log('styles', styles);
 ```
 
-From the console log it's clear that the css rules are assigned as keys and the values are `module` specific.
+From the console log it's clear that the css rules are assigned as keys and the values are **module** specific.
 
 <img src="https://i.imgur.com/xQOPP0d.png" />
 
@@ -248,11 +248,11 @@ The rules are then applied to the elements using dot notation.
 </div>
 ```
 
-If we take a look at the `button` element in the `Elements` Tab in DevTools we will see the following:
+If we take a look at the **button** element in the **Elements** Tab in DevTools we will see the following:
 
 <img src="https://i.imgur.com/kDWUghQ.png" />
 
-Since this isn't a standard CSS name there is no way these styles will conflict with another element in the global scope that has been assigned a class of `.button` as well.
+Since this isn't a standard CSS name there is no way these styles will conflict with another element in the global scope that has been assigned a class of **.button** as well.
 
 #### Adding Another Class
 
@@ -270,8 +270,8 @@ If we want to add the **primary** class as well to the button then we will need 
 
 #### Drawbacks of CSS Modules
 
-- Limited access to `props` and `state`
-- No Sass/SCSS like features except `composes`
+- Limited access to **props** and **state**
+- No Sass/SCSS like features except **composes**
 
 ## Styled Components
 
@@ -293,7 +293,7 @@ Now that were jumping into styled components let's take a look at a [CoinMarketC
 
 **Install Styled Components**
 
-Since `styled components` in a third party library it must first be installed as an NPM package.
+Since **styled components** in a third party library it must first be installed as an NPM package.
 
 <img src="https://i.imgur.com/zCX1cFF.png" />
 
@@ -307,11 +307,11 @@ Which then must be imported.
 import styled from 'styled-components';
 ```
 
-<!-- Styled Components are created ES6 feature called a `Tagged Template Literal`, or perhaps you know it as `String Template Literal`. -->
+<!-- Styled Components are created ES6 feature called a `Tagged Template Literal`, or perhaps you know it as **String Template Literal**. -->
 
 **Using Styled Components**
 
-Let's create two styled components, one for the **div** and the other for the `button`.
+Let's create two styled components, one for the **div** and the other for the **button**.
 
 ```js
 const Container = styled.div``;
@@ -321,7 +321,7 @@ const PrimaryButton = styled.button``;
 
 **Adding Styles**
 
-Let's add some styles to the `Container`. Adding a `color` can be done by either written literally by it's name/hex/rgb or by referencing a variable.
+Let's add some styles to the **Container**. Adding a **color** can be done by either written literally by it's name/hex/rgb or by referencing a variable.
 
 ```js
 const Container = styled.div`
@@ -329,7 +329,7 @@ const Container = styled.div`
 `;
 ```
 
-Now the `Button`.
+Now the **Button**.
 
 ```js
 const PrimaryButton = styled.button`
@@ -347,7 +347,7 @@ Let's make use of the new styled components.
 </Container>
 ```
 
-If we take a look at those elements in the `Elements` Tab of DevTools we will see that the class names begin with `sc-` and then end with a mix of difference characters.
+If we take a look at those elements in the **Elements** Tab of DevTools we will see that the class names begin with **sc-** and then end with a mix of difference characters.
 
 <img src="https://i.imgur.com/QYiiYxc.png" />
 
@@ -357,7 +357,7 @@ Let's also take a look in React Dev Tools.
 
 **Common CSS**
 
-Let's take a look at `css` and use it to create and share css between multiple components.
+Let's take a look at **css** and use it to create and share css between multiple components.
 
 The functions need to be imported.
 
@@ -388,7 +388,7 @@ const PrimaryButton = styled.button`
 
 #### Adding Hover
 
-Let's also add a `hover` effect as well. Styled Components make use of Sass/SCSS syntax and since `hover` is a `pseudoclass` so we must include `&:hover`.
+Let's also add a **hover** effect as well. Styled Components make use of Sass/SCSS syntax and since **hover** is a **pseudoclass** so we must include **&:hover**.
 
 ```js
 const PrimaryButton = styled.button`
@@ -415,13 +415,13 @@ Just as we did with inline styles we can use conditional logic to determine whic
 Conditional logic can be added in the following ways:
 
 - a single ternary operator
-- a callback function based on `prop` passed directly to the styled component
+- a callback function based on **prop** passed directly to the styled component
 
 #### Ternary Operator
 
-Let's try and set the `border-radius` based on a prop value passed from the parent.
+Let's try and set the **border-radius** based on a prop value passed from the parent.
 
-Being that were using `string template literals` when creating the component we must include `${}` when referencing variables.
+Being that were using **string template literals** when creating the component we must include **${}** when referencing variables.
 
 ```js
 const PrimaryButton = styled.button`
@@ -448,7 +448,7 @@ Refactor the route in App.js to pass down a prop of **primary={true}**
 
 First take a moment to remove the **primary prop** being passed from App
 
-Besides accepting props from the parent directly we can also pass a `styled component` unique props of it's own just as we would do with any Component.
+Besides accepting props from the parent directly we can also pass a **styled component** unique props of it's own just as we would do with any Component.
 
 ```js
 <PrimaryButton primary>Primary</PrimaryButton>
@@ -462,9 +462,9 @@ Besides accepting props from the parent directly we can also pass a `styled comp
 
 <hr>
 
-So it appears it doesn't actually need to be assigned a value and will assign a value of `true` just because the prop exists.
+So it appears it doesn't actually need to be assigned a value and will assign a value of **true** just because the prop exists.
 
-Now within the `styled component` we can't just reference the prop that is being passed directly to the component like before but now need to pass that value via an `anonymous function` and run additional JS conditional logic.
+Now within the **styled component** we can't just reference the prop that is being passed directly to the component like before but now need to pass that value via an **anonymous function** and run additional JS conditional logic.
 
 ```js
 border-radius: ${props => {
@@ -501,7 +501,7 @@ Styled components come with several additional [Helper functions](https://styled
 
 <!-- **CSS**
 
-Let's take a look at `css` and use it to create and share css between multiple components.
+Let's take a look at **css** and use it to create and share css between multiple components.
 
 The functions need to be imported.
 
@@ -594,7 +594,7 @@ animation: ${animate};
 
 #### Benefits of Styled Components
 
-- Full access to `props` and `state`
+- Full access to **props** and **state**
 - Component level styles stay with the component
 - Access to full CSS specification including support of [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) for variable support
 - Sass-like features (such as nesting) and much more if you add [Polished](https://polished.js.org/)
