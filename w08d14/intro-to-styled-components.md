@@ -112,11 +112,11 @@ We can import a single `css` file at the highest level in the app or create sepa
 
 ## Inline Styling
 
-The term `separation of concerns` is a design principle that refers to separating functionality into distinct sections to make it modular. Under `SoC`, it's logical that we separate our CSS, HTML and JS into independent files which has been the standard in the web dev community since it's birth.
+The term **separation of concerns** is a design principle that refers to separating functionality into distinct sections to make it modular. Under **SoC**, it's logical that we separate our CSS, HTML and JS into independent files which has been the standard in the web dev community since it's birth.
 <!-- 
 As a result, [inline styles were considered bad practice](https://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css). -->
 
-Inline styles, particularly in the context of components, do make a lot of sense though and aligns with the idea that `what goes together should stay together`.
+Inline styles, particularly in the context of components, do make a lot of sense though and aligns with the idea that **what goes together should stay together**.
 
 ### Style Object
 
