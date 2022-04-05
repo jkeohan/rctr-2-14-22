@@ -71,16 +71,16 @@ describe('Flatten Array Tests', () => {
 })
 ```
 
-
+<!-- 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
 Let's take a look at the docs on running tests in [CodeSandbox](https://codesandbox.io/docs/tests)
 
-<hr>
+<hr> -->
 
-## Starter Code
+### Starter Code
 
 <!-- The starter code we will be using is a full **create-react-app** build and is slightly different then the React app we are able to spin up using the **React CodeSandbox** template.   -->
 
@@ -129,9 +129,9 @@ If we take a look at **flatten.test.js** we see that contains no code and since 
 
 <img src="https://i.imgur.com/lKclmfd.png" />
 
-Of course the idea here is that the user would need to work out the logic to solve the algo themselves and then run the tests to validate they got it right. 
+<!-- Of course the idea here is that the user would need to work out the logic to solve the algo themselves and then run the tests to validate they got it right.  -->
 
-Our goal however is to create a series of tests that would validate the results of running that code.  
+Our goal is to create a series of tests that will validate the results of running that code.  
 
 Let's start by creating a single test that includes the **input** and **output** we expect.
 
@@ -191,10 +191,10 @@ The test should pass now.
 Now it's your turn to create the following tests:
 
 - it should return an empty array when the input is an empty array
-- it should return a flattened array if the input contains 2 levels of nested arrays
+- it should return a flattened array if the input contains 2 levels deep of nested arrays
 
 **Bonus**
-- is should confirm that the input type is an array
+- it should confirm that the input type is an array
 
 Review the following:
 - [expect.any(constructor)](https://jestjs.io/docs/expect#expectanyconstructor)
