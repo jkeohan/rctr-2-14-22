@@ -204,7 +204,7 @@ Hint: review the following: [expect.any(constructor)](https://jestjs.io/docs/exp
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
 
-Now it's your turn to write some tests and test your algorithm skills. This time we are take a  [Test Driven Development](https://learntdd.in/react/) approach to writing our tests. 
+Now it's your turn to write some tests and test your algorithm skills. This time we are take a  [Test Driven Development](https://learntdd.in/react/) approach to writing our tests. This means we write failing tests first and then the code to make them pass. 
 
 - it should take in an array of duplicate elements and return an array of unique elements. 
 - it should return an empty array when the input is an empty array
