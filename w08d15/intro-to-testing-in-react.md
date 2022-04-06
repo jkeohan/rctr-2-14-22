@@ -184,7 +184,7 @@ The test should pass now.
 
 <img src="https://i.imgur.com/pBR0Dzv.png" width=300/>
 
-<hr>
+<!-- <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
@@ -196,9 +196,24 @@ Now it's your turn to create the following tests:
 **Bonus**
 - it should confirm that the input type is an array
 
-Review the following:
-- [expect.any(constructor)](https://jestjs.io/docs/expect#expectanyconstructor)
-- [test if object, array or string](https://github.com/facebook/jest/issues/3457) - 4th thread from bottom of page
+Hint: review the following: [expect.any(constructor)](https://jestjs.io/docs/expect#expectanyconstructor)
+
+<hr> -->
+
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
+
+Now it's your turn to write some tests and test your algorithm skills. This time we are take a  [Test Driven Development](https://learntdd.in/react/) approach to writing our tests. 
+
+- it should take in an array of duplicate elements and return an array of unique elements. 
+- it should return an empty array when the input is an empty array
+
+**Bonus**
+* it should confirm that the input type is an array
+
+Hint: review the following: [expect.any(constructor)](https://jestjs.io/docs/expect#expectanyconstructor)
+<!-- - [test if object, array or string](https://github.com/facebook/jest/issues/3457) - 4th thread from bottom of page -->
 
 <hr>
 
@@ -269,14 +284,14 @@ import App from './App';
 import { render, screen } from '@testing-library/react';
 ```
 
-<hr>
+<!-- <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
 Let's take a minute to look at the documentation for [render](https://github.com/testing-library/react-testing-library) as it will hold the DOM elements and run the query as well as [screen](https://testing-library.com/docs/queries/about/#screen) which contains the DOM elements rendered by that component. 
 
 
-<hr>
+<hr> -->
 
 ### Structure Of A Test
 
@@ -359,7 +374,7 @@ It seems our test is failing. Why?
 
 <img src="https://i.imgur.com/IuoSsX0.png" width=500/>
 
-Let's install the **testing-library/jest-dom** library and then import **import '@testing-library/jest-dom/extend-expect** into the test file.
+Let's install the **testing-library/jest-dom** library and then import **import '@testing-library/jest-dom/extend-expect'** into the test file.
 
 ```
 import React from 'react';
@@ -374,7 +389,7 @@ Now our test should pass.
 
 
 ## Working with Enzyme
-[Enzyme](https://github.com/airbnb/enzyme) mimics JQuery's DOM manipulation library to make testing React easier. Using Enzyme we can also directly test **state** within a class based component (it doesn't yet support hooks) which the **React Testing Library** cannot do. 
+[Enzyme](https://github.com/airbnb/enzyme) mimics JQuery's DOM manipulation library to make testing React easier. Using Enzyme we can also directly test **state** within a class based component which the **React Testing Library** cannot do. It does not yet support testing **state** in functional components. 
 
 
 ### Setting Up Our Environment For Enzyme 
@@ -420,7 +435,7 @@ As before React will detect that there is a test but since there isn't anything 
 
 Were going to take a [Test Driven Development](https://learntdd.in/react/) approach now where we will write our tests first and then the code that will cause it to pass, or fail. 
 
-Let's write a test that confirm the `HelloWorld` component renders out a name that's passed to it via props. 
+Let's write a test that confirm the `HelloWorld` component renders out a name that is passed to it via props. 
 
 Enzyme tests begin with rendering a React component, and for this, you have three choices: 
 
@@ -452,7 +467,7 @@ describe('Hello world component', () => {
 })
 ```
 
-Here we will be testing to confirm that the HelloWorld component was passed a prop value of **Your name**. 
+Here we will be testing to confirm that the **HelloWorld** component was passed a prop value of **Your name**. 
 
 ```js
 //...previous imports
@@ -490,7 +505,7 @@ The test passes without the need to import and run the component in App.
 
 ## Writing Tests for a Counter App 
 
-For this exercise, you will be continue using **TDD** to write the tests first and then the React code to pass them.. 
+For this exercise, you will be continue using **TDD** to write a failing test first and then the React code to make them pass. 
 
 We want to build a counter app. When we press a button, we want a number stored in state to increase, and when we press a second button that number will decrease. Given these test requirements, write a React component that passes the following tests.
 
@@ -622,9 +637,9 @@ describe('Counter component', () => {
 })
 ```
 
-Test should once again fail as expected so let's add the code to make it pass. This
+Test should once again fails as expected so let's add the code to make it pass. This
 
-```
+```js
 export default function Counter(props) {
   return (
     <div>
@@ -650,7 +665,7 @@ Now it should passes.
 
 Since we will need to recreate the Counter component for each test we can create a shallow version of it prior to running each subsequent test. 
 
-To do this we must use the **beforeEach()** function and then we update each test and remove the local shallow copy. 
+To do this we must use the **[beforeEach()](https://jestjs.io/docs/api#beforeeachfn-timeout)** function and then we update each test and remove the local shallow copy.
 
 ```js
 import React from 'react'
@@ -659,7 +674,7 @@ import { shallow } from 'enzyme'
 import Counter from './Counter'
 
 describe('Counter component', () => {
-  let component
+  let component;
   beforeEach(() => {
     component = shallow(<Counter />)
   })
@@ -700,7 +715,7 @@ describe('Counter component', () => {
 
 This also requires that we update our Component to include a button but also **state**. 
 
-```
+```js
 import React, { useState } from 'react';
 
 export default function Counter(props) {
