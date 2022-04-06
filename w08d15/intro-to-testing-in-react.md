@@ -217,7 +217,7 @@ Hint: review the following: [expect.any(constructor)](https://jestjs.io/docs/exp
 
 <hr>
 
-<details><summary>Solution</summary>
+<!-- <details><summary>Solution</summary>
 
 ```js
 it('should returns empty array when the input is an empty array', () => {
@@ -245,7 +245,7 @@ it('should determine input in an array', () => {
   expect(nestedArray).toEqual(expect.any(Array));
 });
 ```
-</details>
+</details> -->
 
 
 ### Test Suites
