@@ -405,7 +405,7 @@ At the moment, Enzyme has adapters that provide compatibility for different vers
 **Create setupTest.js file**
 
 
-Then we need to create a **setUpTests.js** file. Create-react-app reads this file to see if there is any additional setup for the tests. In that file let's import the **jest-dom** library and then configure Enzyme to use an **Adapter**
+Then we need to create a **setupTests.js** file. Create-react-app reads this file to see if there is any additional setup for the tests. In that file let's import the **jest-dom** library and then configure Enzyme to use an **Adapter**
 
 ```js
 import '@testing-library/jest-dom';
@@ -450,7 +450,7 @@ Let's start with Shallow Rendering as it should be used for tests that are limit
 Let's start by importing **React**, the **Adapter**, [shallow](https://enzymejs.github.io/enzyme/docs/api/shallow.html) and the **HelloWorld** component. 
 ```js
 import React from 'react'
-import Adapter from '../../setUpTests'
+import Adapter from '../../setupTests'
 import { shallow } from 'enzyme'
 import HelloWorld from './HelloWorld'
 ```
@@ -543,7 +543,7 @@ Copy the following code into **Counter.test.js** to get us started.
 
 ```js
 import React from 'react'
-import Adapter from '../../setUpTests'
+import Adapter from '../../setupTests'
 import { shallow } from 'enzyme'
 
 import Counter from './Counter'
