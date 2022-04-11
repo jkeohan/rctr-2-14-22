@@ -54,7 +54,7 @@ Another import required is the **mapbox-gl.css** file which has also been import
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min - Mapbox Access Token
 
-Working with Mapbox requires that we sign up at Mapbox to create an access token.  
+Working with Mapbox requires that we [sign up at Mapbox](https://www.mapbox.com/) to create an access token.  
 
 <img src="https://i.imgur.com/tgJQybC.png">
 
@@ -156,7 +156,11 @@ Implementing one of these styles is done by adding a **mapStyle** prop and setti
 />
 ```
 
-[Solution](https://codesandbox.io/s/rctr-mapbox-starter-8-2-21-0kfn5?file=/src/Map/index.js)
+<!-- [Solution](https://codesandbox.io/s/rctr-mapbox-starter-8-2-21-0kfn5?file=/src/Map/index.js) -->
+
+### Bonus
+
+Instructor will perform a codealong and add markers to the map.  
 
 
 ## Additional Resources
