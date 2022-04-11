@@ -48,7 +48,7 @@ The class schedule is as follows:
 |14 | Mon 04/04|<li>[Styling Components](https://github.com/jkeohan/rctr-2-14-22/blob/main/w08d14/intro-to-styled-components.md)</li>|<li>Read: [React Testing - Jest/Enzyme](https://medium.com/javascript-in-plain-english/testing-in-react-part-1-types-tools-244107abf0c6)</li> |[Recording](https://generalassembly.zoom.us/rec/share/aznxHCPT5FXLkSd7djZah78cJo9TRL2db-K98vYNKnxconPAZ5qu_Rkk7yGud5Dc.JNFVT39YhA_J6dwO?startTime=1649113450000)|
 |15 | Wed 04/06|<li>[Testing in React](https://github.com/jkeohan/rctr-2-14-22/blob/main/w08d15/intro-to-testing-in-react.md)</li>|<li>Read: [Writing Your Own Custom Hooks](https://blog.bitsrc.io/writing-your-own-custom-hooks-4fbcf77e112e)</li><li>Read: [11 Custom Hooks](https://blog.bitsrc.io/11-useful-custom-react-hooks-for-your-next-app-c66307cf0f0c)</li> |[Recording](https://generalassembly.zoom.us/rec/share/o8_TYinHy0P7sfZkXDAGX3Oe13VTuKvSaAFF-Gz6miF8Yng9AJG0O6wbsLcL7kq9.4ltxfjNcBIOq5cID?startTime=1649285984000)|
 |16 | Mon 04/11|<li>[Custom Hooks](https://github.com/jkeohan/rctr-2-14-22/blob/main/w09d16/intro-to-custom-hooks.md)</li>||Recording|
-|17 | Wed 04/13|<li>[React & Mapbox](https://github.com/jkeohan/rctr-2-14-22/blob/main/w09d17/intro-to-mapbox.md)</li>||Recording|
+|17 | Wed 04/13|<li>[React & Mapbox](https://github.com/jkeohan/rctr-2-14-22/blob/main/w09d17/intro-to-mapbox.md)</li>|Do: Complete MVP for 1:1's|Recording|
 |18 | Mon 04/18|<li>[Final Project 1on1's](https://docs.google.com/spreadsheets/d/1d4JVrnePPau9VtGB-aHjp7hE4CijMgGwC0fo45TxaKo/edit?userstoinvite=bgirldefy@yahoo.com&actionButton=1#gid=1711570661)</li>||Recording|
 |19 | Wed 04/20|<li>React & Shopify</li>||Recording|
 |20 | Mon 04/25|<li>Project Presentations</li>||Recording|
