@@ -277,7 +277,7 @@ Here are some resources that provide custom hooks or walk you through the proces
 - [useLocalStorage Hook](https://usehooks.com/useLocalStorage/)
 - [useHistory Hook For React Router](https://medium.com/javascript-in-plain-english/navigating-your-react-app-with-the-usehistory-hook-c7c465bfc6f6)
 - [Writing Your Own Custom Hooks](https://blog.bitsrc.io/writing-your-own-custom-hooks-4fbcf77e112e)
-- [11 Custom Hooks](https://blog.bitsrc.io/11-useful-custom-react-hooks-for-your-next-app-c66307cf0f0c)
+- [11 Custom Hooks](https://blog.bitsrc.io/11-useful-custom-react-hooks-for-your-next-app-c66307cf0f0c) - useDocumentTitle
 
 
 ## Bonus 
