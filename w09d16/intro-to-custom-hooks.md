@@ -102,7 +102,7 @@ todos.clear())
 ### Our First Custom Hook - useDocumentTitle
 Let's take a look a really basic example of a Counter Component that also updates the ***document.title*** of an open tab with text that display the current ***count*** value. 
 
-**Stater CodeSandbox:** [useDocumentTitle](https://codesandbox.io/s/usedocumenttitle-starter-3i3ll?file=/src/Counter.js)
+**Stater CodeSandbox:** [useDocumentTitle](https://codesandbox.io/s/custom-hooks-starter-egwjy?file=/src/Counter.js)
 
 It's not currently using any Custom Hooks but that will change once we evaluate what can be removed and placed into our new hook.
 
