@@ -285,3 +285,5 @@ Here are some resources that provide custom hooks or walk you through the proces
 Instructor will provide walk through demo of creating a **useApi** hook and replace the data file. This
 
 Starter code: [StreetballMecca Starter](https://codesandbox.io/s/streetball-mecca-useapi-starter-pph261?file=/src/components/App/index.js)
+
+<!-- Solution Code: [Streeball Mecca Solution](https://codesandbox.io/s/streetball-mecca-useapi-solution-1pbq2h?file=/src/reducers/parkReducer.js:664-891) -->
