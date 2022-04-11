@@ -282,7 +282,7 @@ Here are some resources that provide custom hooks or walk you through the proces
 
 ## Bonus 
 
-Instructor will provide walk through demo of creating a **useApi** hook and replace the data file. This
+Instructor will provide walk through demo of creating a **useApi** hook and replace the data file. 
 
 Starter code: [StreetballMecca Starter](https://codesandbox.io/s/streetball-mecca-useapi-starter-pph261?file=/src/components/App/index.js)
 
