@@ -2,6 +2,11 @@
 
 ## Learning Objectives
 
+- Explore some of the Front End tech that drives Shopify 
+- Create a form using Polaris, Shopify React Component Library
+- Extend the form using **react-form** hook from Shopify's Quilt repo
+- Refactor form to include translations using **react-i18n** hook
+
 ## How Shopify Has Embraced React
 
 ## Working With Shopify Polaris
@@ -27,7 +32,7 @@ Here is the [Starter CodeSandbox](https://codesandbox.io/s/login-form-starter-po
 
 ### Form Component
 
-Since were going to rebuild the existing form using Shopify Components so let's first take a look at the [Form Component](https://polaris.shopify.com/components/forms/form#all-examples). 
+Since were going to rebuild the existing form using Shopify Components let's first take a look at the [Polaris Form Component](https://polaris.shopify.com/components/forms/form#all-examples). 
 
 The documenation provides a CodeSandbox link to begin working with the Component which we can see contains all the functionality required to work with a form, including **state** and **handler** methods.  
 
@@ -37,7 +42,7 @@ The layout of the form will need some work but for now let's copy/paste this int
 
 ### Missing AppProvider
 
-Instead of rendering the Form as was displayed in the example CodeSandbox we are instead met with the following error: 
+Instead of rendering the Form as was displayed in the example we are instead presented with the following error: 
 
 <img src="https://screenshot.click/30-50-5a75n-hmzpg.png">
 
@@ -51,16 +56,16 @@ To do this we will import it into **index.js** which is the highest level of our
 
 ### Rebuilding The Existing Form
 
-With our Form in working condition we can start making the edits needed to recreate the existing Form desing and functionality. 
+With our Form in working condition we can start making the edits needed to recreate the existing Form design and functionality. 
 
-First let's clean up the form and remove any reference to signing up for the newsletter.  This requireds we do the following:
+First let's clean up the form and remove any reference to signing up for the newsletter.  This requires we do the following:
 - Remove the **Checkbox** Component and it's corresponding import
 - Remote the HandleNewsLetterChange function
 - delete setNewsLetter() from the **handleSubmit** function
 - delete the existing state for **newsLetter**
 
 
-Now let's setup the form to include the additional functionality to support a new password input field which incldues the following: 
+Now let's setup the form to include the additional functionality needed to support a new password input field which includes the following: 
 
 - adding new state values of **[password, setPassword]**
 - add a new handler called **handlePasswordChange**
@@ -79,7 +84,7 @@ With all those changes in place our Form should now look like the following:
 
 ### Styling The Form
 
-Although we could always opt to use our own CSS to apply the styling there are several additional Shopify Components that we can use to bring us closer to the design. The ones we will work with now can be found under their corresponding categories:
+Although we could always opt to use our own CSS to apply styling there are several additional Shopify Components that we can use to bring us closer to the original design. The ones we will work with now can be found under their corresponding categories:
 
 - Action:
     - [Button](https://polaris.shopify.com/components/actions/button#navigation)
@@ -93,8 +98,8 @@ Although we could always opt to use our own CSS to apply the styling there are s
 
 Lets start with the **Button** Component since that is part of the form.  If we take a look at the docs we can see that we can make use of the following styling options:
 
-- Primary - changes the color to green
-- FullWidth - expands the button to full width
+- **primary** - changes the color to green
+- **fullWidth** - expands the button to full width
 
 ```js
  <Button primary fullWidth>Submit</Button>
@@ -102,12 +107,12 @@ Lets start with the **Button** Component since that is part of the form.  If we 
 
 **Card**
 
-It's time to wrap our Form so that it contains the additional white spacing around it and also include the **Login** text located at the top of the form. 
+It's time to wrap our Form so that it contains the additional white spacing around it and also includes the **Login** text located at the top of the form. 
 
 To do this we will import a **Card** Component and make use of the following props:
 
- - **sectioned** 
- - **title** 
+- **sectioned** - auto wrap content in section
+ - **title** - adds title content for the card
 
 ```js
 import { Button, Form, FormLayout, TextField, Card } from "@shopify/polaris";
@@ -117,22 +122,22 @@ import { Button, Form, FormLayout, TextField, Card } from "@shopify/polaris";
 ```js
 <Card sectioned title="Login">
     <Form onSubmit={handleSubmit}>
-    ...rest of code
+    // ...rest of code
 </Card>
 ```
 
-Once we add the Card along with it's props we can see the title and additional spacing.  If we take a look in Dev Tools we can see the structure. 
+Once we add the Card along with it's props we can see the title and additional spacing.  If we take a look in Dev Tools we can see all the structural Components. 
 
 <img src="https://screenshot.click/30-03-ue0yl-b48u8.png">
 
 **Page**
 
-Let's import the **Page** Component, wrap the entire **Card** and add the following properties:
+Let's import the **Page** Component which will wrap the entire **Card** and include the following property:
 
 - **narrowWidth**
 
 ```js
-<Page>
+<Page narrowWidth>
     <Card sectioned title="Login">
         <Form onSubmit={handleSubmit}>
         ...rest of code
@@ -149,14 +154,14 @@ Here is how the Form should look with all the changes we've made:
 
 Form is coming along and requires only a few more subtle tweaks to make it look like our original design.  Two things we still need to implement: 
 
-- narrow down the width
 - remove the space between the inputs
+- decrease the width
 
 Let's first take a look in Dev Tools and see where the additional spacing is coming from for the input fields and button.  
 
 <img src="https://screenshot.click/30-35-cr4kn-8kd0a.png" />
 
-It's clear that the **Polaris-FormLayout__Item** is where that is being assigned. These elements are direct children of the **FormLayout** Component so if we were to add an extra **div** around the inputs then that would be become the **Polaris-FormLayout__Item** and both fields would no longer have the additional margin. 
+It's clear that the **Polaris-FormLayout__Item** is where the margin is being assigned. These elements are direct children of the **FormLayout** Component so if we were to add an extra **div** around the inputs then that would be become the **Polaris-FormLayout__Item** and margin would only be applied once.
 
 ```js
 <FormLayout>
@@ -205,7 +210,7 @@ import {
 } from "@shopify/react-form";
 ```
 
-From these hooks will import additional functionality needed to replace **state** and the **handlerFunction** which were included in the previous **Polaris Form** starter code. 
+These hooks will import all the functionality needed to replace **state** and the **handlerFunctions** which were included in the previous **Polaris Form** starter code. 
 
 #### useForm
 
