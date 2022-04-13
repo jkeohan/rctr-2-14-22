@@ -27,21 +27,26 @@ All of these libraries have been ported over to React with each one having sever
 
 We will be using **react-map-gl** as we can see from the results that it is the far more popular React library. 
 
+<hr>
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min - React-Map-GL
+
+Since were working with the react-map-gl library why don't we take a look at their [documentation](https://visgl.github.io/react-map-gl/).
+
+<hr>
+
+
 
 ## Starter Code
 
-Here is the [Starter CodeSandbox](https://codesandbox.io/s/rctr-mapbox-starter-2hden?file=/src/App.js) we will be using for this lecture which already imports the **react-map-gl** library
-
-If we examine the code we will see that it is a bare bones React app, however it also includes the **react-map-gl** dependency to help get us started.  
+Here is the [Starter CodeSandbox](https://codesandbox.io/s/rctr-mapbox-starter-2hden?file=/src/App.js) we will be using for this lecture which already imports the **react-map-gl** library.
 
 <img src="https://i.imgur.com/Yj0Cozl.png">
 
 <br>
 <br>
 
-**mapbox-gl.css** 
 
-Another import required is the **mapbox-gl.css** file which has also been imported via a a link tag. 
+Another import required is the **mapbox-gl.css** file which has also been imported via a a link tag in **public/index.html**
 
 ```html
  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css'>
@@ -116,13 +121,13 @@ And then update **ReactMapGL** to include them.
 <ReactMapGL {...viewport} />
 ```
 
-At this point we should the following which means our map is working to some extent but yet something is missing. 
+At this point we should the following which means our map is working to some extent but still needs a bit more configuration to render the actual map.
 
 <img src="https://i.imgur.com/4hh5m9g.png">
 
 ### Mapbox Token
 
-The missing piece is the **Access Token**. Let's include that as well. 
+One additional piece we need to add is the **Access Token**. 
 
 ```js
 const mapboxToken = "add your token here"
@@ -141,9 +146,7 @@ And with that we should now see the map.
 
 Mapbox comes with several additional styles that we can use of such as **light**, **dark**, **satelite** and several others. 
 
-Let's take a look at the official [Mapbox Documentation](https://docs.mapbox.com/api/maps/styles/) and see which others are available. 
-
-Implementing one of these styles is done by adding a **mapStyle** prop and setting it's value to one of the styles. 
+Implementing one of these styles is done by adding the [**mapStyle** prop](https://visgl.github.io/react-map-gl/docs/api-reference/types#styling) and setting it's value to one of the styles defined in the official [Mapbox Documentation](https://docs.mapbox.com/api/maps/styles/).
 
 ```
 <ReactMapGL 
