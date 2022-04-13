@@ -163,4 +163,4 @@ Implementing one of these styles is done by adding the [**mapStyle** prop](https
 Instructor will perform a codealong and add markers to the map.  
 
 
-## Additional Resources
+### Additional Resources
