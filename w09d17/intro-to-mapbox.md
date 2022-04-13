@@ -19,14 +19,13 @@ There are several popular JavaScript mapping libraries to choose from including:
 
 ### React Versions
 
-All of these libraries have been ported over to React with each one having several different React libraries to choose from.  Let's take **Mapbox** which includes the following separate NPM libraries:
+All of these libraries have been ported over to React with each one having several different React libraries to choose from.  When making the decision on which library to choose it's always best to do some research and see which one is trending on [npmtrends](https://www.npmtrends.com/mapbox-gl-vs-react-map-gl-vs-react-mapbox-gl). Let's take a look at a few of the **Mapbox** NPM libraries:
 
 - [react-map-gl](https://github.com/visgl/react-map-gl)
 - [react-mapbox-gl](https://github.com/alex3165/react-mapbox-gl)
 
-When making the decision on which library to choose it's always best to do some research and see which one is trending on [npmtrends](https://www.npmtrends.com/mapbox-gl-vs-react-map-gl-vs-react-mapbox-gl).
 
-For this lesson we will be working with **react-map-gl**
+We will be using **react-map-gl** as we can see from the results that it is the far more popular React library. 
 
 
 ## Starter Code
