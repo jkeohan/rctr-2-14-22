@@ -30,9 +30,7 @@ We will be using **react-map-gl** as we can see from the results that it is the 
 
 ## Starter Code
 
-Here is the [Starter CodeSandbox](https://codesandbox.io/s/rctr-mapbox-starter-2hden?file=/src/App.js) we will be using for this lecture.
-
-**react-map-gl** library
+Here is the [Starter CodeSandbox](https://codesandbox.io/s/rctr-mapbox-starter-2hden?file=/src/App.js) we will be using for this lecture which already imports the **react-map-gl** library
 
 If we examine the code we will see that it is a bare bones React app, however it also includes the **react-map-gl** dependency to help get us started.  
 
