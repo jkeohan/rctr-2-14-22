@@ -28,6 +28,7 @@ All of these libraries have been ported over to React with each one having sever
 We will be using **react-map-gl** as we can see from the results that it is the far more popular React library. 
 
 <hr>
+
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min - React-Map-GL
 
 Since were working with the react-map-gl library why don't we take a look at their [documentation](https://visgl.github.io/react-map-gl/).
