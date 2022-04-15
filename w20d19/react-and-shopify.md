@@ -13,9 +13,9 @@
 
 Polaris is a design system built to help both Shopify and 3rd party developers create a consistent look and feel when building apps for our merchants.  One feature of the Polaris design system that we will be working with today is their Component library, which provides the following benefits:
 
-- comonents are flexible enough to meet diverse needs
-- comonents have a well-documented public interface with guidelines and conventions
-- components meet accessibillity standards and are responsive to any screen or device
+- provides components that are flexible enough to meet diverse needs
+- well-documented public interface with guidelines and conventions
+- all components meet accessibillity standards and are responsive to any screen or device
 
 <hr>
 
@@ -26,7 +26,7 @@ Let's take a closer look at the [Polaris](https://polaris.shopify.com/) documena
 
 <hr>
 
-#### Starter Code
+### Starter Code
 
 Here is the [Starter CodeSandbox](https://codesandbox.io/s/login-form-starter-polaris-duhck8?file=/src/components/FormPolaris.js) that we will be working with during this lesson.  It contains an existing form which we will rebuild using the Polaris Form Component and supporting styling Polaris layout Components. 
 
