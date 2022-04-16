@@ -13,9 +13,10 @@
 
 Polaris is a design system built to help both Shopify and 3rd party developers create a consistent look and feel when building apps for our merchants.  One feature of the Polaris design system that we will be working with today is their Component library, which provides the following benefits:
 
-- comonents are flexible enough to meet diverse needs
-- comonents have a well-documented public interface with guidelines and conventions
-- components meet accessibillity standards and are responsive to any screen or device
+- Components are flexible enough to meet diverse needs
+- All Components meet accessibility standards and are responsive to any screen or device
+
+- Shopify provides a well-documented public interface with guidelines and conventions
 
 <hr>
 
@@ -28,7 +29,7 @@ Let's take a closer look at the [Polaris](https://polaris.shopify.com/) documena
 
 #### Starter Code
 
-Here is the [Starter CodeSandbox](https://codesandbox.io/s/login-form-starter-polaris-duhck8?file=/src/components/FormPolaris.js) that we will be working with during this lesson.  It contains an existing form which we will rebuild using the Polaris Form Component and supporting styling Polaris layout Components. 
+Here is the [Starter CodeSandbox](https://codesandbox.io/s/login-form-starter-polaris-duhck8?file=/src/components/FormPolaris.js) that we will be working with during this lesson.  It contains an existing form which we will rebuild using the **Polaris Form Component** and supporting Polaris styling layout Components.
 
 ### Form Component
 
@@ -48,11 +49,13 @@ Instead of rendering the Form as was displayed in the example we are instead pre
 
 The message indicates that our app must be wrapped in an **AppProvider** Component so let's take a look at the **[App provider docs](https://polaris.shopify.com/components/structure/app-provider#navigation)** and see what this entails. 
 
-Looking at the example it's clear the **AppProvider** wraps the parent level **Page** Component and is also provided an **i18n** prop that is passed some configuration options.  We won't concern oursevles just yet with the **i18n** prop but let's import the provider so we can start working with the Form. 
+Looking at the example it's clear the **AppProvider** wraps the parent level **Page** Component and is also provided an **i18n** prop that is passed some configuration options.  
 
-To do this we will import it into **index.js** which is the highest level of our application. 
+We won't concern ourselves just yet with the **i18n** prop but let's import the provider so we can start working with the Form. 
 
-<img src="https://screenshot.click/30-13-cvklu-p12gr.png" />
+To do this we will import the **AppProvider** into **App** and render it as the top level Component.  
+
+<img src="https://i.imgur.com/AU4nsWr.png" />
 
 ### Rebuilding The Existing Form
 
@@ -179,41 +182,51 @@ If we take a look at Dev Tools we shoudl see the setting for **Polaris-Page** an
 }
 ```
 
-**[Solution CodeSandbox](https://codesandbox.io/s/login-form-starter-polaris-duhck8?file=/src/components/FormPolaris.js)**
+#### Solution CodeSandbox
+
+Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solution-polaris-veyw5g)**
 
 ### Working With Shopify's React-Form Package
 
-Since working with Forms is a common occurence in the **Admin** tool at Shopify, their developers took it one step further and created an entire **React-Form** npm pacakge The package is one of many which are included in their **Quilt library**.
+Since working with Forms is common in the **Admin** tool at Shopify, their developers took it one step further and created an entire **React-Form** npm pacakge that does much of the heavy lifting.  The package is one of many which are included in their **Quilt Repo**.
 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 <br>
 
-Let's take a closer look at the publicly available [Quilt](https://github.com/Shopify/quilt) library and then specifically the [react-form](https://github.com/Shopify/quilt) package.
+Let's take a closer look at the publicly available [Quilt](https://github.com/Shopify/quilt) repository of packages and then we a deeper dive into the [react-form](https://github.com/Shopify/quilt) package.
 
-<img src="https://screenshot.click/30-34-e4e5r-mysts.png" />
+<img src="https://screenshot.click/30-34-e4e5r-mysts.png" width=500/>
 
 <hr>
 
 ### Initial Form
 
-In order to demo **react-form** without rebuilding the template, we've incorporated our previous Polaris Form Component along with a few changes. 
+In order to demo **react-form** without rebuilding the template, we've incorporated our previous Polaris Form Component along with a few changes. We've also gone ahead and imported **react-form** as a dependency. 
 
-Let's first take a look at the hooks we've imported from **react-form**.
+<img src="https://i.imgur.com/FVdoQpg.png" />
+
+
+This package exports a variety of hooks for all things form state but the quickest way to get up and running is with the following hooks: 
+
+- **useField**: used for handling the state and validations of an input field.
+- **useForm** : used for handling all state logic
+
+Let's first import the hooks from the react-form library.
 
 ```js
 import {
   useField,
   useForm,
-  notEmpty,
 } from "@shopify/react-form";
 ```
 
-These hooks will import all the functionality needed to replace **state** and the **handlerFunctions** which were included in the previous **Polaris Form** starter code. 
+
+
 
 #### useForm
 
 Let's start with **useForm**. 
-
-<img src="https://screenshot.click/30-05-meguy-b75v1.png">
+<!-- 
+<img src="https://screenshot.click/30-05-meguy-b75v1.png"> -->
