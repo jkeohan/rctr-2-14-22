@@ -17,13 +17,11 @@ Polaris is a design system built to help both Shopify and 3rd party developers c
 
 - Components are flexible enough to meet diverse needs
 - All Components meet accessibility standards and are responsive to any screen or device
-
 - Shopify provides a well-documented public interface with guidelines and conventions
 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
-
 <br>
 
 Let's take a closer look at the [Polaris](https://polaris.shopify.com/) documenation.
