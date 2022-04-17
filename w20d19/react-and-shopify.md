@@ -227,6 +227,132 @@ import {
 
 #### useForm
 
-Let's start with **useForm**. 
+Let's start with **useForm** as it's used for handling all state logic. There are several fields we can work with but for now let's focus on the following:
+
+- **fields**: manages the form fields 
+- **submit**: replaces the handleSubmit function and handles onSubmit
+- **reset**: rests the form once submitted
 <!-- 
 <img src="https://screenshot.click/30-05-meguy-b75v1.png"> -->
+
+**useForm** requires that we pass it a configuration object that contains a **fields** key and **onSubmit** function.  Let's also add a console.log so we can confirm when the form has been submitted. 
+```js
+  const { fields, submit} = useForm({
+    fields: {
+      email: '',
+      password: ''
+    },
+    async onSubmit(form) {
+      console.log('onSubmit - form', form);
+      return { status: 'success' };
+    }
+  });
+```
+
+Now we need to replace the existing values with the ones we have just instantiated. 
+
+Both the **onSubmit** event listener and **TextField** Components need to be updated. 
+
+```js
+<Form onSubmit={submit}>
+    <FormLayout>
+    <div>
+        <TextField placeholder="Email Address" {...fields.email} />
+        <TextField placeholder="Password" {...fields.password} />
+    </div>
+    //...additonal code
+    </FormLayout>
+</Form>
+```
+
+We can confirm that the **onSubmit** function is working by clicking on the **Submit** button and looking at the console.
+
+ ```js
+onSubmit - form {email: "", password: ""}
+ ```
+
+### useField Hook
+
+If we type into the fields we will notice that the values aren't being captured.  That's because we need the help of the **useField** hook.  
+
+```js
+      email: useField({
+        value: "",
+      }),
+      password: useField({
+        value: "",
+      })
+```
+
+Now if we type into the inputs we can see that the text is being rendered in the UI. 
+
+<img src="https://i.imgur.com/X5ydZb7.png" />
+
+We can also confirm in the console that those values are being captured by the form when we click **Submit**.
+
+```js
+onSubmit - form {email: "joe@gmail.com", password: "password"}
+```
+
+#### Resetting Form 
+
+When working with a form one thing that we need to do is clear the fields once the **Form** has been submitted.  We can do this by making use of the the **reset** function from **useForm** and calling it in **onSubmit**. 
+
+
+```js
+export default function ReactPolarisForm() {
+  const { fields, submit, reset} = useForm({
+    fields: {
+      email: useField({
+        value: "",
+      }),
+      password: useField({
+        value: "",
+      })
+    },
+    async onSubmit(form) {
+      console.log('onSubmit - form', form);
+      reset()
+      return { status: 'success' };
+    }
+  });
+```
+
+#### Validating Fields
+
+Now that we have the basic form functionality working let's add some validation. **useForm** provides the following validation:
+
+- notEmpty - confirms the field has input
+- lengthMoreThan - confirms the field meets a certain length criteria
+
+To make use of these setting we will need to import them from **react-form**. 
+
+```js
+import {
+  useField,
+  useForm,
+  notEmpty,
+  lengthMoreThan
+} from '@shopify/react-form';
+```
+
+ Applying these validations to **useField** requires that we add a new **validate** key and include an array of validations. 
+
+```js
+fields: {
+  email: useField({
+    value: '',
+    validates: [
+      notEmpty('field is required'),
+      lengthMoreThan(3, 'Email must be more than 3 characters')
+    ]
+  }),
+  password: useField({
+    value: '',
+    validates: [
+      notEmpty('field is required'),
+      lengthMoreThan(3, 'Password must be more than 8 characters')
+    ]
+  })
+}
+```
