@@ -3,11 +3,13 @@
 ## Learning Objectives
 
 - Explore some of the Front End tech that drives Shopify 
-- Create a form using Polaris, Shopify React Component Library
-- Extend the form using **react-form** hook from Shopify's Quilt repo
-- Refactor form to include translations using **react-i18n** hook
+- Create a form using Shopify React Component Library **Polaris**
+- Extend the form using **react-form** hook from Shopify's **Quilt** repo
+- Refactor the form to include translations using **Quilts react-i18n** hook
 
 ## How Shopify Has Embraced React
+
+Read some Shopify Dev Blog articles and come up with a summary. 
 
 ## Working With Shopify Polaris
 
@@ -21,6 +23,7 @@ Polaris is a design system built to help both Shopify and 3rd party developers c
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+
 <br>
 
 Let's take a closer look at the [Polaris](https://polaris.shopify.com/) documenation.
@@ -356,3 +359,119 @@ fields: {
   })
 }
 ```
+
+### Adding Translations
+
+Shopify is an international company with merchants joining the platform from all over the world.  In order to accommodate this internationalization Shopify has created a **react-i18n** library which can be configured to provide a certain level of translations.  
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+
+<br>
+
+Let's take a closer look at the [react-i18n](https://polaris.shopify.com/) library in the **Quilt** repo. 
+
+<img src="https://i.imgur.com/2a7pdR0.png"/>
+
+<hr>
+
+We've gone ahead and imported the library so we can jump right in.  
+
+<img src="https://i.imgur.com/vYZhl45.png" />
+
+#### I18nContext.Provider
+
+This library requires a provider component which supplies i18n details to the rest of the app, and coordinates the loading of translations. Somewhere near the "top" of your application, render a **I18nContext.Provider** component. This component accepts an **I18nManager** as the value prop, which allows you to specify the global i18n properties. 
+
+One thing to note is the I18nContext.Provider will pass context to App so we will opt to configure the provider as the very top of our application in **index.js**. 
+
+Here we will import both **I18nContext** and **I18Manager**.
+```js
+import { I18nContext, I18nManager } from "@shopify/react-i18n";
+```
+
+Then we will need to define our current locale.  For the sake of this demo we will hard code it but in a production this would be set dynamically.
+
+```js
+import { I18nContext, I18nManager } from "@shopify/react-i18n";
+
+const locale = "es";
+
+const i18nManager = new I18nManager({
+  locale,
+  onError(error) {}
+});
+```
+
+Let's now enable the **i18nContext.Provider** and pass the **i18Manager**. 
+```js
+import { I18nContext, I18nManager } from "@shopify/react-i18n";
+
+const locale = "es";
+
+const i18nManager = new I18nManager({
+  locale,
+  onError(error) {}
+});
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <I18nContext.Provider value={i18nManager}>
+    <App />
+  </I18nContext.Provider>,
+  rootElement
+);
+```
+
+#### The useI18n Hook
+
+With our context in place let's configure App to enable translations and pass it down to it's children. This requires that we first import the **useI18n** hook and define a fallback language.
+
+```js
+import { useI18n } from '@shopify/react-i18n';
+import en from '../translations/en.json';
+```
+
+Inside the App component lets instantiate the **useI18n** hook.  The hook returns both an **i18n** value and a **ShareTranslations** Component. 
+
+```js
+const [i18n, ShareTranslations] = useI18n({
+  id: 'Translations',
+  fallback: en,
+  translations(locale) {
+    return import(`../translations/${locale}.json`);
+  }
+});
+```
+
+#### Using Translations 
+
+We must now configure every child Component to consume the translations by importing the **i18n** hook. Let's go to **ReactForm** Component to import and instantiate the **i18n** hook. 
+
+```js
+import { useI18n } from "@shopify/react-i18n";
+
+export default function ReactPolarisForm() {
+  const [i18n] = useI18n();
+  //...rest of code
+}
+```
+
+Let's make use of the translations for the **Login** header and **placeholder** text in the **TextField** Components.
+
+```js
+<Card sectioned title={i18n.translate('Translations.heading')}>
+
+<TextField
+  placeholder={i18n.translate('Translations.email')}
+  {...fields.email}
+/>
+<TextField
+  placeholder={i18n.translate('Translations.password')}
+  {...fields.password}
+/>
+```
+
+### Additional Resources 
+
+- [Lost in Translations: Bringing the World to Shopify](https://shopify.engineering/lost-in-translations)
