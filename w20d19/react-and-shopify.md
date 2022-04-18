@@ -198,7 +198,7 @@ Since working with Forms is common in the **Admin** tool at Shopify, their devel
 
 Let's take a closer look at the publicly available [Quilt](https://github.com/Shopify/quilt) repository of packages and then we a deeper dive into the [react-form](https://github.com/Shopify/quilt) package.
 
-<img src="https://screenshot.click/30-34-e4e5r-mysts.png" width=500/>
+<img src="https://screenshot.click/30-34-e4e5r-mysts.png" width="700px"/>
 
 <hr>
 
