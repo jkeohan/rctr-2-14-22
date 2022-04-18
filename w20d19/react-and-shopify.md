@@ -7,7 +7,7 @@
 - Extend the form using **react-form** hook from Shopify's **Quilt** repo
 - Refactor the form to include translations using **Quilts react-i18n** hook
 
-## How Shopify Has Embraced React
+## How Shopify Has Embraced React, Polaris the Quilt Library. 
 
 Read some Shopify Dev Blog articles and come up with a summary. 
 
