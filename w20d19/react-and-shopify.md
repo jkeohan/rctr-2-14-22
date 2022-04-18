@@ -369,7 +369,7 @@ Shopify is an international company with merchants joining the platform from all
 
 Let's take a closer look at the [react-i18n](https://polaris.shopify.com/) library in the **Quilt** repo. 
 
-<img src="https://i.imgur.com/2a7pdR0.png"/>
+<img src="https://i.imgur.com/2a7pdR0.png" width="500px"/>
 
 <hr>
 
