@@ -56,7 +56,7 @@ We won't concern ourselves just yet with the **i18n** prop but let's import the 
 
 To do this we will import the **AppProvider** into **App** and render it as the top level Component.  
 
-<img src="https://i.imgur.com/AU4nsWr.png" />
+<img src="https://i.imgur.com/AU4nsWr.png" width="500px"/>
 
 ### Rebuilding The Existing Form
 
