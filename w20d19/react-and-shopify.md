@@ -183,9 +183,9 @@ If we take a look at Dev Tools we shoudl see the setting for **Polaris-Page** an
 }
 ```
 
-#### Solution CodeSandbox
+<!-- #### Solution CodeSandbox
 
-Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solution-polaris-veyw5g)**
+Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solution-polaris-veyw5g)** -->
 
 ### Working With Shopify's React-Form Package
 
@@ -469,6 +469,10 @@ Let's make use of the translations for the **Login** header and **placeholder** 
   {...fields.password}
 />
 ```
+
+#### Solution CodeSandbox
+
+Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solution-polaris-veyw5g)**
 
 ### Additional Resources 
 
