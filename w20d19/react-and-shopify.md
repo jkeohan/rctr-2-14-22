@@ -287,7 +287,7 @@ If we type into the fields we will notice that the values aren't being captured.
 
 Now if we type into the inputs we can see that the text is being rendered in the UI. 
 
-<img src="https://i.imgur.com/X5ydZb7.png" />
+<img src="https://i.imgur.com/X5ydZb7.png" widht="500px"/>
 
 We can also confirm in the console that those values are being captured by the form when we click **Submit**.
 
@@ -375,7 +375,7 @@ Let's take a closer look at the [react-i18n](https://polaris.shopify.com/) libra
 
 We've gone ahead and imported the library so we can jump right in.  
 
-<img src="https://i.imgur.com/vYZhl45.png" />
+<img src="https://i.imgur.com/vYZhl45.png" width="300px"/>
 
 #### I18nContext.Provider
 
