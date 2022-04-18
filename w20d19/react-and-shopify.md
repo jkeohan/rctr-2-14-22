@@ -152,7 +152,7 @@ Let's import the **Page** Component which will wrap the entire **Card** and incl
 
 Here is how the Form should look with all the changes we've made:
 
-<img src="https://screenshot.click/30-22-hfpty-n4cfl.png" />
+<img src="https://screenshot.click/30-22-hfpty-n4cfl.png" width="400px"/>
 
 ### Last of the Styling
 
@@ -163,7 +163,7 @@ Form is coming along and requires only a few more subtle tweaks to make it look 
 
 Let's first take a look in Dev Tools and see where the additional spacing is coming from for the input fields and button.  
 
-<img src="https://screenshot.click/30-35-cr4kn-8kd0a.png" />
+<img src="https://screenshot.click/30-35-cr4kn-8kd0a.png" width="400px"/>
 
 It's clear that the **Polaris-FormLayout__Item** is where the margin is being assigned. These elements are direct children of the **FormLayout** Component so if we were to add an extra **div** around the inputs then that would be become the **Polaris-FormLayout__Item** and margin would only be applied once.
 
