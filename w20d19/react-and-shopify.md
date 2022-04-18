@@ -206,7 +206,7 @@ Let's take a closer look at the publicly available [Quilt](https://github.com/Sh
 
 In order to demo **react-form** without rebuilding the template, we've incorporated our previous Polaris Form Component along with a few changes. We've also gone ahead and imported **react-form** as a dependency. 
 
-<img src="https://i.imgur.com/FVdoQpg.png" />
+<img src="https://i.imgur.com/FVdoQpg.png" width="300px"/>
 
 
 This package exports a variety of hooks for all things form state but the quickest way to get up and running is with the following hooks: 
