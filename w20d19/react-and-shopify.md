@@ -473,3 +473,4 @@ Let's make use of the translations for the **Login** header and **placeholder** 
 ### Additional Resources 
 
 - [Lost in Translations: Bringing the World to Shopify](https://shopify.engineering/lost-in-translations)
+- [Building a Data Table in Polaris](https://shopify.engineering/building-data-table-component-react)
