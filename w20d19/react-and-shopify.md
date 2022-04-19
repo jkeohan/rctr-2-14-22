@@ -7,7 +7,7 @@
 - Extend the form using **react-form** hook from Shopify's **Quilt** repo
 - Refactor the form to include translations using **Quilts react-i18n** hook
 
-## How Shopify Has Embraced React
+## How Shopify Has Embraced React, Polaris the Quilt Library. 
 
 Read some Shopify Dev Blog articles and come up with a summary. 
 
@@ -56,7 +56,7 @@ We won't concern ourselves just yet with the **i18n** prop but let's import the 
 
 To do this we will import the **AppProvider** into **App** and render it as the top level Component.  
 
-<img src="https://i.imgur.com/AU4nsWr.png" />
+<img src="https://i.imgur.com/AU4nsWr.png" width="500px"/>
 
 ### Rebuilding The Existing Form
 
@@ -152,7 +152,7 @@ Let's import the **Page** Component which will wrap the entire **Card** and incl
 
 Here is how the Form should look with all the changes we've made:
 
-<img src="https://screenshot.click/30-22-hfpty-n4cfl.png" />
+<img src="https://screenshot.click/30-22-hfpty-n4cfl.png" width="400px"/>
 
 ### Last of the Styling
 
@@ -163,7 +163,7 @@ Form is coming along and requires only a few more subtle tweaks to make it look 
 
 Let's first take a look in Dev Tools and see where the additional spacing is coming from for the input fields and button.  
 
-<img src="https://screenshot.click/30-35-cr4kn-8kd0a.png" />
+<img src="https://screenshot.click/30-35-cr4kn-8kd0a.png" width="400px"/>
 
 It's clear that the **Polaris-FormLayout__Item** is where the margin is being assigned. These elements are direct children of the **FormLayout** Component so if we were to add an extra **div** around the inputs then that would be become the **Polaris-FormLayout__Item** and margin would only be applied once.
 
@@ -183,9 +183,9 @@ If we take a look at Dev Tools we shoudl see the setting for **Polaris-Page** an
 }
 ```
 
-#### Solution CodeSandbox
+<!-- #### Solution CodeSandbox
 
-Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solution-polaris-veyw5g)**
+Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solution-polaris-veyw5g)** -->
 
 ### Working With Shopify's React-Form Package
 
@@ -198,7 +198,7 @@ Since working with Forms is common in the **Admin** tool at Shopify, their devel
 
 Let's take a closer look at the publicly available [Quilt](https://github.com/Shopify/quilt) repository of packages and then we a deeper dive into the [react-form](https://github.com/Shopify/quilt) package.
 
-<img src="https://screenshot.click/30-34-e4e5r-mysts.png" width=500/>
+<img src="https://screenshot.click/30-34-e4e5r-mysts.png" width="700px"/>
 
 <hr>
 
@@ -206,7 +206,7 @@ Let's take a closer look at the publicly available [Quilt](https://github.com/Sh
 
 In order to demo **react-form** without rebuilding the template, we've incorporated our previous Polaris Form Component along with a few changes. We've also gone ahead and imported **react-form** as a dependency. 
 
-<img src="https://i.imgur.com/FVdoQpg.png" />
+<img src="https://i.imgur.com/FVdoQpg.png" width="300px"/>
 
 
 This package exports a variety of hooks for all things form state but the quickest way to get up and running is with the following hooks: 
@@ -287,7 +287,7 @@ If we type into the fields we will notice that the values aren't being captured.
 
 Now if we type into the inputs we can see that the text is being rendered in the UI. 
 
-<img src="https://i.imgur.com/X5ydZb7.png" />
+<img src="https://i.imgur.com/X5ydZb7.png" width="400px"/>
 
 We can also confirm in the console that those values are being captured by the form when we click **Submit**.
 
@@ -369,13 +369,13 @@ Shopify is an international company with merchants joining the platform from all
 
 Let's take a closer look at the [react-i18n](https://polaris.shopify.com/) library in the **Quilt** repo. 
 
-<img src="https://i.imgur.com/2a7pdR0.png"/>
+<img src="https://i.imgur.com/2a7pdR0.png" width="700px"/>
 
 <hr>
 
 We've gone ahead and imported the library so we can jump right in.  
 
-<img src="https://i.imgur.com/vYZhl45.png" />
+<img src="https://i.imgur.com/vYZhl45.png" width="300px"/>
 
 #### I18nContext.Provider
 
@@ -469,6 +469,10 @@ Let's make use of the translations for the **Login** header and **placeholder** 
   {...fields.password}
 />
 ```
+
+#### Solution CodeSandbox
+
+Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solution-polaris-veyw5g)**
 
 ### Additional Resources 
 
