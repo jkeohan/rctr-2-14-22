@@ -266,7 +266,17 @@ Both the **onSubmit** event listener and **TextField** Components need to be upd
 </Form>
 ```
 
-We can confirm that the **onSubmit** function is working by clicking on the **Submit** button and looking at the console.
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+
+<br>
+
+Add a console.log that outputs **fields** and see if you can determine why we need to use Object Destructuring for both **email** and **password**.
+
+<hr>
+
+We can also confirm that the **onSubmit** function is working by clicking on the **Submit** button and looking at the console logs.
 
  ```js
 onSubmit - form {email: "", password: ""}
