@@ -40,7 +40,7 @@ The documenation provides a CodeSandbox link to begin working with the Component
 
 <img src="https://screenshot.click/30-47-l4pja-txyc4.png" />
 
-The layout of the form will need some work but for now let's copy/paste this into our exising file and then configure our App to import and render the Component. 
+The layout of the form will need some work but for now let's **copy/paste** this into our exising file and then configure our App to import and render the Component. 
 
 ### Missing AppProvider
 
@@ -52,7 +52,7 @@ The message indicates that our app must be wrapped in an **AppProvider** Compone
 
 Looking at the example it's clear the **AppProvider** wraps the parent level **Page** Component and is also provided an **i18n** prop that is passed some configuration options.  
 
-We won't concern ourselves just yet with the **i18n** prop but let's import the provider so we can start working with the Form. 
+We won't concern ourselves just yet with the **i18n** prop for now, but let's import the provider so we can start working with the Form. 
 
 To do this we will import the **AppProvider** into **App** and render it as the top level Component.  
 
@@ -64,8 +64,8 @@ With our Form in working condition we can start making the edits needed to recre
 
 First let's clean up the form and remove any reference to signing up for the newsletter.  This requires we do the following:
 - Remove the **Checkbox** Component and it's corresponding import
-- Remote the HandleNewsLetterChange function
-- delete setNewsLetter() from the **handleSubmit** function
+- Remote the **HandleNewsLetterChange** function
+- delete **setNewsLetter()** from the **handleSubmit** function
 - delete the existing state for **newsLetter**
 
 
@@ -74,7 +74,7 @@ Now let's setup the form to include the additional functionality needed to suppo
 - adding new state values of **[password, setPassword]**
 - add a new handler called **handlePasswordChange**
 - update **handleSubmit** to clear the password field
-- add/configure the **TextField** Component
+- add and configure the **TextField** Component
 
 Here is what the code required to support our new TextField looks like:
 
@@ -100,7 +100,7 @@ Although we could always opt to use our own CSS to apply styling there are sever
 
 **Button**
 
-Lets start with the **Button** Component since that is part of the form.  If we take a look at the docs we can see that we can make use of the following styling options:
+Lets start with the **Button** Component since that is a visual part of the form.  If we take a look at the docs we can see that we can make use of the following styling options:
 
 - **primary** - changes the color to green
 - **fullWidth** - expands the button to full width
@@ -109,13 +109,15 @@ Lets start with the **Button** Component since that is part of the form.  If we 
  <Button primary fullWidth>Submit</Button>
 ```
 
+If we try submitting the form by clicking on the Submit button we should notice that nothing happens.  There is one additional prop we will need to add to the button to trigger this action and that is **submit**.  
+
 **Card**
 
 It's time to wrap our Form so that it contains the additional white spacing around it and also includes the **Login** text located at the top of the form. 
 
 To do this we will import a **Card** Component and make use of the following props:
 
-- **sectioned** - auto wrap content in section
+- **sectioned** - auto wrap content in a section
  - **title** - adds title content for the card
 
 ```js
@@ -266,7 +268,17 @@ Both the **onSubmit** event listener and **TextField** Components need to be upd
 </Form>
 ```
 
-We can confirm that the **onSubmit** function is working by clicking on the **Submit** button and looking at the console.
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+
+<br>
+
+Add a console.log that outputs **fields** and see if you can determine why we need to use Object Destructuring for both **email** and **password**.
+
+<hr>
+
+We can also confirm that the **onSubmit** function is working by clicking on the **Submit** button and looking at the console logs.
 
  ```js
 onSubmit - form {email: "", password: ""}
@@ -277,12 +289,12 @@ onSubmit - form {email: "", password: ""}
 If we type into the fields we will notice that the values aren't being captured.  That's because we need the help of the **useField** hook.  
 
 ```js
-      email: useField({
-        value: "",
-      }),
-      password: useField({
-        value: "",
-      })
+email: useField({
+  value: "",
+}),
+password: useField({
+  value: "",
+})
 ```
 
 Now if we type into the inputs we can see that the text is being rendered in the UI. 
