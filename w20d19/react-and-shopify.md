@@ -117,7 +117,7 @@ It's time to wrap our Form so that it contains the additional white spacing arou
 
 To do this we will import a **Card** Component and make use of the following props:
 
-- **sectioned** - auto wrap content in section
+- **sectioned** - auto wrap content in a section
  - **title** - adds title content for the card
 
 ```js
