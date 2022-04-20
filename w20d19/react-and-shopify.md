@@ -64,8 +64,8 @@ With our Form in working condition we can start making the edits needed to recre
 
 First let's clean up the form and remove any reference to signing up for the newsletter.  This requires we do the following:
 - Remove the **Checkbox** Component and it's corresponding import
-- Remote the HandleNewsLetterChange function
-- delete setNewsLetter() from the **handleSubmit** function
+- Remote the **HandleNewsLetterChange** function
+- delete **setNewsLetter()** from the **handleSubmit** function
 - delete the existing state for **newsLetter**
 
 
@@ -74,7 +74,7 @@ Now let's setup the form to include the additional functionality needed to suppo
 - adding new state values of **[password, setPassword]**
 - add a new handler called **handlePasswordChange**
 - update **handleSubmit** to clear the password field
-- add/configure the **TextField** Component
+- add and configure the **TextField** Component
 
 Here is what the code required to support our new TextField looks like:
 
