@@ -132,7 +132,7 @@ import { Button, Form, FormLayout, TextField, Card } from "@shopify/polaris";
 </Card>
 ```
 
-Once we add the Card along with it's props we can see the title and additional spacing.  If we take a look in Dev Tools we can see all the structural Components. 
+Once we add the Card, along with it's props, we can see the title and additional spacing.  If we take a look in Dev Tools we can see all the structural Components. 
 
 <img src="https://screenshot.click/30-03-ue0yl-b48u8.png">
 
@@ -154,11 +154,11 @@ Let's import the **Page** Component which will wrap the entire **Card** and incl
 
 Here is how the Form should look with all the changes we've made:
 
-<img src="https://screenshot.click/30-22-hfpty-n4cfl.png" width="400px"/>
+<img src="https://i.imgur.com/V5VgZ2Z.png" width="400px"/>
 
-### Last of the Styling
+#### A Bit of Custom CSS
 
-Form is coming along and requires only a few more subtle tweaks to make it look like our original design.  Two things we still need to implement: 
+<!-- Form is coming along and requires only a few more subtle tweaks to make it look like our original design.  Two things we still need to implement: 
 
 - remove the space between the inputs
 - decrease the width
@@ -173,11 +173,11 @@ It's clear that the **Polaris-FormLayout__Item** is where the margin is being as
 <FormLayout>
     <div>
         <TextField
-```
+``` -->
 
-This seems to do the trick.  Now all we need to do is add a few lines of custom CSS to decrease the width even more and center the Form. 
+This seems to do the trick.  Now all we need to do is add a small bit of custom CSS to decrease the width even more. 
 
-If we take a look at Dev Tools we shoudl see the setting for **Polaris-Page** and if we assign the following custom CSS to **styles.css** our form will be complete.
+If we take a look at Dev Tools we should see the setting for **Polaris-Page** and if we add the following CSS rule to **styles.css** our form will be complete.
 
 ```css
 .Polaris-Page {
@@ -191,14 +191,14 @@ Here is the **[Solution CodeSandbox](https://codesandbox.io/s/login-form-solutio
 
 ### Working With Shopify's React-Form Package
 
-Since working with Forms is common in the **Admin** tool at Shopify, their developers took it one step further and created an entire **React-Form** npm pacakge that does much of the heavy lifting.  The package is one of many which are included in their **Quilt Repo**.
+Since working with Forms is common when working in the **Admin**, Shopify took it one step further and created an entire **React-Form** npm package that does much of the heavy lifting.  The package is one of many which are included in their **Quilt Repo**.
 
 <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 <br>
 
-Let's take a closer look at the publicly available [Quilt](https://github.com/Shopify/quilt) repository of packages and then we a deeper dive into the [react-form](https://github.com/Shopify/quilt) package.
+Let's take a closer look at the publicly available [Quilt](https://github.com/Shopify/quilt) repository of packages and then we take a deeper dive into the [react-form](https://github.com/Shopify/quilt) package.
 
 <img src="https://screenshot.click/30-34-e4e5r-mysts.png" width="700px"/>
 
@@ -252,29 +252,44 @@ Let's start with **useForm** as it's used for handling all state logic. There ar
   });
 ```
 
-Now we need to replace the existing values with the ones we have just instantiated. 
+We need to replace the existing values with the ones we have just instantiated, which means we need to update the **onSubmit** event listener and **TextField** Components.
 
-Both the **onSubmit** event listener and **TextField** Components need to be updated. 
+Lets first add a console log to confirm that **fields** contains the keys we will need to reference. .
 
+ ```js
+console.log('fields', fields)
+fields {email: "", password: ""}
+ ```
+
+We should be able to reference those values in our **TextField** Components. Let's first try with **email**.
 ```js
 <Form onSubmit={submit}>
     <FormLayout>
     <div>
-        <TextField placeholder="Email Address" {...fields.email} />
-        <TextField placeholder="Password" {...fields.password} />
+        <TextField placeholder="Email Address" {fields.email} />
     </div>
     //...additonal code
     </FormLayout>
 </Form>
 ```
 
-<hr>
+Were presented with following error which states it expected "..." as well. 
+
+<img src="https://i.imgur.com/6c8enRf.png" width="400px"/>
+
+Adding the **spread operator** will indeed resolve the issue but were not exactly sure at this time as to why it is required.  That will be answered in a few more steps.  
+
+```js
+<TextField placeholder="Email Address" {...fields.email} />
+```
+
+<!-- <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
 <br>
 
-Add a console.log that outputs **fields** and see if you can determine why we need to use Object Destructuring for both **email** and **password**.
+Add a console.log that outputs the **fields** variable and see if you can determine why we need to use Object Destructuring for both **email** and **password**.
 
 <hr>
 
@@ -282,7 +297,7 @@ We can also confirm that the **onSubmit** function is working by clicking on the
 
  ```js
 onSubmit - form {email: "", password: ""}
- ```
+ ``` -->
 
 ### useField Hook
 
@@ -306,6 +321,10 @@ We can also confirm in the console that those values are being captured by the f
 ```js
 onSubmit - form {email: "joe@gmail.com", password: "password"}
 ```
+
+Let's take one final look at the previous console log of **fields** to see if anything has changed.  We should see that each fields is now an object that contains many more values, two of which are providing use the functionality we need are: **value** and **onChange**. 
+
+<img src="https://i.imgur.com/TvePAhD.png">
 
 #### Resetting Form 
 
