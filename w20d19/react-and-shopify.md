@@ -1,4 +1,4 @@
-# React & Shopify
+# Intro To React & Shopify
 
 ## Learning Objectives
 
