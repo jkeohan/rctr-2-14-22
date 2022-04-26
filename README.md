@@ -50,8 +50,8 @@ The class schedule is as follows:
 |16 | Mon 04/11|<li>[Custom Hooks](https://github.com/jkeohan/rctr-2-14-22/blob/main/w09d16/intro-to-custom-hooks.md)</li>||[Recording](https://generalassembly.zoom.us/rec/share/pSTSlAthpWi-nHOWAWY01SO0pdjxA4e-yztIib9Kdzo8BJ39COx5NIpwvwb03rkx.m6FCSLfG_zc2AGlC?startTime=1649718213000)|
 |17 | Wed 04/13|<li>[React & Mapbox](https://github.com/jkeohan/rctr-2-14-22/blob/main/w09d17/intro-to-mapbox.md)</li>|Do: Complete MVP for 1:1's| [Recording](https://generalassembly.zoom.us/rec/share/m0krhiKp2nsKyE9uHwPZkUpirxcDvScpCgyi08KOQ81o7W38YD9U1AD4JHVuLinT.F8IPtn6xvcPhyRJ7?startTime=1649890875000)|
 |18 | Mon 04/18|<li>[Final Project 1on1's](https://docs.google.com/spreadsheets/d/1d4JVrnePPau9VtGB-aHjp7hE4CijMgGwC0fo45TxaKo/edit?userstoinvite=bgirldefy@yahoo.com&actionButton=1#gid=1711570661)</li>||No Recording|
-|19 | Wed 04/20|<li>[React & Shopify](https://github.com/jkeohan/rctr-2-14-22/blob/main/w20d19/react-and-shopify.md)</li>||Recording|
-|20 | Mon 04/25|<li>Project Presentations</li>||Recording|
+|19 | Wed 04/20|<li>[React & Shopify](https://github.com/jkeohan/rctr-2-14-22/blob/main/w20d19/react-and-shopify.md)</li>||[Recording](https://generalassembly.zoom.us/rec/share/iaHc57eVqYLAWSY1GZaFsMJ8uLHMFquoulAyiKTkBdXPpd_-cS25G-yZ92sUN7lH.or6HKwW6-kHQL2Fz?startTime=1650495740000)|
+|20 | Mon 04/25|<li>Project Presentations</li>||[Recording](https://generalassembly.zoom.us/rec/share/2dRszHMfOqQACdu3dDZ1IibcGI3DVFdf17C-Z2HnmUNyjUWVqhLCSRkRHOffdlWW.pdHb-o8XBflcJTP5?startTime=1650927991000)|
 
 <!--  -->
 
