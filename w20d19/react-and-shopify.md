@@ -461,7 +461,7 @@ import { useI18n } from '@shopify/react-i18n';
 import en from '../translations/en.json';
 ```
 
-Inside the App component lets instantiate the **useI18n** hook.  The hook returns both an **i18n** value and a **ShareTranslations** Component. 
+Inside the App component lets instantiate the **useI18n** hook.  The hook returns both an **i18n** value and a **ShareTranslations** Component. **i18n** is passed a translation config object with the below options:
 
 ```js
 const [i18n, ShareTranslations] = useI18n({
@@ -471,6 +471,16 @@ const [i18n, ShareTranslations] = useI18n({
     return import(`../translations/${locale}.json`);
   }
 });
+```
+
+The **AppProvider** is then passed the translations via an **i18n** prop and **ShareTranslations** component is then used to share the translations to all child components. 
+
+```js
+<AppProvider i18n={i18n.translations}>
+    <ShareTranslations>
+      <ReactForm />
+    </ShareTranslations>
+</AppProvider>
 ```
 
 #### Using Translations 
