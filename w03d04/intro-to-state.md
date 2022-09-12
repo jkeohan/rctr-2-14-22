@@ -74,9 +74,9 @@ This is a very important concept to keep in mind as a **re-render** can also ini
 
 ### React Lifecycle
 
-<img src="https://i.imgur.com/njO9Lfv.png">
+[React Hooks Lifecycle](https://wavez.github.io/react-hooks-lifecycle/)
 
-[react-hooks-lifecycle](https://wavez.github.io/react-hooks-lifecycle/)
+<img src="https://i.imgur.com/njO9Lfv.png">
 
 
 <!-- ### Rules Of State
