@@ -76,6 +76,8 @@ This is a very important concept to keep in mind as a **re-render** can also ini
 
 <img src="https://i.imgur.com/njO9Lfv.png">
 
+[react-hooks-lifecycle](https://wavez.github.io/react-hooks-lifecycle/)
+
 
 <!-- ### Rules Of State
 :oncoming_police_car: - Here are the rules we need to follow when working with state. 
