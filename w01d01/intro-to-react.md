@@ -160,8 +160,6 @@ Take a moment to install the tool and then open `DevTools` to confirm the **Comp
 
 :thumbsup: Click on the thumbs up when you're done.
 
-Now let's take a look at a more advanced app built in React: [Postmates](https://postmates.com/).
-
 <hr>
 
 <!-- ### React Alone Can't Build A App
