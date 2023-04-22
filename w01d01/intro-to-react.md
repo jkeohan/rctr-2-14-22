@@ -268,7 +268,7 @@ As of `16.8` React introduced `Hooks` which allowed **Functional Components** to
 
 **Hooks** are the way to write modern day React and will use them throughout this class.  
 
-<img src="https://i.imgur.com/cYH2l2Q.png" width=300/>
+<img src="https://i.imgur.com/VcARsI5.png" width=300/>
 
 #### Setting Up index.js
 
