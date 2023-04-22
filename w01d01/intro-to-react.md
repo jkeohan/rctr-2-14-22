@@ -330,7 +330,15 @@ Let's take a moment to examine `public/index.html`
 
 Now, in the HTML, cut the entire element with `<div className=App>` and paste it over the `<h1>` in `index.js`. 
 
-<img src="https://i.imgur.com/y2l6la8.png" width=400/>
+```js
+root.render(
+  <div className="App">
+    <h1>Hello CodeSandbox</h1>
+    <h2>Start editing to see some magic happen!</h2>
+  </div>
+);
+
+```
 
 React will re-render and our page should display the content.   
 
