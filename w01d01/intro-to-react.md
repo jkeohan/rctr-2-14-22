@@ -302,14 +302,17 @@ const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 ```
 
+And now we can render some HTML.
+
+```js
+root.render(
+  'Hello world'
+);
+```
+
 We should see our app update to display the following:
 
 <img src="https://i.imgur.com/sY8NkIg.png" width=300/>
-
-
-We only use `ReactDOM.render()` once when initially `mounting` the React app. 
-
-:question: But what happened the previous HTML? 
 
 <hr>
 
