@@ -290,27 +290,16 @@ This will be the element that React mounts to and uses to render the entire app.
 Before you can work with React, or any library for that matter, we must import them into the file in which they will be used.  In our case let's import the libraries into `index.js`.
 
 ```js
-// IMPORT React
-import React from "react";
-// IMPORT ReactDOM
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 ```
 
 #### ReactDOM.render()
-With our libraries in place we can use `ReactDOM.render()` to render either, a `Component` or plain `HTML` to the screen.  
+With our library in place we can use `createRoot()` to render either, a `Component` or plain `HTML` to the screen.  
 
-In our basic starter app we will render some basic `HTML` for now.
-
-`ReactDOM.render()` accepts the following two arguments:
-
-- The HTML or Component name to render
-- The DOM element we want to mount react to which in our case is:  `<div id="root"></div>`
-
+Before we can render anything we need to tell React what element to use as it's mounting point which, in most cases is an element with and id of root.
 ```js
-// GRAB THE ELEMENT WITH AN ID OF ROOT AND STORE IN A VARIABLE CALLED rootElement
 const rootElement = document.getElementById("root");
-// RENDER               WHAT              WHERE
-ReactDOM.render(<h1>Hello World</h1>, rootElement);
+const root = createRoot(rootElement);
 ```
 
 We should see our app update to display the following:
